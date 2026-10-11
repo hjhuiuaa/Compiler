@@ -1,0 +1,10 @@
+{
+  "clang": "Alpine clang version 20.1.8",
+  "ld.lld": "LLD 20.1.8 (compatible with GNU linkers)",
+  "llvm-ar": "LLVM (http://llvm.org/):",
+  "llvm-objdump": "LLVM (http://llvm.org/):",
+  "qemu-riscv64": "qemu-riscv64 version 10.0.0",
+  "target": "riscv64-linux-musl / rv64gc / lp64d",
+  "sysroot": "/opt/riscv-sysroot",
+  "course_runtime_sha256": "675cb4bb667676c33afb3216e8153c3d5f0d550da9375b4081d3d4d8c40392d7"
+}

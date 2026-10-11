@@ -1,0 +1,14 @@
+   text	   data	    bss	    dec	    hex	filename
+    470	      0	      4	    474	    1da	build/features-asm.o
+    792	      0	      4	    796	    31c	build/features-ir-O0.o
+    780	      0	      4	    784	    310	build/features-ir-O2.o
+   1098	      0	      4	   1102	    44e	build/features-source-O0.o
+    856	      0	      4	    860	    35c	build/features-source-O2.o
+    118	      0	      0	    118	     76	build/fib-asm.o
+    247	      0	      0	    247	     f7	build/fib-c-O0.o
+    197	      0	      0	    197	     c5	build/fib-c-O2.o
+    244	      0	      0	    244	     f4	build/fib-ir-O0.o
+    236	      0	      0	    236	     ec	build/fib-ir-O2.o
+    244	      0	      0	    244	     f4	build/fib-source-O0.o
+    180	      0	      0	    180	     b4	build/fib-source-O2.o
+   1997	     12	  24608	  26617	   67f9	build/sylib.o

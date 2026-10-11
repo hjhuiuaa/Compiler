@@ -1,0 +1,6 @@
+0000000000000044 t .Lfib_cond
+0000000000000066 t .Lfib_exit
+                 U getint
+0000000000000000 T main
+                 U putch
+                 U putint

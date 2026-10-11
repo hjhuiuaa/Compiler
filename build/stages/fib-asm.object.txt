@@ -1,0 +1,70 @@
+
+build/fib-asm.o:	file format elf64-littleriscv
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+       0: 7179         	addi	sp, sp, -0x30
+       2: f406         	sd	ra, 0x28(sp)
+       4: f022         	sd	s0, 0x20(sp)
+       6: ec26         	sd	s1, 0x18(sp)
+       8: e84a         	sd	s2, 0x10(sp)
+       a: e44e         	sd	s3, 0x8(sp)
+       c: 4401         	li	s0, 0x0
+       e: 4485         	li	s1, 0x1
+      10: 4905         	li	s2, 0x1
+      12: 00000097     	auipc	ra, 0x0
+		0000000000000012:  R_RISCV_CALL_PLT	getint
+		0000000000000012:  R_RISCV_RELAX	*ABS*
+      16: 000080e7     	jalr	ra <main+0x12>
+      1a: 89aa         	mv	s3, a0
+      1c: 8522         	mv	a0, s0
+      1e: 00000097     	auipc	ra, 0x0
+		000000000000001e:  R_RISCV_CALL_PLT	putint
+		000000000000001e:  R_RISCV_RELAX	*ABS*
+      22: 000080e7     	jalr	ra <main+0x1e>
+      26: 4529         	li	a0, 0xa
+      28: 00000097     	auipc	ra, 0x0
+		0000000000000028:  R_RISCV_CALL_PLT	putch
+		0000000000000028:  R_RISCV_RELAX	*ABS*
+      2c: 000080e7     	jalr	ra <main+0x28>
+      30: 8526         	mv	a0, s1
+      32: 00000097     	auipc	ra, 0x0
+		0000000000000032:  R_RISCV_CALL_PLT	putint
+		0000000000000032:  R_RISCV_RELAX	*ABS*
+      36: 000080e7     	jalr	ra <main+0x32>
+      3a: 4529         	li	a0, 0xa
+      3c: 00000097     	auipc	ra, 0x0
+		000000000000003c:  R_RISCV_CALL_PLT	putch
+		000000000000003c:  R_RISCV_RELAX	*ABS*
+      40: 000080e7     	jalr	ra <main+0x3c>
+
+0000000000000044 <.Lfib_cond>:
+      44: 01395063     	bge	s2, s3, 0x44 <.Lfib_cond>
+		0000000000000044:  R_RISCV_BRANCH	.Lfib_exit
+      48: 82a6         	mv	t0, s1
+      4a: 9ca1         	addw	s1, s1, s0
+      4c: 8416         	mv	s0, t0
+      4e: 8526         	mv	a0, s1
+      50: 00000097     	auipc	ra, 0x0
+		0000000000000050:  R_RISCV_CALL_PLT	putint
+		0000000000000050:  R_RISCV_RELAX	*ABS*
+      54: 000080e7     	jalr	ra <.Lfib_cond+0xc>
+      58: 4529         	li	a0, 0xa
+      5a: 00000097     	auipc	ra, 0x0
+		000000000000005a:  R_RISCV_CALL_PLT	putch
+		000000000000005a:  R_RISCV_RELAX	*ABS*
+      5e: 000080e7     	jalr	ra <.Lfib_cond+0x16>
+      62: 2905         	addiw	s2, s2, 0x1
+      64: a001         	j	0x64 <.Lfib_cond+0x20>
+		0000000000000064:  R_RISCV_RVC_JUMP	.Lfib_cond
+
+0000000000000066 <.Lfib_exit>:
+      66: 4501         	li	a0, 0x0
+      68: 69a2         	ld	s3, 0x8(sp)
+      6a: 6942         	ld	s2, 0x10(sp)
+      6c: 64e2         	ld	s1, 0x18(sp)
+      6e: 7402         	ld	s0, 0x20(sp)
+      70: 70a2         	ld	ra, 0x28(sp)
+      72: 6145         	addi	sp, sp, 0x30
+      74: 8082         	ret

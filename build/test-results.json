@@ -1,0 +1,5132 @@
+[
+  {
+    "executable": "fib-source-O0",
+    "input": "-5\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O2",
+    "input": "-5\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O0",
+    "input": "-5\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O2",
+    "input": "-5\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-asm",
+    "input": "-5\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O0",
+    "input": "-5\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O2",
+    "input": "-5\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O0",
+    "input": "0\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O2",
+    "input": "0\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O0",
+    "input": "0\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O2",
+    "input": "0\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-asm",
+    "input": "0\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O0",
+    "input": "0\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O2",
+    "input": "0\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O0",
+    "input": "1\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O2",
+    "input": "1\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O0",
+    "input": "1\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O2",
+    "input": "1\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-asm",
+    "input": "1\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O0",
+    "input": "1\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O2",
+    "input": "1\n",
+    "expected": "0\n1\n",
+    "stdout": "0\n1\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O0",
+    "input": "2\n",
+    "expected": "0\n1\n1\n",
+    "stdout": "0\n1\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O2",
+    "input": "2\n",
+    "expected": "0\n1\n1\n",
+    "stdout": "0\n1\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O0",
+    "input": "2\n",
+    "expected": "0\n1\n1\n",
+    "stdout": "0\n1\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O2",
+    "input": "2\n",
+    "expected": "0\n1\n1\n",
+    "stdout": "0\n1\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-asm",
+    "input": "2\n",
+    "expected": "0\n1\n1\n",
+    "stdout": "0\n1\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O0",
+    "input": "2\n",
+    "expected": "0\n1\n1\n",
+    "stdout": "0\n1\n1\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O2",
+    "input": "2\n",
+    "expected": "0\n1\n1\n",
+    "stdout": "0\n1\n1\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O0",
+    "input": "3\n",
+    "expected": "0\n1\n1\n2\n",
+    "stdout": "0\n1\n1\n2\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O2",
+    "input": "3\n",
+    "expected": "0\n1\n1\n2\n",
+    "stdout": "0\n1\n1\n2\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O0",
+    "input": "3\n",
+    "expected": "0\n1\n1\n2\n",
+    "stdout": "0\n1\n1\n2\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O2",
+    "input": "3\n",
+    "expected": "0\n1\n1\n2\n",
+    "stdout": "0\n1\n1\n2\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-asm",
+    "input": "3\n",
+    "expected": "0\n1\n1\n2\n",
+    "stdout": "0\n1\n1\n2\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O0",
+    "input": "3\n",
+    "expected": "0\n1\n1\n2\n",
+    "stdout": "0\n1\n1\n2\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O2",
+    "input": "3\n",
+    "expected": "0\n1\n1\n2\n",
+    "stdout": "0\n1\n1\n2\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O0",
+    "input": "5\n",
+    "expected": "0\n1\n1\n2\n3\n5\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O2",
+    "input": "5\n",
+    "expected": "0\n1\n1\n2\n3\n5\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O0",
+    "input": "5\n",
+    "expected": "0\n1\n1\n2\n3\n5\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O2",
+    "input": "5\n",
+    "expected": "0\n1\n1\n2\n3\n5\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-asm",
+    "input": "5\n",
+    "expected": "0\n1\n1\n2\n3\n5\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O0",
+    "input": "5\n",
+    "expected": "0\n1\n1\n2\n3\n5\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O2",
+    "input": "5\n",
+    "expected": "0\n1\n1\n2\n3\n5\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O0",
+    "input": "10\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O2",
+    "input": "10\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O0",
+    "input": "10\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O2",
+    "input": "10\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-asm",
+    "input": "10\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O0",
+    "input": "10\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O2",
+    "input": "10\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O0",
+    "input": "20\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O2",
+    "input": "20\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O0",
+    "input": "20\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O2",
+    "input": "20\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-asm",
+    "input": "20\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O0",
+    "input": "20\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O2",
+    "input": "20\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O0",
+    "input": "30\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O2",
+    "input": "30\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O0",
+    "input": "30\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O2",
+    "input": "30\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-asm",
+    "input": "30\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O0",
+    "input": "30\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O2",
+    "input": "30\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O0",
+    "input": "46\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n1346269\n2178309\n3524578\n5702887\n9227465\n14930352\n24157817\n39088169\n63245986\n102334155\n165580141\n267914296\n433494437\n701408733\n1134903170\n1836311903\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n1346269\n2178309\n3524578\n5702887\n9227465\n14930352\n24157817\n39088169\n63245986\n102334155\n165580141\n267914296\n433494437\n701408733\n1134903170\n1836311903\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-source-O2",
+    "input": "46\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n1346269\n2178309\n3524578\n5702887\n9227465\n14930352\n24157817\n39088169\n63245986\n102334155\n165580141\n267914296\n433494437\n701408733\n1134903170\n1836311903\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n1346269\n2178309\n3524578\n5702887\n9227465\n14930352\n24157817\n39088169\n63245986\n102334155\n165580141\n267914296\n433494437\n701408733\n1134903170\n1836311903\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O0",
+    "input": "46\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n1346269\n2178309\n3524578\n5702887\n9227465\n14930352\n24157817\n39088169\n63245986\n102334155\n165580141\n267914296\n433494437\n701408733\n1134903170\n1836311903\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n1346269\n2178309\n3524578\n5702887\n9227465\n14930352\n24157817\n39088169\n63245986\n102334155\n165580141\n267914296\n433494437\n701408733\n1134903170\n1836311903\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-ir-O2",
+    "input": "46\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n1346269\n2178309\n3524578\n5702887\n9227465\n14930352\n24157817\n39088169\n63245986\n102334155\n165580141\n267914296\n433494437\n701408733\n1134903170\n1836311903\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n1346269\n2178309\n3524578\n5702887\n9227465\n14930352\n24157817\n39088169\n63245986\n102334155\n165580141\n267914296\n433494437\n701408733\n1134903170\n1836311903\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-asm",
+    "input": "46\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n1346269\n2178309\n3524578\n5702887\n9227465\n14930352\n24157817\n39088169\n63245986\n102334155\n165580141\n267914296\n433494437\n701408733\n1134903170\n1836311903\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n1346269\n2178309\n3524578\n5702887\n9227465\n14930352\n24157817\n39088169\n63245986\n102334155\n165580141\n267914296\n433494437\n701408733\n1134903170\n1836311903\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O0",
+    "input": "46\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n1346269\n2178309\n3524578\n5702887\n9227465\n14930352\n24157817\n39088169\n63245986\n102334155\n165580141\n267914296\n433494437\n701408733\n1134903170\n1836311903\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n1346269\n2178309\n3524578\n5702887\n9227465\n14930352\n24157817\n39088169\n63245986\n102334155\n165580141\n267914296\n433494437\n701408733\n1134903170\n1836311903\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "fib-c-O2",
+    "input": "46\n",
+    "expected": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n1346269\n2178309\n3524578\n5702887\n9227465\n14930352\n24157817\n39088169\n63245986\n102334155\n165580141\n267914296\n433494437\n701408733\n1134903170\n1836311903\n",
+    "stdout": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n1346269\n2178309\n3524578\n5702887\n9227465\n14930352\n24157817\n39088169\n63245986\n102334155\n165580141\n267914296\n433494437\n701408733\n1134903170\n1836311903\n",
+    "stderr": "",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-100 -100\n",
+    "expected": "-200\n0\n10000\n1\n0\n-1\n0\n1\n1\n0\n0\n-49\n100\n-99\n-100\n",
+    "stdout": "-200\n0\n10000\n1\n0\n-1\n0\n1\n1\n0\n0\n-49\n100\n-99\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-100 -100\n",
+    "expected": "-200\n0\n10000\n1\n0\n-1\n0\n1\n1\n0\n0\n-49\n100\n-99\n-100\n",
+    "stdout": "-200\n0\n10000\n1\n0\n-1\n0\n1\n1\n0\n0\n-49\n100\n-99\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-100 -100\n",
+    "expected": "-200\n0\n10000\n1\n0\n-1\n0\n1\n1\n0\n0\n-49\n100\n-99\n-100\n",
+    "stdout": "-200\n0\n10000\n1\n0\n-1\n0\n1\n1\n0\n0\n-49\n100\n-99\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-100 -100\n",
+    "expected": "-200\n0\n10000\n1\n0\n-1\n0\n1\n1\n0\n0\n-49\n100\n-99\n-100\n",
+    "stdout": "-200\n0\n10000\n1\n0\n-1\n0\n1\n1\n0\n0\n-49\n100\n-99\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-100 -100\n",
+    "expected": "-200\n0\n10000\n1\n0\n-1\n0\n1\n1\n0\n0\n-49\n100\n-99\n-100\n",
+    "stdout": "-200\n0\n10000\n1\n0\n-1\n0\n1\n1\n0\n0\n-49\n100\n-99\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-100 -3\n",
+    "expected": "-103\n-97\n300\n33\n-1\n-1\n1\n1\n1\n0\n0\n-98\n100\n-2\n-100\n",
+    "stdout": "-103\n-97\n300\n33\n-1\n-1\n1\n1\n1\n0\n0\n-98\n100\n-2\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-100 -3\n",
+    "expected": "-103\n-97\n300\n33\n-1\n-1\n1\n1\n1\n0\n0\n-98\n100\n-2\n-100\n",
+    "stdout": "-103\n-97\n300\n33\n-1\n-1\n1\n1\n1\n0\n0\n-98\n100\n-2\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-100 -3\n",
+    "expected": "-103\n-97\n300\n33\n-1\n-1\n1\n1\n1\n0\n0\n-98\n100\n-2\n-100\n",
+    "stdout": "-103\n-97\n300\n33\n-1\n-1\n1\n1\n1\n0\n0\n-98\n100\n-2\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-100 -3\n",
+    "expected": "-103\n-97\n300\n33\n-1\n-1\n1\n1\n1\n0\n0\n-98\n100\n-2\n-100\n",
+    "stdout": "-103\n-97\n300\n33\n-1\n-1\n1\n1\n1\n0\n0\n-98\n100\n-2\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-100 -3\n",
+    "expected": "-103\n-97\n300\n33\n-1\n-1\n1\n1\n1\n0\n0\n-98\n100\n-2\n-100\n",
+    "stdout": "-103\n-97\n300\n33\n-1\n-1\n1\n1\n1\n0\n0\n-98\n100\n-2\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-100 -1\n",
+    "expected": "-101\n-99\n100\n100\n0\n-1\n1\n1\n1\n0\n0\n-99\n100\n0\n-100\n",
+    "stdout": "-101\n-99\n100\n100\n0\n-1\n1\n1\n1\n0\n0\n-99\n100\n0\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-100 -1\n",
+    "expected": "-101\n-99\n100\n100\n0\n-1\n1\n1\n1\n0\n0\n-99\n100\n0\n-100\n",
+    "stdout": "-101\n-99\n100\n100\n0\n-1\n1\n1\n1\n0\n0\n-99\n100\n0\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-100 -1\n",
+    "expected": "-101\n-99\n100\n100\n0\n-1\n1\n1\n1\n0\n0\n-99\n100\n0\n-100\n",
+    "stdout": "-101\n-99\n100\n100\n0\n-1\n1\n1\n1\n0\n0\n-99\n100\n0\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-100 -1\n",
+    "expected": "-101\n-99\n100\n100\n0\n-1\n1\n1\n1\n0\n0\n-99\n100\n0\n-100\n",
+    "stdout": "-101\n-99\n100\n100\n0\n-1\n1\n1\n1\n0\n0\n-99\n100\n0\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-100 -1\n",
+    "expected": "-101\n-99\n100\n100\n0\n-1\n1\n1\n1\n0\n0\n-99\n100\n0\n-100\n",
+    "stdout": "-101\n-99\n100\n100\n0\n-1\n1\n1\n1\n0\n0\n-99\n100\n0\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-100 0\n",
+    "expected": "-100\n-100\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-99\n100\n1\n-100\n",
+    "stdout": "-100\n-100\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-99\n100\n1\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-100 0\n",
+    "expected": "-100\n-100\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-99\n100\n1\n-100\n",
+    "stdout": "-100\n-100\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-99\n100\n1\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-100 0\n",
+    "expected": "-100\n-100\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-99\n100\n1\n-100\n",
+    "stdout": "-100\n-100\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-99\n100\n1\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-100 0\n",
+    "expected": "-100\n-100\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-99\n100\n1\n-100\n",
+    "stdout": "-100\n-100\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-99\n100\n1\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-100 0\n",
+    "expected": "-100\n-100\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-99\n100\n1\n-100\n",
+    "stdout": "-100\n-100\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-99\n100\n1\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-100 1\n",
+    "expected": "-99\n-101\n-100\n-100\n0\n-1\n0\n1\n1\n0\n1\n-100\n100\n2\n-100\n",
+    "stdout": "-99\n-101\n-100\n-100\n0\n-1\n0\n1\n1\n0\n1\n-100\n100\n2\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-100 1\n",
+    "expected": "-99\n-101\n-100\n-100\n0\n-1\n0\n1\n1\n0\n1\n-100\n100\n2\n-100\n",
+    "stdout": "-99\n-101\n-100\n-100\n0\n-1\n0\n1\n1\n0\n1\n-100\n100\n2\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-100 1\n",
+    "expected": "-99\n-101\n-100\n-100\n0\n-1\n0\n1\n1\n0\n1\n-100\n100\n2\n-100\n",
+    "stdout": "-99\n-101\n-100\n-100\n0\n-1\n0\n1\n1\n0\n1\n-100\n100\n2\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-100 1\n",
+    "expected": "-99\n-101\n-100\n-100\n0\n-1\n0\n1\n1\n0\n1\n-100\n100\n2\n-100\n",
+    "stdout": "-99\n-101\n-100\n-100\n0\n-1\n0\n1\n1\n0\n1\n-100\n100\n2\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-100 1\n",
+    "expected": "-99\n-101\n-100\n-100\n0\n-1\n0\n1\n1\n0\n1\n-100\n100\n2\n-100\n",
+    "stdout": "-99\n-101\n-100\n-100\n0\n-1\n0\n1\n1\n0\n1\n-100\n100\n2\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-100 3\n",
+    "expected": "-97\n-103\n-300\n-33\n-1\n-1\n0\n1\n1\n0\n3\n-101\n100\n4\n-100\n",
+    "stdout": "-97\n-103\n-300\n-33\n-1\n-1\n0\n1\n1\n0\n3\n-101\n100\n4\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-100 3\n",
+    "expected": "-97\n-103\n-300\n-33\n-1\n-1\n0\n1\n1\n0\n3\n-101\n100\n4\n-100\n",
+    "stdout": "-97\n-103\n-300\n-33\n-1\n-1\n0\n1\n1\n0\n3\n-101\n100\n4\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-100 3\n",
+    "expected": "-97\n-103\n-300\n-33\n-1\n-1\n0\n1\n1\n0\n3\n-101\n100\n4\n-100\n",
+    "stdout": "-97\n-103\n-300\n-33\n-1\n-1\n0\n1\n1\n0\n3\n-101\n100\n4\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-100 3\n",
+    "expected": "-97\n-103\n-300\n-33\n-1\n-1\n0\n1\n1\n0\n3\n-101\n100\n4\n-100\n",
+    "stdout": "-97\n-103\n-300\n-33\n-1\n-1\n0\n1\n1\n0\n3\n-101\n100\n4\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-100 3\n",
+    "expected": "-97\n-103\n-300\n-33\n-1\n-1\n0\n1\n1\n0\n3\n-101\n100\n4\n-100\n",
+    "stdout": "-97\n-103\n-300\n-33\n-1\n-1\n0\n1\n1\n0\n3\n-101\n100\n4\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-100 100\n",
+    "expected": "0\n-200\n-10000\n-1\n0\n-1\n0\n1\n1\n0\n100\n-149\n100\n101\n-100\n",
+    "stdout": "0\n-200\n-10000\n-1\n0\n-1\n0\n1\n1\n0\n100\n-149\n100\n101\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-100 100\n",
+    "expected": "0\n-200\n-10000\n-1\n0\n-1\n0\n1\n1\n0\n100\n-149\n100\n101\n-100\n",
+    "stdout": "0\n-200\n-10000\n-1\n0\n-1\n0\n1\n1\n0\n100\n-149\n100\n101\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-100 100\n",
+    "expected": "0\n-200\n-10000\n-1\n0\n-1\n0\n1\n1\n0\n100\n-149\n100\n101\n-100\n",
+    "stdout": "0\n-200\n-10000\n-1\n0\n-1\n0\n1\n1\n0\n100\n-149\n100\n101\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-100 100\n",
+    "expected": "0\n-200\n-10000\n-1\n0\n-1\n0\n1\n1\n0\n100\n-149\n100\n101\n-100\n",
+    "stdout": "0\n-200\n-10000\n-1\n0\n-1\n0\n1\n1\n0\n100\n-149\n100\n101\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-100 100\n",
+    "expected": "0\n-200\n-10000\n-1\n0\n-1\n0\n1\n1\n0\n100\n-149\n100\n101\n-100\n",
+    "stdout": "0\n-200\n-10000\n-1\n0\n-1\n0\n1\n1\n0\n100\n-149\n100\n101\n-100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-7 -100\n",
+    "expected": "-107\n93\n700\n0\n-7\n-1\n0\n1\n1\n0\n0\n43\n7\n-99\n-7\n",
+    "stdout": "-107\n93\n700\n0\n-7\n-1\n0\n1\n1\n0\n0\n43\n7\n-99\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-7 -100\n",
+    "expected": "-107\n93\n700\n0\n-7\n-1\n0\n1\n1\n0\n0\n43\n7\n-99\n-7\n",
+    "stdout": "-107\n93\n700\n0\n-7\n-1\n0\n1\n1\n0\n0\n43\n7\n-99\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-7 -100\n",
+    "expected": "-107\n93\n700\n0\n-7\n-1\n0\n1\n1\n0\n0\n43\n7\n-99\n-7\n",
+    "stdout": "-107\n93\n700\n0\n-7\n-1\n0\n1\n1\n0\n0\n43\n7\n-99\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-7 -100\n",
+    "expected": "-107\n93\n700\n0\n-7\n-1\n0\n1\n1\n0\n0\n43\n7\n-99\n-7\n",
+    "stdout": "-107\n93\n700\n0\n-7\n-1\n0\n1\n1\n0\n0\n43\n7\n-99\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-7 -100\n",
+    "expected": "-107\n93\n700\n0\n-7\n-1\n0\n1\n1\n0\n0\n43\n7\n-99\n-7\n",
+    "stdout": "-107\n93\n700\n0\n-7\n-1\n0\n1\n1\n0\n0\n43\n7\n-99\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-7 -3\n",
+    "expected": "-10\n-4\n21\n2\n-1\n-1\n1\n1\n1\n0\n0\n-5\n7\n-2\n-7\n",
+    "stdout": "-10\n-4\n21\n2\n-1\n-1\n1\n1\n1\n0\n0\n-5\n7\n-2\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-7 -3\n",
+    "expected": "-10\n-4\n21\n2\n-1\n-1\n1\n1\n1\n0\n0\n-5\n7\n-2\n-7\n",
+    "stdout": "-10\n-4\n21\n2\n-1\n-1\n1\n1\n1\n0\n0\n-5\n7\n-2\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-7 -3\n",
+    "expected": "-10\n-4\n21\n2\n-1\n-1\n1\n1\n1\n0\n0\n-5\n7\n-2\n-7\n",
+    "stdout": "-10\n-4\n21\n2\n-1\n-1\n1\n1\n1\n0\n0\n-5\n7\n-2\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-7 -3\n",
+    "expected": "-10\n-4\n21\n2\n-1\n-1\n1\n1\n1\n0\n0\n-5\n7\n-2\n-7\n",
+    "stdout": "-10\n-4\n21\n2\n-1\n-1\n1\n1\n1\n0\n0\n-5\n7\n-2\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-7 -3\n",
+    "expected": "-10\n-4\n21\n2\n-1\n-1\n1\n1\n1\n0\n0\n-5\n7\n-2\n-7\n",
+    "stdout": "-10\n-4\n21\n2\n-1\n-1\n1\n1\n1\n0\n0\n-5\n7\n-2\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-7 -1\n",
+    "expected": "-8\n-6\n7\n7\n0\n-1\n1\n1\n1\n0\n0\n-6\n7\n0\n-7\n",
+    "stdout": "-8\n-6\n7\n7\n0\n-1\n1\n1\n1\n0\n0\n-6\n7\n0\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-7 -1\n",
+    "expected": "-8\n-6\n7\n7\n0\n-1\n1\n1\n1\n0\n0\n-6\n7\n0\n-7\n",
+    "stdout": "-8\n-6\n7\n7\n0\n-1\n1\n1\n1\n0\n0\n-6\n7\n0\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-7 -1\n",
+    "expected": "-8\n-6\n7\n7\n0\n-1\n1\n1\n1\n0\n0\n-6\n7\n0\n-7\n",
+    "stdout": "-8\n-6\n7\n7\n0\n-1\n1\n1\n1\n0\n0\n-6\n7\n0\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-7 -1\n",
+    "expected": "-8\n-6\n7\n7\n0\n-1\n1\n1\n1\n0\n0\n-6\n7\n0\n-7\n",
+    "stdout": "-8\n-6\n7\n7\n0\n-1\n1\n1\n1\n0\n0\n-6\n7\n0\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-7 -1\n",
+    "expected": "-8\n-6\n7\n7\n0\n-1\n1\n1\n1\n0\n0\n-6\n7\n0\n-7\n",
+    "stdout": "-8\n-6\n7\n7\n0\n-1\n1\n1\n1\n0\n0\n-6\n7\n0\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-7 0\n",
+    "expected": "-7\n-7\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-6\n7\n1\n-7\n",
+    "stdout": "-7\n-7\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-6\n7\n1\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-7 0\n",
+    "expected": "-7\n-7\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-6\n7\n1\n-7\n",
+    "stdout": "-7\n-7\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-6\n7\n1\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-7 0\n",
+    "expected": "-7\n-7\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-6\n7\n1\n-7\n",
+    "stdout": "-7\n-7\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-6\n7\n1\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-7 0\n",
+    "expected": "-7\n-7\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-6\n7\n1\n-7\n",
+    "stdout": "-7\n-7\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-6\n7\n1\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-7 0\n",
+    "expected": "-7\n-7\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-6\n7\n1\n-7\n",
+    "stdout": "-7\n-7\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n-6\n7\n1\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-7 1\n",
+    "expected": "-6\n-8\n-7\n-7\n0\n-1\n0\n1\n1\n0\n1\n-7\n7\n2\n-7\n",
+    "stdout": "-6\n-8\n-7\n-7\n0\n-1\n0\n1\n1\n0\n1\n-7\n7\n2\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-7 1\n",
+    "expected": "-6\n-8\n-7\n-7\n0\n-1\n0\n1\n1\n0\n1\n-7\n7\n2\n-7\n",
+    "stdout": "-6\n-8\n-7\n-7\n0\n-1\n0\n1\n1\n0\n1\n-7\n7\n2\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-7 1\n",
+    "expected": "-6\n-8\n-7\n-7\n0\n-1\n0\n1\n1\n0\n1\n-7\n7\n2\n-7\n",
+    "stdout": "-6\n-8\n-7\n-7\n0\n-1\n0\n1\n1\n0\n1\n-7\n7\n2\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-7 1\n",
+    "expected": "-6\n-8\n-7\n-7\n0\n-1\n0\n1\n1\n0\n1\n-7\n7\n2\n-7\n",
+    "stdout": "-6\n-8\n-7\n-7\n0\n-1\n0\n1\n1\n0\n1\n-7\n7\n2\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-7 1\n",
+    "expected": "-6\n-8\n-7\n-7\n0\n-1\n0\n1\n1\n0\n1\n-7\n7\n2\n-7\n",
+    "stdout": "-6\n-8\n-7\n-7\n0\n-1\n0\n1\n1\n0\n1\n-7\n7\n2\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-7 3\n",
+    "expected": "-4\n-10\n-21\n-2\n-1\n-1\n0\n1\n1\n0\n3\n-8\n7\n4\n-7\n",
+    "stdout": "-4\n-10\n-21\n-2\n-1\n-1\n0\n1\n1\n0\n3\n-8\n7\n4\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-7 3\n",
+    "expected": "-4\n-10\n-21\n-2\n-1\n-1\n0\n1\n1\n0\n3\n-8\n7\n4\n-7\n",
+    "stdout": "-4\n-10\n-21\n-2\n-1\n-1\n0\n1\n1\n0\n3\n-8\n7\n4\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-7 3\n",
+    "expected": "-4\n-10\n-21\n-2\n-1\n-1\n0\n1\n1\n0\n3\n-8\n7\n4\n-7\n",
+    "stdout": "-4\n-10\n-21\n-2\n-1\n-1\n0\n1\n1\n0\n3\n-8\n7\n4\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-7 3\n",
+    "expected": "-4\n-10\n-21\n-2\n-1\n-1\n0\n1\n1\n0\n3\n-8\n7\n4\n-7\n",
+    "stdout": "-4\n-10\n-21\n-2\n-1\n-1\n0\n1\n1\n0\n3\n-8\n7\n4\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-7 3\n",
+    "expected": "-4\n-10\n-21\n-2\n-1\n-1\n0\n1\n1\n0\n3\n-8\n7\n4\n-7\n",
+    "stdout": "-4\n-10\n-21\n-2\n-1\n-1\n0\n1\n1\n0\n3\n-8\n7\n4\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-7 100\n",
+    "expected": "93\n-107\n-700\n0\n-7\n-1\n0\n1\n1\n0\n100\n-56\n7\n101\n-7\n",
+    "stdout": "93\n-107\n-700\n0\n-7\n-1\n0\n1\n1\n0\n100\n-56\n7\n101\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-7 100\n",
+    "expected": "93\n-107\n-700\n0\n-7\n-1\n0\n1\n1\n0\n100\n-56\n7\n101\n-7\n",
+    "stdout": "93\n-107\n-700\n0\n-7\n-1\n0\n1\n1\n0\n100\n-56\n7\n101\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-7 100\n",
+    "expected": "93\n-107\n-700\n0\n-7\n-1\n0\n1\n1\n0\n100\n-56\n7\n101\n-7\n",
+    "stdout": "93\n-107\n-700\n0\n-7\n-1\n0\n1\n1\n0\n100\n-56\n7\n101\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-7 100\n",
+    "expected": "93\n-107\n-700\n0\n-7\n-1\n0\n1\n1\n0\n100\n-56\n7\n101\n-7\n",
+    "stdout": "93\n-107\n-700\n0\n-7\n-1\n0\n1\n1\n0\n100\n-56\n7\n101\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-7 100\n",
+    "expected": "93\n-107\n-700\n0\n-7\n-1\n0\n1\n1\n0\n100\n-56\n7\n101\n-7\n",
+    "stdout": "93\n-107\n-700\n0\n-7\n-1\n0\n1\n1\n0\n100\n-56\n7\n101\n-7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-1 -100\n",
+    "expected": "-101\n99\n100\n0\n-1\n-1\n0\n1\n1\n0\n0\n49\n1\n-99\n-1\n",
+    "stdout": "-101\n99\n100\n0\n-1\n-1\n0\n1\n1\n0\n0\n49\n1\n-99\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-1 -100\n",
+    "expected": "-101\n99\n100\n0\n-1\n-1\n0\n1\n1\n0\n0\n49\n1\n-99\n-1\n",
+    "stdout": "-101\n99\n100\n0\n-1\n-1\n0\n1\n1\n0\n0\n49\n1\n-99\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-1 -100\n",
+    "expected": "-101\n99\n100\n0\n-1\n-1\n0\n1\n1\n0\n0\n49\n1\n-99\n-1\n",
+    "stdout": "-101\n99\n100\n0\n-1\n-1\n0\n1\n1\n0\n0\n49\n1\n-99\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-1 -100\n",
+    "expected": "-101\n99\n100\n0\n-1\n-1\n0\n1\n1\n0\n0\n49\n1\n-99\n-1\n",
+    "stdout": "-101\n99\n100\n0\n-1\n-1\n0\n1\n1\n0\n0\n49\n1\n-99\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-1 -100\n",
+    "expected": "-101\n99\n100\n0\n-1\n-1\n0\n1\n1\n0\n0\n49\n1\n-99\n-1\n",
+    "stdout": "-101\n99\n100\n0\n-1\n-1\n0\n1\n1\n0\n0\n49\n1\n-99\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-1 -3\n",
+    "expected": "-4\n2\n3\n0\n-1\n-1\n0\n1\n1\n0\n0\n1\n1\n-2\n-1\n",
+    "stdout": "-4\n2\n3\n0\n-1\n-1\n0\n1\n1\n0\n0\n1\n1\n-2\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-1 -3\n",
+    "expected": "-4\n2\n3\n0\n-1\n-1\n0\n1\n1\n0\n0\n1\n1\n-2\n-1\n",
+    "stdout": "-4\n2\n3\n0\n-1\n-1\n0\n1\n1\n0\n0\n1\n1\n-2\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-1 -3\n",
+    "expected": "-4\n2\n3\n0\n-1\n-1\n0\n1\n1\n0\n0\n1\n1\n-2\n-1\n",
+    "stdout": "-4\n2\n3\n0\n-1\n-1\n0\n1\n1\n0\n0\n1\n1\n-2\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-1 -3\n",
+    "expected": "-4\n2\n3\n0\n-1\n-1\n0\n1\n1\n0\n0\n1\n1\n-2\n-1\n",
+    "stdout": "-4\n2\n3\n0\n-1\n-1\n0\n1\n1\n0\n0\n1\n1\n-2\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-1 -3\n",
+    "expected": "-4\n2\n3\n0\n-1\n-1\n0\n1\n1\n0\n0\n1\n1\n-2\n-1\n",
+    "stdout": "-4\n2\n3\n0\n-1\n-1\n0\n1\n1\n0\n0\n1\n1\n-2\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-1 -1\n",
+    "expected": "-2\n0\n1\n1\n0\n-1\n0\n1\n1\n0\n0\n0\n1\n0\n-1\n",
+    "stdout": "-2\n0\n1\n1\n0\n-1\n0\n1\n1\n0\n0\n0\n1\n0\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-1 -1\n",
+    "expected": "-2\n0\n1\n1\n0\n-1\n0\n1\n1\n0\n0\n0\n1\n0\n-1\n",
+    "stdout": "-2\n0\n1\n1\n0\n-1\n0\n1\n1\n0\n0\n0\n1\n0\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-1 -1\n",
+    "expected": "-2\n0\n1\n1\n0\n-1\n0\n1\n1\n0\n0\n0\n1\n0\n-1\n",
+    "stdout": "-2\n0\n1\n1\n0\n-1\n0\n1\n1\n0\n0\n0\n1\n0\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-1 -1\n",
+    "expected": "-2\n0\n1\n1\n0\n-1\n0\n1\n1\n0\n0\n0\n1\n0\n-1\n",
+    "stdout": "-2\n0\n1\n1\n0\n-1\n0\n1\n1\n0\n0\n0\n1\n0\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-1 -1\n",
+    "expected": "-2\n0\n1\n1\n0\n-1\n0\n1\n1\n0\n0\n0\n1\n0\n-1\n",
+    "stdout": "-2\n0\n1\n1\n0\n-1\n0\n1\n1\n0\n0\n0\n1\n0\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-1 0\n",
+    "expected": "-1\n-1\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n0\n1\n1\n-1\n",
+    "stdout": "-1\n-1\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n0\n1\n1\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-1 0\n",
+    "expected": "-1\n-1\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n0\n1\n1\n-1\n",
+    "stdout": "-1\n-1\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n0\n1\n1\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-1 0\n",
+    "expected": "-1\n-1\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n0\n1\n1\n-1\n",
+    "stdout": "-1\n-1\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n0\n1\n1\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-1 0\n",
+    "expected": "-1\n-1\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n0\n1\n1\n-1\n",
+    "stdout": "-1\n-1\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n0\n1\n1\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-1 0\n",
+    "expected": "-1\n-1\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n0\n1\n1\n-1\n",
+    "stdout": "-1\n-1\n0\n0\n0\n-1\n0\n1\n0\n0\n0\n0\n1\n1\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-1 1\n",
+    "expected": "0\n-2\n-1\n-1\n0\n-1\n0\n1\n1\n0\n1\n-1\n1\n2\n-1\n",
+    "stdout": "0\n-2\n-1\n-1\n0\n-1\n0\n1\n1\n0\n1\n-1\n1\n2\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-1 1\n",
+    "expected": "0\n-2\n-1\n-1\n0\n-1\n0\n1\n1\n0\n1\n-1\n1\n2\n-1\n",
+    "stdout": "0\n-2\n-1\n-1\n0\n-1\n0\n1\n1\n0\n1\n-1\n1\n2\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-1 1\n",
+    "expected": "0\n-2\n-1\n-1\n0\n-1\n0\n1\n1\n0\n1\n-1\n1\n2\n-1\n",
+    "stdout": "0\n-2\n-1\n-1\n0\n-1\n0\n1\n1\n0\n1\n-1\n1\n2\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-1 1\n",
+    "expected": "0\n-2\n-1\n-1\n0\n-1\n0\n1\n1\n0\n1\n-1\n1\n2\n-1\n",
+    "stdout": "0\n-2\n-1\n-1\n0\n-1\n0\n1\n1\n0\n1\n-1\n1\n2\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-1 1\n",
+    "expected": "0\n-2\n-1\n-1\n0\n-1\n0\n1\n1\n0\n1\n-1\n1\n2\n-1\n",
+    "stdout": "0\n-2\n-1\n-1\n0\n-1\n0\n1\n1\n0\n1\n-1\n1\n2\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-1 3\n",
+    "expected": "2\n-4\n-3\n0\n-1\n-1\n0\n1\n1\n0\n3\n-2\n1\n4\n-1\n",
+    "stdout": "2\n-4\n-3\n0\n-1\n-1\n0\n1\n1\n0\n3\n-2\n1\n4\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-1 3\n",
+    "expected": "2\n-4\n-3\n0\n-1\n-1\n0\n1\n1\n0\n3\n-2\n1\n4\n-1\n",
+    "stdout": "2\n-4\n-3\n0\n-1\n-1\n0\n1\n1\n0\n3\n-2\n1\n4\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-1 3\n",
+    "expected": "2\n-4\n-3\n0\n-1\n-1\n0\n1\n1\n0\n3\n-2\n1\n4\n-1\n",
+    "stdout": "2\n-4\n-3\n0\n-1\n-1\n0\n1\n1\n0\n3\n-2\n1\n4\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-1 3\n",
+    "expected": "2\n-4\n-3\n0\n-1\n-1\n0\n1\n1\n0\n3\n-2\n1\n4\n-1\n",
+    "stdout": "2\n-4\n-3\n0\n-1\n-1\n0\n1\n1\n0\n3\n-2\n1\n4\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-1 3\n",
+    "expected": "2\n-4\n-3\n0\n-1\n-1\n0\n1\n1\n0\n3\n-2\n1\n4\n-1\n",
+    "stdout": "2\n-4\n-3\n0\n-1\n-1\n0\n1\n1\n0\n3\n-2\n1\n4\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-1 100\n",
+    "expected": "99\n-101\n-100\n0\n-1\n-1\n0\n1\n1\n0\n100\n-50\n1\n101\n-1\n",
+    "stdout": "99\n-101\n-100\n0\n-1\n-1\n0\n1\n1\n0\n100\n-50\n1\n101\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-1 100\n",
+    "expected": "99\n-101\n-100\n0\n-1\n-1\n0\n1\n1\n0\n100\n-50\n1\n101\n-1\n",
+    "stdout": "99\n-101\n-100\n0\n-1\n-1\n0\n1\n1\n0\n100\n-50\n1\n101\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-1 100\n",
+    "expected": "99\n-101\n-100\n0\n-1\n-1\n0\n1\n1\n0\n100\n-50\n1\n101\n-1\n",
+    "stdout": "99\n-101\n-100\n0\n-1\n-1\n0\n1\n1\n0\n100\n-50\n1\n101\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-1 100\n",
+    "expected": "99\n-101\n-100\n0\n-1\n-1\n0\n1\n1\n0\n100\n-50\n1\n101\n-1\n",
+    "stdout": "99\n-101\n-100\n0\n-1\n-1\n0\n1\n1\n0\n100\n-50\n1\n101\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-1 100\n",
+    "expected": "99\n-101\n-100\n0\n-1\n-1\n0\n1\n1\n0\n100\n-50\n1\n101\n-1\n",
+    "stdout": "99\n-101\n-100\n0\n-1\n-1\n0\n1\n1\n0\n100\n-50\n1\n101\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "0 -100\n",
+    "expected": "-100\n100\n0\n0\n0\n0\n0\n0\n1\n1\n0\n50\n0\n-99\n0\n",
+    "stdout": "-100\n100\n0\n0\n0\n0\n0\n0\n1\n1\n0\n50\n0\n-99\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "0 -100\n",
+    "expected": "-100\n100\n0\n0\n0\n0\n0\n0\n1\n1\n0\n50\n0\n-99\n0\n",
+    "stdout": "-100\n100\n0\n0\n0\n0\n0\n0\n1\n1\n0\n50\n0\n-99\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "0 -100\n",
+    "expected": "-100\n100\n0\n0\n0\n0\n0\n0\n1\n1\n0\n50\n0\n-99\n0\n",
+    "stdout": "-100\n100\n0\n0\n0\n0\n0\n0\n1\n1\n0\n50\n0\n-99\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "0 -100\n",
+    "expected": "-100\n100\n0\n0\n0\n0\n0\n0\n1\n1\n0\n50\n0\n-99\n0\n",
+    "stdout": "-100\n100\n0\n0\n0\n0\n0\n0\n1\n1\n0\n50\n0\n-99\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "0 -100\n",
+    "expected": "-100\n100\n0\n0\n0\n0\n0\n0\n1\n1\n0\n50\n0\n-99\n0\n",
+    "stdout": "-100\n100\n0\n0\n0\n0\n0\n0\n1\n1\n0\n50\n0\n-99\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "0 -3\n",
+    "expected": "-3\n3\n0\n0\n0\n0\n0\n0\n1\n1\n0\n2\n0\n-2\n0\n",
+    "stdout": "-3\n3\n0\n0\n0\n0\n0\n0\n1\n1\n0\n2\n0\n-2\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "0 -3\n",
+    "expected": "-3\n3\n0\n0\n0\n0\n0\n0\n1\n1\n0\n2\n0\n-2\n0\n",
+    "stdout": "-3\n3\n0\n0\n0\n0\n0\n0\n1\n1\n0\n2\n0\n-2\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "0 -3\n",
+    "expected": "-3\n3\n0\n0\n0\n0\n0\n0\n1\n1\n0\n2\n0\n-2\n0\n",
+    "stdout": "-3\n3\n0\n0\n0\n0\n0\n0\n1\n1\n0\n2\n0\n-2\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "0 -3\n",
+    "expected": "-3\n3\n0\n0\n0\n0\n0\n0\n1\n1\n0\n2\n0\n-2\n0\n",
+    "stdout": "-3\n3\n0\n0\n0\n0\n0\n0\n1\n1\n0\n2\n0\n-2\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "0 -3\n",
+    "expected": "-3\n3\n0\n0\n0\n0\n0\n0\n1\n1\n0\n2\n0\n-2\n0\n",
+    "stdout": "-3\n3\n0\n0\n0\n0\n0\n0\n1\n1\n0\n2\n0\n-2\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "0 -1\n",
+    "expected": "-1\n1\n0\n0\n0\n0\n0\n0\n1\n1\n0\n1\n0\n0\n0\n",
+    "stdout": "-1\n1\n0\n0\n0\n0\n0\n0\n1\n1\n0\n1\n0\n0\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "0 -1\n",
+    "expected": "-1\n1\n0\n0\n0\n0\n0\n0\n1\n1\n0\n1\n0\n0\n0\n",
+    "stdout": "-1\n1\n0\n0\n0\n0\n0\n0\n1\n1\n0\n1\n0\n0\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "0 -1\n",
+    "expected": "-1\n1\n0\n0\n0\n0\n0\n0\n1\n1\n0\n1\n0\n0\n0\n",
+    "stdout": "-1\n1\n0\n0\n0\n0\n0\n0\n1\n1\n0\n1\n0\n0\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "0 -1\n",
+    "expected": "-1\n1\n0\n0\n0\n0\n0\n0\n1\n1\n0\n1\n0\n0\n0\n",
+    "stdout": "-1\n1\n0\n0\n0\n0\n0\n0\n1\n1\n0\n1\n0\n0\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "0 -1\n",
+    "expected": "-1\n1\n0\n0\n0\n0\n0\n0\n1\n1\n0\n1\n0\n0\n0\n",
+    "stdout": "-1\n1\n0\n0\n0\n0\n0\n0\n1\n1\n0\n1\n0\n0\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "0 0\n",
+    "expected": "0\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n0\n1\n0\n",
+    "stdout": "0\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n0\n1\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "0 0\n",
+    "expected": "0\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n0\n1\n0\n",
+    "stdout": "0\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n0\n1\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "0 0\n",
+    "expected": "0\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n0\n1\n0\n",
+    "stdout": "0\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n0\n1\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "0 0\n",
+    "expected": "0\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n0\n1\n0\n",
+    "stdout": "0\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n0\n1\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "0 0\n",
+    "expected": "0\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n0\n1\n0\n",
+    "stdout": "0\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n0\n1\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "0 1\n",
+    "expected": "1\n-1\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n2\n0\n",
+    "stdout": "1\n-1\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n2\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "0 1\n",
+    "expected": "1\n-1\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n2\n0\n",
+    "stdout": "1\n-1\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n2\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "0 1\n",
+    "expected": "1\n-1\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n2\n0\n",
+    "stdout": "1\n-1\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n2\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "0 1\n",
+    "expected": "1\n-1\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n2\n0\n",
+    "stdout": "1\n-1\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n2\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "0 1\n",
+    "expected": "1\n-1\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n2\n0\n",
+    "stdout": "1\n-1\n0\n0\n0\n0\n0\n0\n1\n0\n0\n0\n0\n2\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "0 3\n",
+    "expected": "3\n-3\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-1\n0\n4\n0\n",
+    "stdout": "3\n-3\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-1\n0\n4\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "0 3\n",
+    "expected": "3\n-3\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-1\n0\n4\n0\n",
+    "stdout": "3\n-3\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-1\n0\n4\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "0 3\n",
+    "expected": "3\n-3\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-1\n0\n4\n0\n",
+    "stdout": "3\n-3\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-1\n0\n4\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "0 3\n",
+    "expected": "3\n-3\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-1\n0\n4\n0\n",
+    "stdout": "3\n-3\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-1\n0\n4\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "0 3\n",
+    "expected": "3\n-3\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-1\n0\n4\n0\n",
+    "stdout": "3\n-3\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-1\n0\n4\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "0 100\n",
+    "expected": "100\n-100\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-49\n0\n101\n0\n",
+    "stdout": "100\n-100\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-49\n0\n101\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "0 100\n",
+    "expected": "100\n-100\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-49\n0\n101\n0\n",
+    "stdout": "100\n-100\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-49\n0\n101\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "0 100\n",
+    "expected": "100\n-100\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-49\n0\n101\n0\n",
+    "stdout": "100\n-100\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-49\n0\n101\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "0 100\n",
+    "expected": "100\n-100\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-49\n0\n101\n0\n",
+    "stdout": "100\n-100\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-49\n0\n101\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "0 100\n",
+    "expected": "100\n-100\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-49\n0\n101\n0\n",
+    "stdout": "100\n-100\n0\n0\n0\n0\n0\n0\n1\n0\n0\n-49\n0\n101\n0\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "1 -100\n",
+    "expected": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stdout": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "1 -100\n",
+    "expected": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stdout": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "1 -100\n",
+    "expected": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stdout": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "1 -100\n",
+    "expected": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stdout": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "1 -100\n",
+    "expected": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stdout": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "1 -3\n",
+    "expected": "-2\n4\n-3\n0\n1\n1\n0\n1\n1\n1\n1\n3\n-1\n-2\n1\n",
+    "stdout": "-2\n4\n-3\n0\n1\n1\n0\n1\n1\n1\n1\n3\n-1\n-2\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "1 -3\n",
+    "expected": "-2\n4\n-3\n0\n1\n1\n0\n1\n1\n1\n1\n3\n-1\n-2\n1\n",
+    "stdout": "-2\n4\n-3\n0\n1\n1\n0\n1\n1\n1\n1\n3\n-1\n-2\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "1 -3\n",
+    "expected": "-2\n4\n-3\n0\n1\n1\n0\n1\n1\n1\n1\n3\n-1\n-2\n1\n",
+    "stdout": "-2\n4\n-3\n0\n1\n1\n0\n1\n1\n1\n1\n3\n-1\n-2\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "1 -3\n",
+    "expected": "-2\n4\n-3\n0\n1\n1\n0\n1\n1\n1\n1\n3\n-1\n-2\n1\n",
+    "stdout": "-2\n4\n-3\n0\n1\n1\n0\n1\n1\n1\n1\n3\n-1\n-2\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "1 -3\n",
+    "expected": "-2\n4\n-3\n0\n1\n1\n0\n1\n1\n1\n1\n3\n-1\n-2\n1\n",
+    "stdout": "-2\n4\n-3\n0\n1\n1\n0\n1\n1\n1\n1\n3\n-1\n-2\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "1 -1\n",
+    "expected": "0\n2\n-1\n-1\n0\n1\n0\n1\n1\n1\n1\n2\n-1\n0\n1\n",
+    "stdout": "0\n2\n-1\n-1\n0\n1\n0\n1\n1\n1\n1\n2\n-1\n0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "1 -1\n",
+    "expected": "0\n2\n-1\n-1\n0\n1\n0\n1\n1\n1\n1\n2\n-1\n0\n1\n",
+    "stdout": "0\n2\n-1\n-1\n0\n1\n0\n1\n1\n1\n1\n2\n-1\n0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "1 -1\n",
+    "expected": "0\n2\n-1\n-1\n0\n1\n0\n1\n1\n1\n1\n2\n-1\n0\n1\n",
+    "stdout": "0\n2\n-1\n-1\n0\n1\n0\n1\n1\n1\n1\n2\n-1\n0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "1 -1\n",
+    "expected": "0\n2\n-1\n-1\n0\n1\n0\n1\n1\n1\n1\n2\n-1\n0\n1\n",
+    "stdout": "0\n2\n-1\n-1\n0\n1\n0\n1\n1\n1\n1\n2\n-1\n0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "1 -1\n",
+    "expected": "0\n2\n-1\n-1\n0\n1\n0\n1\n1\n1\n1\n2\n-1\n0\n1\n",
+    "stdout": "0\n2\n-1\n-1\n0\n1\n0\n1\n1\n1\n1\n2\n-1\n0\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "1 0\n",
+    "expected": "1\n1\n0\n0\n0\n1\n0\n1\n0\n1\n1\n1\n-1\n1\n1\n",
+    "stdout": "1\n1\n0\n0\n0\n1\n0\n1\n0\n1\n1\n1\n-1\n1\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "1 0\n",
+    "expected": "1\n1\n0\n0\n0\n1\n0\n1\n0\n1\n1\n1\n-1\n1\n1\n",
+    "stdout": "1\n1\n0\n0\n0\n1\n0\n1\n0\n1\n1\n1\n-1\n1\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "1 0\n",
+    "expected": "1\n1\n0\n0\n0\n1\n0\n1\n0\n1\n1\n1\n-1\n1\n1\n",
+    "stdout": "1\n1\n0\n0\n0\n1\n0\n1\n0\n1\n1\n1\n-1\n1\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "1 0\n",
+    "expected": "1\n1\n0\n0\n0\n1\n0\n1\n0\n1\n1\n1\n-1\n1\n1\n",
+    "stdout": "1\n1\n0\n0\n0\n1\n0\n1\n0\n1\n1\n1\n-1\n1\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "1 0\n",
+    "expected": "1\n1\n0\n0\n0\n1\n0\n1\n0\n1\n1\n1\n-1\n1\n1\n",
+    "stdout": "1\n1\n0\n0\n0\n1\n0\n1\n0\n1\n1\n1\n-1\n1\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "1 1\n",
+    "expected": "2\n0\n1\n1\n0\n1\n0\n1\n1\n0\n2\n1\n-1\n2\n1\n",
+    "stdout": "2\n0\n1\n1\n0\n1\n0\n1\n1\n0\n2\n1\n-1\n2\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "1 1\n",
+    "expected": "2\n0\n1\n1\n0\n1\n0\n1\n1\n0\n2\n1\n-1\n2\n1\n",
+    "stdout": "2\n0\n1\n1\n0\n1\n0\n1\n1\n0\n2\n1\n-1\n2\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "1 1\n",
+    "expected": "2\n0\n1\n1\n0\n1\n0\n1\n1\n0\n2\n1\n-1\n2\n1\n",
+    "stdout": "2\n0\n1\n1\n0\n1\n0\n1\n1\n0\n2\n1\n-1\n2\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "1 1\n",
+    "expected": "2\n0\n1\n1\n0\n1\n0\n1\n1\n0\n2\n1\n-1\n2\n1\n",
+    "stdout": "2\n0\n1\n1\n0\n1\n0\n1\n1\n0\n2\n1\n-1\n2\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "1 1\n",
+    "expected": "2\n0\n1\n1\n0\n1\n0\n1\n1\n0\n2\n1\n-1\n2\n1\n",
+    "stdout": "2\n0\n1\n1\n0\n1\n0\n1\n1\n0\n2\n1\n-1\n2\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "1 3\n",
+    "expected": "4\n-2\n3\n0\n1\n1\n0\n1\n1\n0\n4\n0\n-1\n4\n1\n",
+    "stdout": "4\n-2\n3\n0\n1\n1\n0\n1\n1\n0\n4\n0\n-1\n4\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "1 3\n",
+    "expected": "4\n-2\n3\n0\n1\n1\n0\n1\n1\n0\n4\n0\n-1\n4\n1\n",
+    "stdout": "4\n-2\n3\n0\n1\n1\n0\n1\n1\n0\n4\n0\n-1\n4\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "1 3\n",
+    "expected": "4\n-2\n3\n0\n1\n1\n0\n1\n1\n0\n4\n0\n-1\n4\n1\n",
+    "stdout": "4\n-2\n3\n0\n1\n1\n0\n1\n1\n0\n4\n0\n-1\n4\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "1 3\n",
+    "expected": "4\n-2\n3\n0\n1\n1\n0\n1\n1\n0\n4\n0\n-1\n4\n1\n",
+    "stdout": "4\n-2\n3\n0\n1\n1\n0\n1\n1\n0\n4\n0\n-1\n4\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "1 3\n",
+    "expected": "4\n-2\n3\n0\n1\n1\n0\n1\n1\n0\n4\n0\n-1\n4\n1\n",
+    "stdout": "4\n-2\n3\n0\n1\n1\n0\n1\n1\n0\n4\n0\n-1\n4\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "1 100\n",
+    "expected": "101\n-99\n100\n0\n1\n1\n0\n1\n1\n0\n101\n-48\n-1\n101\n1\n",
+    "stdout": "101\n-99\n100\n0\n1\n1\n0\n1\n1\n0\n101\n-48\n-1\n101\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "1 100\n",
+    "expected": "101\n-99\n100\n0\n1\n1\n0\n1\n1\n0\n101\n-48\n-1\n101\n1\n",
+    "stdout": "101\n-99\n100\n0\n1\n1\n0\n1\n1\n0\n101\n-48\n-1\n101\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "1 100\n",
+    "expected": "101\n-99\n100\n0\n1\n1\n0\n1\n1\n0\n101\n-48\n-1\n101\n1\n",
+    "stdout": "101\n-99\n100\n0\n1\n1\n0\n1\n1\n0\n101\n-48\n-1\n101\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "1 100\n",
+    "expected": "101\n-99\n100\n0\n1\n1\n0\n1\n1\n0\n101\n-48\n-1\n101\n1\n",
+    "stdout": "101\n-99\n100\n0\n1\n1\n0\n1\n1\n0\n101\n-48\n-1\n101\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "1 100\n",
+    "expected": "101\n-99\n100\n0\n1\n1\n0\n1\n1\n0\n101\n-48\n-1\n101\n1\n",
+    "stdout": "101\n-99\n100\n0\n1\n1\n0\n1\n1\n0\n101\n-48\n-1\n101\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "7 -100\n",
+    "expected": "-93\n107\n-700\n0\n7\n1\n0\n1\n1\n1\n7\n57\n-7\n-99\n7\n",
+    "stdout": "-93\n107\n-700\n0\n7\n1\n0\n1\n1\n1\n7\n57\n-7\n-99\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "7 -100\n",
+    "expected": "-93\n107\n-700\n0\n7\n1\n0\n1\n1\n1\n7\n57\n-7\n-99\n7\n",
+    "stdout": "-93\n107\n-700\n0\n7\n1\n0\n1\n1\n1\n7\n57\n-7\n-99\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "7 -100\n",
+    "expected": "-93\n107\n-700\n0\n7\n1\n0\n1\n1\n1\n7\n57\n-7\n-99\n7\n",
+    "stdout": "-93\n107\n-700\n0\n7\n1\n0\n1\n1\n1\n7\n57\n-7\n-99\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "7 -100\n",
+    "expected": "-93\n107\n-700\n0\n7\n1\n0\n1\n1\n1\n7\n57\n-7\n-99\n7\n",
+    "stdout": "-93\n107\n-700\n0\n7\n1\n0\n1\n1\n1\n7\n57\n-7\n-99\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "7 -100\n",
+    "expected": "-93\n107\n-700\n0\n7\n1\n0\n1\n1\n1\n7\n57\n-7\n-99\n7\n",
+    "stdout": "-93\n107\n-700\n0\n7\n1\n0\n1\n1\n1\n7\n57\n-7\n-99\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "7 -3\n",
+    "expected": "4\n10\n-21\n-2\n1\n1\n0\n1\n1\n1\n7\n9\n-7\n-2\n7\n",
+    "stdout": "4\n10\n-21\n-2\n1\n1\n0\n1\n1\n1\n7\n9\n-7\n-2\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "7 -3\n",
+    "expected": "4\n10\n-21\n-2\n1\n1\n0\n1\n1\n1\n7\n9\n-7\n-2\n7\n",
+    "stdout": "4\n10\n-21\n-2\n1\n1\n0\n1\n1\n1\n7\n9\n-7\n-2\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "7 -3\n",
+    "expected": "4\n10\n-21\n-2\n1\n1\n0\n1\n1\n1\n7\n9\n-7\n-2\n7\n",
+    "stdout": "4\n10\n-21\n-2\n1\n1\n0\n1\n1\n1\n7\n9\n-7\n-2\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "7 -3\n",
+    "expected": "4\n10\n-21\n-2\n1\n1\n0\n1\n1\n1\n7\n9\n-7\n-2\n7\n",
+    "stdout": "4\n10\n-21\n-2\n1\n1\n0\n1\n1\n1\n7\n9\n-7\n-2\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "7 -3\n",
+    "expected": "4\n10\n-21\n-2\n1\n1\n0\n1\n1\n1\n7\n9\n-7\n-2\n7\n",
+    "stdout": "4\n10\n-21\n-2\n1\n1\n0\n1\n1\n1\n7\n9\n-7\n-2\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "7 -1\n",
+    "expected": "6\n8\n-7\n-7\n0\n1\n0\n1\n1\n1\n7\n8\n-7\n0\n7\n",
+    "stdout": "6\n8\n-7\n-7\n0\n1\n0\n1\n1\n1\n7\n8\n-7\n0\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "7 -1\n",
+    "expected": "6\n8\n-7\n-7\n0\n1\n0\n1\n1\n1\n7\n8\n-7\n0\n7\n",
+    "stdout": "6\n8\n-7\n-7\n0\n1\n0\n1\n1\n1\n7\n8\n-7\n0\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "7 -1\n",
+    "expected": "6\n8\n-7\n-7\n0\n1\n0\n1\n1\n1\n7\n8\n-7\n0\n7\n",
+    "stdout": "6\n8\n-7\n-7\n0\n1\n0\n1\n1\n1\n7\n8\n-7\n0\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "7 -1\n",
+    "expected": "6\n8\n-7\n-7\n0\n1\n0\n1\n1\n1\n7\n8\n-7\n0\n7\n",
+    "stdout": "6\n8\n-7\n-7\n0\n1\n0\n1\n1\n1\n7\n8\n-7\n0\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "7 -1\n",
+    "expected": "6\n8\n-7\n-7\n0\n1\n0\n1\n1\n1\n7\n8\n-7\n0\n7\n",
+    "stdout": "6\n8\n-7\n-7\n0\n1\n0\n1\n1\n1\n7\n8\n-7\n0\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "7 0\n",
+    "expected": "7\n7\n0\n0\n0\n1\n0\n1\n0\n1\n7\n7\n-7\n1\n7\n",
+    "stdout": "7\n7\n0\n0\n0\n1\n0\n1\n0\n1\n7\n7\n-7\n1\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "7 0\n",
+    "expected": "7\n7\n0\n0\n0\n1\n0\n1\n0\n1\n7\n7\n-7\n1\n7\n",
+    "stdout": "7\n7\n0\n0\n0\n1\n0\n1\n0\n1\n7\n7\n-7\n1\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "7 0\n",
+    "expected": "7\n7\n0\n0\n0\n1\n0\n1\n0\n1\n7\n7\n-7\n1\n7\n",
+    "stdout": "7\n7\n0\n0\n0\n1\n0\n1\n0\n1\n7\n7\n-7\n1\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "7 0\n",
+    "expected": "7\n7\n0\n0\n0\n1\n0\n1\n0\n1\n7\n7\n-7\n1\n7\n",
+    "stdout": "7\n7\n0\n0\n0\n1\n0\n1\n0\n1\n7\n7\n-7\n1\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "7 0\n",
+    "expected": "7\n7\n0\n0\n0\n1\n0\n1\n0\n1\n7\n7\n-7\n1\n7\n",
+    "stdout": "7\n7\n0\n0\n0\n1\n0\n1\n0\n1\n7\n7\n-7\n1\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "7 1\n",
+    "expected": "8\n6\n7\n7\n0\n1\n1\n1\n1\n1\n8\n7\n-7\n2\n7\n",
+    "stdout": "8\n6\n7\n7\n0\n1\n1\n1\n1\n1\n8\n7\n-7\n2\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "7 1\n",
+    "expected": "8\n6\n7\n7\n0\n1\n1\n1\n1\n1\n8\n7\n-7\n2\n7\n",
+    "stdout": "8\n6\n7\n7\n0\n1\n1\n1\n1\n1\n8\n7\n-7\n2\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "7 1\n",
+    "expected": "8\n6\n7\n7\n0\n1\n1\n1\n1\n1\n8\n7\n-7\n2\n7\n",
+    "stdout": "8\n6\n7\n7\n0\n1\n1\n1\n1\n1\n8\n7\n-7\n2\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "7 1\n",
+    "expected": "8\n6\n7\n7\n0\n1\n1\n1\n1\n1\n8\n7\n-7\n2\n7\n",
+    "stdout": "8\n6\n7\n7\n0\n1\n1\n1\n1\n1\n8\n7\n-7\n2\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "7 1\n",
+    "expected": "8\n6\n7\n7\n0\n1\n1\n1\n1\n1\n8\n7\n-7\n2\n7\n",
+    "stdout": "8\n6\n7\n7\n0\n1\n1\n1\n1\n1\n8\n7\n-7\n2\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "7 3\n",
+    "expected": "10\n4\n21\n2\n1\n1\n1\n1\n1\n1\n10\n6\n-7\n4\n7\n",
+    "stdout": "10\n4\n21\n2\n1\n1\n1\n1\n1\n1\n10\n6\n-7\n4\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "7 3\n",
+    "expected": "10\n4\n21\n2\n1\n1\n1\n1\n1\n1\n10\n6\n-7\n4\n7\n",
+    "stdout": "10\n4\n21\n2\n1\n1\n1\n1\n1\n1\n10\n6\n-7\n4\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "7 3\n",
+    "expected": "10\n4\n21\n2\n1\n1\n1\n1\n1\n1\n10\n6\n-7\n4\n7\n",
+    "stdout": "10\n4\n21\n2\n1\n1\n1\n1\n1\n1\n10\n6\n-7\n4\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "7 3\n",
+    "expected": "10\n4\n21\n2\n1\n1\n1\n1\n1\n1\n10\n6\n-7\n4\n7\n",
+    "stdout": "10\n4\n21\n2\n1\n1\n1\n1\n1\n1\n10\n6\n-7\n4\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "7 3\n",
+    "expected": "10\n4\n21\n2\n1\n1\n1\n1\n1\n1\n10\n6\n-7\n4\n7\n",
+    "stdout": "10\n4\n21\n2\n1\n1\n1\n1\n1\n1\n10\n6\n-7\n4\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "7 100\n",
+    "expected": "107\n-93\n700\n0\n7\n1\n0\n1\n1\n0\n107\n-42\n-7\n101\n7\n",
+    "stdout": "107\n-93\n700\n0\n7\n1\n0\n1\n1\n0\n107\n-42\n-7\n101\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "7 100\n",
+    "expected": "107\n-93\n700\n0\n7\n1\n0\n1\n1\n0\n107\n-42\n-7\n101\n7\n",
+    "stdout": "107\n-93\n700\n0\n7\n1\n0\n1\n1\n0\n107\n-42\n-7\n101\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "7 100\n",
+    "expected": "107\n-93\n700\n0\n7\n1\n0\n1\n1\n0\n107\n-42\n-7\n101\n7\n",
+    "stdout": "107\n-93\n700\n0\n7\n1\n0\n1\n1\n0\n107\n-42\n-7\n101\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "7 100\n",
+    "expected": "107\n-93\n700\n0\n7\n1\n0\n1\n1\n0\n107\n-42\n-7\n101\n7\n",
+    "stdout": "107\n-93\n700\n0\n7\n1\n0\n1\n1\n0\n107\n-42\n-7\n101\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "7 100\n",
+    "expected": "107\n-93\n700\n0\n7\n1\n0\n1\n1\n0\n107\n-42\n-7\n101\n7\n",
+    "stdout": "107\n-93\n700\n0\n7\n1\n0\n1\n1\n0\n107\n-42\n-7\n101\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "100 -100\n",
+    "expected": "0\n200\n-10000\n-1\n0\n1\n0\n1\n1\n1\n100\n150\n-100\n-99\n100\n",
+    "stdout": "0\n200\n-10000\n-1\n0\n1\n0\n1\n1\n1\n100\n150\n-100\n-99\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "100 -100\n",
+    "expected": "0\n200\n-10000\n-1\n0\n1\n0\n1\n1\n1\n100\n150\n-100\n-99\n100\n",
+    "stdout": "0\n200\n-10000\n-1\n0\n1\n0\n1\n1\n1\n100\n150\n-100\n-99\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "100 -100\n",
+    "expected": "0\n200\n-10000\n-1\n0\n1\n0\n1\n1\n1\n100\n150\n-100\n-99\n100\n",
+    "stdout": "0\n200\n-10000\n-1\n0\n1\n0\n1\n1\n1\n100\n150\n-100\n-99\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "100 -100\n",
+    "expected": "0\n200\n-10000\n-1\n0\n1\n0\n1\n1\n1\n100\n150\n-100\n-99\n100\n",
+    "stdout": "0\n200\n-10000\n-1\n0\n1\n0\n1\n1\n1\n100\n150\n-100\n-99\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "100 -100\n",
+    "expected": "0\n200\n-10000\n-1\n0\n1\n0\n1\n1\n1\n100\n150\n-100\n-99\n100\n",
+    "stdout": "0\n200\n-10000\n-1\n0\n1\n0\n1\n1\n1\n100\n150\n-100\n-99\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "100 -3\n",
+    "expected": "97\n103\n-300\n-33\n1\n1\n0\n1\n1\n1\n100\n102\n-100\n-2\n100\n",
+    "stdout": "97\n103\n-300\n-33\n1\n1\n0\n1\n1\n1\n100\n102\n-100\n-2\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "100 -3\n",
+    "expected": "97\n103\n-300\n-33\n1\n1\n0\n1\n1\n1\n100\n102\n-100\n-2\n100\n",
+    "stdout": "97\n103\n-300\n-33\n1\n1\n0\n1\n1\n1\n100\n102\n-100\n-2\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "100 -3\n",
+    "expected": "97\n103\n-300\n-33\n1\n1\n0\n1\n1\n1\n100\n102\n-100\n-2\n100\n",
+    "stdout": "97\n103\n-300\n-33\n1\n1\n0\n1\n1\n1\n100\n102\n-100\n-2\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "100 -3\n",
+    "expected": "97\n103\n-300\n-33\n1\n1\n0\n1\n1\n1\n100\n102\n-100\n-2\n100\n",
+    "stdout": "97\n103\n-300\n-33\n1\n1\n0\n1\n1\n1\n100\n102\n-100\n-2\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "100 -3\n",
+    "expected": "97\n103\n-300\n-33\n1\n1\n0\n1\n1\n1\n100\n102\n-100\n-2\n100\n",
+    "stdout": "97\n103\n-300\n-33\n1\n1\n0\n1\n1\n1\n100\n102\n-100\n-2\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "100 -1\n",
+    "expected": "99\n101\n-100\n-100\n0\n1\n0\n1\n1\n1\n100\n101\n-100\n0\n100\n",
+    "stdout": "99\n101\n-100\n-100\n0\n1\n0\n1\n1\n1\n100\n101\n-100\n0\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "100 -1\n",
+    "expected": "99\n101\n-100\n-100\n0\n1\n0\n1\n1\n1\n100\n101\n-100\n0\n100\n",
+    "stdout": "99\n101\n-100\n-100\n0\n1\n0\n1\n1\n1\n100\n101\n-100\n0\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "100 -1\n",
+    "expected": "99\n101\n-100\n-100\n0\n1\n0\n1\n1\n1\n100\n101\n-100\n0\n100\n",
+    "stdout": "99\n101\n-100\n-100\n0\n1\n0\n1\n1\n1\n100\n101\n-100\n0\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "100 -1\n",
+    "expected": "99\n101\n-100\n-100\n0\n1\n0\n1\n1\n1\n100\n101\n-100\n0\n100\n",
+    "stdout": "99\n101\n-100\n-100\n0\n1\n0\n1\n1\n1\n100\n101\n-100\n0\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "100 -1\n",
+    "expected": "99\n101\n-100\n-100\n0\n1\n0\n1\n1\n1\n100\n101\n-100\n0\n100\n",
+    "stdout": "99\n101\n-100\n-100\n0\n1\n0\n1\n1\n1\n100\n101\n-100\n0\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "100 0\n",
+    "expected": "100\n100\n0\n0\n0\n1\n0\n1\n0\n1\n100\n100\n-100\n1\n100\n",
+    "stdout": "100\n100\n0\n0\n0\n1\n0\n1\n0\n1\n100\n100\n-100\n1\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "100 0\n",
+    "expected": "100\n100\n0\n0\n0\n1\n0\n1\n0\n1\n100\n100\n-100\n1\n100\n",
+    "stdout": "100\n100\n0\n0\n0\n1\n0\n1\n0\n1\n100\n100\n-100\n1\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "100 0\n",
+    "expected": "100\n100\n0\n0\n0\n1\n0\n1\n0\n1\n100\n100\n-100\n1\n100\n",
+    "stdout": "100\n100\n0\n0\n0\n1\n0\n1\n0\n1\n100\n100\n-100\n1\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "100 0\n",
+    "expected": "100\n100\n0\n0\n0\n1\n0\n1\n0\n1\n100\n100\n-100\n1\n100\n",
+    "stdout": "100\n100\n0\n0\n0\n1\n0\n1\n0\n1\n100\n100\n-100\n1\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "100 0\n",
+    "expected": "100\n100\n0\n0\n0\n1\n0\n1\n0\n1\n100\n100\n-100\n1\n100\n",
+    "stdout": "100\n100\n0\n0\n0\n1\n0\n1\n0\n1\n100\n100\n-100\n1\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "100 1\n",
+    "expected": "101\n99\n100\n100\n0\n1\n1\n1\n1\n1\n101\n100\n-100\n2\n100\n",
+    "stdout": "101\n99\n100\n100\n0\n1\n1\n1\n1\n1\n101\n100\n-100\n2\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "100 1\n",
+    "expected": "101\n99\n100\n100\n0\n1\n1\n1\n1\n1\n101\n100\n-100\n2\n100\n",
+    "stdout": "101\n99\n100\n100\n0\n1\n1\n1\n1\n1\n101\n100\n-100\n2\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "100 1\n",
+    "expected": "101\n99\n100\n100\n0\n1\n1\n1\n1\n1\n101\n100\n-100\n2\n100\n",
+    "stdout": "101\n99\n100\n100\n0\n1\n1\n1\n1\n1\n101\n100\n-100\n2\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "100 1\n",
+    "expected": "101\n99\n100\n100\n0\n1\n1\n1\n1\n1\n101\n100\n-100\n2\n100\n",
+    "stdout": "101\n99\n100\n100\n0\n1\n1\n1\n1\n1\n101\n100\n-100\n2\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "100 1\n",
+    "expected": "101\n99\n100\n100\n0\n1\n1\n1\n1\n1\n101\n100\n-100\n2\n100\n",
+    "stdout": "101\n99\n100\n100\n0\n1\n1\n1\n1\n1\n101\n100\n-100\n2\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "100 3\n",
+    "expected": "103\n97\n300\n33\n1\n1\n1\n1\n1\n1\n103\n99\n-100\n4\n100\n",
+    "stdout": "103\n97\n300\n33\n1\n1\n1\n1\n1\n1\n103\n99\n-100\n4\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "100 3\n",
+    "expected": "103\n97\n300\n33\n1\n1\n1\n1\n1\n1\n103\n99\n-100\n4\n100\n",
+    "stdout": "103\n97\n300\n33\n1\n1\n1\n1\n1\n1\n103\n99\n-100\n4\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "100 3\n",
+    "expected": "103\n97\n300\n33\n1\n1\n1\n1\n1\n1\n103\n99\n-100\n4\n100\n",
+    "stdout": "103\n97\n300\n33\n1\n1\n1\n1\n1\n1\n103\n99\n-100\n4\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "100 3\n",
+    "expected": "103\n97\n300\n33\n1\n1\n1\n1\n1\n1\n103\n99\n-100\n4\n100\n",
+    "stdout": "103\n97\n300\n33\n1\n1\n1\n1\n1\n1\n103\n99\n-100\n4\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "100 3\n",
+    "expected": "103\n97\n300\n33\n1\n1\n1\n1\n1\n1\n103\n99\n-100\n4\n100\n",
+    "stdout": "103\n97\n300\n33\n1\n1\n1\n1\n1\n1\n103\n99\n-100\n4\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "100 100\n",
+    "expected": "200\n0\n10000\n1\n0\n1\n0\n1\n1\n0\n200\n50\n-100\n101\n100\n",
+    "stdout": "200\n0\n10000\n1\n0\n1\n0\n1\n1\n0\n200\n50\n-100\n101\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "100 100\n",
+    "expected": "200\n0\n10000\n1\n0\n1\n0\n1\n1\n0\n200\n50\n-100\n101\n100\n",
+    "stdout": "200\n0\n10000\n1\n0\n1\n0\n1\n1\n0\n200\n50\n-100\n101\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "100 100\n",
+    "expected": "200\n0\n10000\n1\n0\n1\n0\n1\n1\n0\n200\n50\n-100\n101\n100\n",
+    "stdout": "200\n0\n10000\n1\n0\n1\n0\n1\n1\n0\n200\n50\n-100\n101\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "100 100\n",
+    "expected": "200\n0\n10000\n1\n0\n1\n0\n1\n1\n0\n200\n50\n-100\n101\n100\n",
+    "stdout": "200\n0\n10000\n1\n0\n1\n0\n1\n1\n0\n200\n50\n-100\n101\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "100 100\n",
+    "expected": "200\n0\n10000\n1\n0\n1\n0\n1\n1\n0\n200\n50\n-100\n101\n100\n",
+    "stdout": "200\n0\n10000\n1\n0\n1\n0\n1\n1\n0\n200\n50\n-100\n101\n100\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "44 90\n",
+    "expected": "134\n-46\n3960\n0\n44\n1\n0\n1\n1\n0\n134\n0\n-44\n91\n44\n",
+    "stdout": "134\n-46\n3960\n0\n44\n1\n0\n1\n1\n0\n134\n0\n-44\n91\n44\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "44 90\n",
+    "expected": "134\n-46\n3960\n0\n44\n1\n0\n1\n1\n0\n134\n0\n-44\n91\n44\n",
+    "stdout": "134\n-46\n3960\n0\n44\n1\n0\n1\n1\n0\n134\n0\n-44\n91\n44\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "44 90\n",
+    "expected": "134\n-46\n3960\n0\n44\n1\n0\n1\n1\n0\n134\n0\n-44\n91\n44\n",
+    "stdout": "134\n-46\n3960\n0\n44\n1\n0\n1\n1\n0\n134\n0\n-44\n91\n44\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "44 90\n",
+    "expected": "134\n-46\n3960\n0\n44\n1\n0\n1\n1\n0\n134\n0\n-44\n91\n44\n",
+    "stdout": "134\n-46\n3960\n0\n44\n1\n0\n1\n1\n0\n134\n0\n-44\n91\n44\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "44 90\n",
+    "expected": "134\n-46\n3960\n0\n44\n1\n0\n1\n1\n0\n134\n0\n-44\n91\n44\n",
+    "stdout": "134\n-46\n3960\n0\n44\n1\n0\n1\n1\n0\n134\n0\n-44\n91\n44\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "7 -92\n",
+    "expected": "-85\n99\n-644\n0\n7\n1\n0\n1\n1\n1\n7\n53\n-7\n-91\n7\n",
+    "stdout": "-85\n99\n-644\n0\n7\n1\n0\n1\n1\n1\n7\n53\n-7\n-91\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "7 -92\n",
+    "expected": "-85\n99\n-644\n0\n7\n1\n0\n1\n1\n1\n7\n53\n-7\n-91\n7\n",
+    "stdout": "-85\n99\n-644\n0\n7\n1\n0\n1\n1\n1\n7\n53\n-7\n-91\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "7 -92\n",
+    "expected": "-85\n99\n-644\n0\n7\n1\n0\n1\n1\n1\n7\n53\n-7\n-91\n7\n",
+    "stdout": "-85\n99\n-644\n0\n7\n1\n0\n1\n1\n1\n7\n53\n-7\n-91\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "7 -92\n",
+    "expected": "-85\n99\n-644\n0\n7\n1\n0\n1\n1\n1\n7\n53\n-7\n-91\n7\n",
+    "stdout": "-85\n99\n-644\n0\n7\n1\n0\n1\n1\n1\n7\n53\n-7\n-91\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "7 -92\n",
+    "expected": "-85\n99\n-644\n0\n7\n1\n0\n1\n1\n1\n7\n53\n-7\n-91\n7\n",
+    "stdout": "-85\n99\n-644\n0\n7\n1\n0\n1\n1\n1\n7\n53\n-7\n-91\n7\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-48 59\n",
+    "expected": "11\n-107\n-2832\n0\n-48\n-1\n0\n1\n1\n0\n59\n-77\n48\n60\n-48\n",
+    "stdout": "11\n-107\n-2832\n0\n-48\n-1\n0\n1\n1\n0\n59\n-77\n48\n60\n-48\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-48 59\n",
+    "expected": "11\n-107\n-2832\n0\n-48\n-1\n0\n1\n1\n0\n59\n-77\n48\n60\n-48\n",
+    "stdout": "11\n-107\n-2832\n0\n-48\n-1\n0\n1\n1\n0\n59\n-77\n48\n60\n-48\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-48 59\n",
+    "expected": "11\n-107\n-2832\n0\n-48\n-1\n0\n1\n1\n0\n59\n-77\n48\n60\n-48\n",
+    "stdout": "11\n-107\n-2832\n0\n-48\n-1\n0\n1\n1\n0\n59\n-77\n48\n60\n-48\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-48 59\n",
+    "expected": "11\n-107\n-2832\n0\n-48\n-1\n0\n1\n1\n0\n59\n-77\n48\n60\n-48\n",
+    "stdout": "11\n-107\n-2832\n0\n-48\n-1\n0\n1\n1\n0\n59\n-77\n48\n60\n-48\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-48 59\n",
+    "expected": "11\n-107\n-2832\n0\n-48\n-1\n0\n1\n1\n0\n59\n-77\n48\n60\n-48\n",
+    "stdout": "11\n-107\n-2832\n0\n-48\n-1\n0\n1\n1\n0\n59\n-77\n48\n60\n-48\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-80 49\n",
+    "expected": "-31\n-129\n-3920\n-1\n-31\n-1\n0\n1\n1\n0\n49\n-104\n80\n50\n-80\n",
+    "stdout": "-31\n-129\n-3920\n-1\n-31\n-1\n0\n1\n1\n0\n49\n-104\n80\n50\n-80\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-80 49\n",
+    "expected": "-31\n-129\n-3920\n-1\n-31\n-1\n0\n1\n1\n0\n49\n-104\n80\n50\n-80\n",
+    "stdout": "-31\n-129\n-3920\n-1\n-31\n-1\n0\n1\n1\n0\n49\n-104\n80\n50\n-80\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-80 49\n",
+    "expected": "-31\n-129\n-3920\n-1\n-31\n-1\n0\n1\n1\n0\n49\n-104\n80\n50\n-80\n",
+    "stdout": "-31\n-129\n-3920\n-1\n-31\n-1\n0\n1\n1\n0\n49\n-104\n80\n50\n-80\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-80 49\n",
+    "expected": "-31\n-129\n-3920\n-1\n-31\n-1\n0\n1\n1\n0\n49\n-104\n80\n50\n-80\n",
+    "stdout": "-31\n-129\n-3920\n-1\n-31\n-1\n0\n1\n1\n0\n49\n-104\n80\n50\n-80\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-80 49\n",
+    "expected": "-31\n-129\n-3920\n-1\n-31\n-1\n0\n1\n1\n0\n49\n-104\n80\n50\n-80\n",
+    "stdout": "-31\n-129\n-3920\n-1\n-31\n-1\n0\n1\n1\n0\n49\n-104\n80\n50\n-80\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-25 29\n",
+    "expected": "4\n-54\n-725\n0\n-25\n-1\n0\n1\n1\n0\n29\n-39\n25\n30\n-25\n",
+    "stdout": "4\n-54\n-725\n0\n-25\n-1\n0\n1\n1\n0\n29\n-39\n25\n30\n-25\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-25 29\n",
+    "expected": "4\n-54\n-725\n0\n-25\n-1\n0\n1\n1\n0\n29\n-39\n25\n30\n-25\n",
+    "stdout": "4\n-54\n-725\n0\n-25\n-1\n0\n1\n1\n0\n29\n-39\n25\n30\n-25\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-25 29\n",
+    "expected": "4\n-54\n-725\n0\n-25\n-1\n0\n1\n1\n0\n29\n-39\n25\n30\n-25\n",
+    "stdout": "4\n-54\n-725\n0\n-25\n-1\n0\n1\n1\n0\n29\n-39\n25\n30\n-25\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-25 29\n",
+    "expected": "4\n-54\n-725\n0\n-25\n-1\n0\n1\n1\n0\n29\n-39\n25\n30\n-25\n",
+    "stdout": "4\n-54\n-725\n0\n-25\n-1\n0\n1\n1\n0\n29\n-39\n25\n30\n-25\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-25 29\n",
+    "expected": "4\n-54\n-725\n0\n-25\n-1\n0\n1\n1\n0\n29\n-39\n25\n30\n-25\n",
+    "stdout": "4\n-54\n-725\n0\n-25\n-1\n0\n1\n1\n0\n29\n-39\n25\n30\n-25\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-45 -98\n",
+    "expected": "-143\n53\n4410\n0\n-45\n-1\n0\n1\n1\n0\n0\n4\n45\n-97\n-45\n",
+    "stdout": "-143\n53\n4410\n0\n-45\n-1\n0\n1\n1\n0\n0\n4\n45\n-97\n-45\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-45 -98\n",
+    "expected": "-143\n53\n4410\n0\n-45\n-1\n0\n1\n1\n0\n0\n4\n45\n-97\n-45\n",
+    "stdout": "-143\n53\n4410\n0\n-45\n-1\n0\n1\n1\n0\n0\n4\n45\n-97\n-45\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-45 -98\n",
+    "expected": "-143\n53\n4410\n0\n-45\n-1\n0\n1\n1\n0\n0\n4\n45\n-97\n-45\n",
+    "stdout": "-143\n53\n4410\n0\n-45\n-1\n0\n1\n1\n0\n0\n4\n45\n-97\n-45\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-45 -98\n",
+    "expected": "-143\n53\n4410\n0\n-45\n-1\n0\n1\n1\n0\n0\n4\n45\n-97\n-45\n",
+    "stdout": "-143\n53\n4410\n0\n-45\n-1\n0\n1\n1\n0\n0\n4\n45\n-97\n-45\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-45 -98\n",
+    "expected": "-143\n53\n4410\n0\n-45\n-1\n0\n1\n1\n0\n0\n4\n45\n-97\n-45\n",
+    "stdout": "-143\n53\n4410\n0\n-45\n-1\n0\n1\n1\n0\n0\n4\n45\n-97\n-45\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-23 -46\n",
+    "expected": "-69\n23\n1058\n0\n-23\n-1\n0\n1\n1\n0\n0\n0\n23\n-45\n-23\n",
+    "stdout": "-69\n23\n1058\n0\n-23\n-1\n0\n1\n1\n0\n0\n0\n23\n-45\n-23\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-23 -46\n",
+    "expected": "-69\n23\n1058\n0\n-23\n-1\n0\n1\n1\n0\n0\n0\n23\n-45\n-23\n",
+    "stdout": "-69\n23\n1058\n0\n-23\n-1\n0\n1\n1\n0\n0\n0\n23\n-45\n-23\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-23 -46\n",
+    "expected": "-69\n23\n1058\n0\n-23\n-1\n0\n1\n1\n0\n0\n0\n23\n-45\n-23\n",
+    "stdout": "-69\n23\n1058\n0\n-23\n-1\n0\n1\n1\n0\n0\n0\n23\n-45\n-23\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-23 -46\n",
+    "expected": "-69\n23\n1058\n0\n-23\n-1\n0\n1\n1\n0\n0\n0\n23\n-45\n-23\n",
+    "stdout": "-69\n23\n1058\n0\n-23\n-1\n0\n1\n1\n0\n0\n0\n23\n-45\n-23\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-23 -46\n",
+    "expected": "-69\n23\n1058\n0\n-23\n-1\n0\n1\n1\n0\n0\n0\n23\n-45\n-23\n",
+    "stdout": "-69\n23\n1058\n0\n-23\n-1\n0\n1\n1\n0\n0\n0\n23\n-45\n-23\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "46 53\n",
+    "expected": "99\n-7\n2438\n0\n46\n1\n0\n1\n1\n0\n99\n20\n-46\n54\n46\n",
+    "stdout": "99\n-7\n2438\n0\n46\n1\n0\n1\n1\n0\n99\n20\n-46\n54\n46\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "46 53\n",
+    "expected": "99\n-7\n2438\n0\n46\n1\n0\n1\n1\n0\n99\n20\n-46\n54\n46\n",
+    "stdout": "99\n-7\n2438\n0\n46\n1\n0\n1\n1\n0\n99\n20\n-46\n54\n46\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "46 53\n",
+    "expected": "99\n-7\n2438\n0\n46\n1\n0\n1\n1\n0\n99\n20\n-46\n54\n46\n",
+    "stdout": "99\n-7\n2438\n0\n46\n1\n0\n1\n1\n0\n99\n20\n-46\n54\n46\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "46 53\n",
+    "expected": "99\n-7\n2438\n0\n46\n1\n0\n1\n1\n0\n99\n20\n-46\n54\n46\n",
+    "stdout": "99\n-7\n2438\n0\n46\n1\n0\n1\n1\n0\n99\n20\n-46\n54\n46\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "46 53\n",
+    "expected": "99\n-7\n2438\n0\n46\n1\n0\n1\n1\n0\n99\n20\n-46\n54\n46\n",
+    "stdout": "99\n-7\n2438\n0\n46\n1\n0\n1\n1\n0\n99\n20\n-46\n54\n46\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-91 -39\n",
+    "expected": "-130\n-52\n3549\n2\n-13\n-1\n1\n1\n1\n0\n0\n-71\n91\n-38\n-91\n",
+    "stdout": "-130\n-52\n3549\n2\n-13\n-1\n1\n1\n1\n0\n0\n-71\n91\n-38\n-91\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-91 -39\n",
+    "expected": "-130\n-52\n3549\n2\n-13\n-1\n1\n1\n1\n0\n0\n-71\n91\n-38\n-91\n",
+    "stdout": "-130\n-52\n3549\n2\n-13\n-1\n1\n1\n1\n0\n0\n-71\n91\n-38\n-91\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-91 -39\n",
+    "expected": "-130\n-52\n3549\n2\n-13\n-1\n1\n1\n1\n0\n0\n-71\n91\n-38\n-91\n",
+    "stdout": "-130\n-52\n3549\n2\n-13\n-1\n1\n1\n1\n0\n0\n-71\n91\n-38\n-91\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-91 -39\n",
+    "expected": "-130\n-52\n3549\n2\n-13\n-1\n1\n1\n1\n0\n0\n-71\n91\n-38\n-91\n",
+    "stdout": "-130\n-52\n3549\n2\n-13\n-1\n1\n1\n1\n0\n0\n-71\n91\n-38\n-91\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-91 -39\n",
+    "expected": "-130\n-52\n3549\n2\n-13\n-1\n1\n1\n1\n0\n0\n-71\n91\n-38\n-91\n",
+    "stdout": "-130\n-52\n3549\n2\n-13\n-1\n1\n1\n1\n0\n0\n-71\n91\n-38\n-91\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-42 55\n",
+    "expected": "13\n-97\n-2310\n0\n-42\n-1\n0\n1\n1\n0\n55\n-69\n42\n56\n-42\n",
+    "stdout": "13\n-97\n-2310\n0\n-42\n-1\n0\n1\n1\n0\n55\n-69\n42\n56\n-42\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-42 55\n",
+    "expected": "13\n-97\n-2310\n0\n-42\n-1\n0\n1\n1\n0\n55\n-69\n42\n56\n-42\n",
+    "stdout": "13\n-97\n-2310\n0\n-42\n-1\n0\n1\n1\n0\n55\n-69\n42\n56\n-42\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-42 55\n",
+    "expected": "13\n-97\n-2310\n0\n-42\n-1\n0\n1\n1\n0\n55\n-69\n42\n56\n-42\n",
+    "stdout": "13\n-97\n-2310\n0\n-42\n-1\n0\n1\n1\n0\n55\n-69\n42\n56\n-42\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-42 55\n",
+    "expected": "13\n-97\n-2310\n0\n-42\n-1\n0\n1\n1\n0\n55\n-69\n42\n56\n-42\n",
+    "stdout": "13\n-97\n-2310\n0\n-42\n-1\n0\n1\n1\n0\n55\n-69\n42\n56\n-42\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-42 55\n",
+    "expected": "13\n-97\n-2310\n0\n-42\n-1\n0\n1\n1\n0\n55\n-69\n42\n56\n-42\n",
+    "stdout": "13\n-97\n-2310\n0\n-42\n-1\n0\n1\n1\n0\n55\n-69\n42\n56\n-42\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "48 32\n",
+    "expected": "80\n16\n1536\n1\n16\n1\n0\n1\n1\n1\n80\n32\n-48\n33\n48\n",
+    "stdout": "80\n16\n1536\n1\n16\n1\n0\n1\n1\n1\n80\n32\n-48\n33\n48\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "48 32\n",
+    "expected": "80\n16\n1536\n1\n16\n1\n0\n1\n1\n1\n80\n32\n-48\n33\n48\n",
+    "stdout": "80\n16\n1536\n1\n16\n1\n0\n1\n1\n1\n80\n32\n-48\n33\n48\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "48 32\n",
+    "expected": "80\n16\n1536\n1\n16\n1\n0\n1\n1\n1\n80\n32\n-48\n33\n48\n",
+    "stdout": "80\n16\n1536\n1\n16\n1\n0\n1\n1\n1\n80\n32\n-48\n33\n48\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "48 32\n",
+    "expected": "80\n16\n1536\n1\n16\n1\n0\n1\n1\n1\n80\n32\n-48\n33\n48\n",
+    "stdout": "80\n16\n1536\n1\n16\n1\n0\n1\n1\n1\n80\n32\n-48\n33\n48\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "48 32\n",
+    "expected": "80\n16\n1536\n1\n16\n1\n0\n1\n1\n1\n80\n32\n-48\n33\n48\n",
+    "stdout": "80\n16\n1536\n1\n16\n1\n0\n1\n1\n1\n80\n32\n-48\n33\n48\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-35 68\n",
+    "expected": "33\n-103\n-2380\n0\n-35\n-1\n0\n1\n1\n0\n68\n-68\n35\n69\n-35\n",
+    "stdout": "33\n-103\n-2380\n0\n-35\n-1\n0\n1\n1\n0\n68\n-68\n35\n69\n-35\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-35 68\n",
+    "expected": "33\n-103\n-2380\n0\n-35\n-1\n0\n1\n1\n0\n68\n-68\n35\n69\n-35\n",
+    "stdout": "33\n-103\n-2380\n0\n-35\n-1\n0\n1\n1\n0\n68\n-68\n35\n69\n-35\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-35 68\n",
+    "expected": "33\n-103\n-2380\n0\n-35\n-1\n0\n1\n1\n0\n68\n-68\n35\n69\n-35\n",
+    "stdout": "33\n-103\n-2380\n0\n-35\n-1\n0\n1\n1\n0\n68\n-68\n35\n69\n-35\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-35 68\n",
+    "expected": "33\n-103\n-2380\n0\n-35\n-1\n0\n1\n1\n0\n68\n-68\n35\n69\n-35\n",
+    "stdout": "33\n-103\n-2380\n0\n-35\n-1\n0\n1\n1\n0\n68\n-68\n35\n69\n-35\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-35 68\n",
+    "expected": "33\n-103\n-2380\n0\n-35\n-1\n0\n1\n1\n0\n68\n-68\n35\n69\n-35\n",
+    "stdout": "33\n-103\n-2380\n0\n-35\n-1\n0\n1\n1\n0\n68\n-68\n35\n69\n-35\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "65 68\n",
+    "expected": "133\n-3\n4420\n0\n65\n1\n0\n1\n1\n0\n133\n31\n-65\n69\n65\n",
+    "stdout": "133\n-3\n4420\n0\n65\n1\n0\n1\n1\n0\n133\n31\n-65\n69\n65\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "65 68\n",
+    "expected": "133\n-3\n4420\n0\n65\n1\n0\n1\n1\n0\n133\n31\n-65\n69\n65\n",
+    "stdout": "133\n-3\n4420\n0\n65\n1\n0\n1\n1\n0\n133\n31\n-65\n69\n65\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "65 68\n",
+    "expected": "133\n-3\n4420\n0\n65\n1\n0\n1\n1\n0\n133\n31\n-65\n69\n65\n",
+    "stdout": "133\n-3\n4420\n0\n65\n1\n0\n1\n1\n0\n133\n31\n-65\n69\n65\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "65 68\n",
+    "expected": "133\n-3\n4420\n0\n65\n1\n0\n1\n1\n0\n133\n31\n-65\n69\n65\n",
+    "stdout": "133\n-3\n4420\n0\n65\n1\n0\n1\n1\n0\n133\n31\n-65\n69\n65\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "65 68\n",
+    "expected": "133\n-3\n4420\n0\n65\n1\n0\n1\n1\n0\n133\n31\n-65\n69\n65\n",
+    "stdout": "133\n-3\n4420\n0\n65\n1\n0\n1\n1\n0\n133\n31\n-65\n69\n65\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "12 -36\n",
+    "expected": "-24\n48\n-432\n0\n12\n1\n0\n1\n1\n1\n12\n30\n-12\n-35\n12\n",
+    "stdout": "-24\n48\n-432\n0\n12\n1\n0\n1\n1\n1\n12\n30\n-12\n-35\n12\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "12 -36\n",
+    "expected": "-24\n48\n-432\n0\n12\n1\n0\n1\n1\n1\n12\n30\n-12\n-35\n12\n",
+    "stdout": "-24\n48\n-432\n0\n12\n1\n0\n1\n1\n1\n12\n30\n-12\n-35\n12\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "12 -36\n",
+    "expected": "-24\n48\n-432\n0\n12\n1\n0\n1\n1\n1\n12\n30\n-12\n-35\n12\n",
+    "stdout": "-24\n48\n-432\n0\n12\n1\n0\n1\n1\n1\n12\n30\n-12\n-35\n12\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "12 -36\n",
+    "expected": "-24\n48\n-432\n0\n12\n1\n0\n1\n1\n1\n12\n30\n-12\n-35\n12\n",
+    "stdout": "-24\n48\n-432\n0\n12\n1\n0\n1\n1\n1\n12\n30\n-12\n-35\n12\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "12 -36\n",
+    "expected": "-24\n48\n-432\n0\n12\n1\n0\n1\n1\n1\n12\n30\n-12\n-35\n12\n",
+    "stdout": "-24\n48\n-432\n0\n12\n1\n0\n1\n1\n1\n12\n30\n-12\n-35\n12\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "56 -60\n",
+    "expected": "-4\n116\n-3360\n0\n56\n1\n0\n1\n1\n1\n56\n86\n-56\n-59\n56\n",
+    "stdout": "-4\n116\n-3360\n0\n56\n1\n0\n1\n1\n1\n56\n86\n-56\n-59\n56\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "56 -60\n",
+    "expected": "-4\n116\n-3360\n0\n56\n1\n0\n1\n1\n1\n56\n86\n-56\n-59\n56\n",
+    "stdout": "-4\n116\n-3360\n0\n56\n1\n0\n1\n1\n1\n56\n86\n-56\n-59\n56\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "56 -60\n",
+    "expected": "-4\n116\n-3360\n0\n56\n1\n0\n1\n1\n1\n56\n86\n-56\n-59\n56\n",
+    "stdout": "-4\n116\n-3360\n0\n56\n1\n0\n1\n1\n1\n56\n86\n-56\n-59\n56\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "56 -60\n",
+    "expected": "-4\n116\n-3360\n0\n56\n1\n0\n1\n1\n1\n56\n86\n-56\n-59\n56\n",
+    "stdout": "-4\n116\n-3360\n0\n56\n1\n0\n1\n1\n1\n56\n86\n-56\n-59\n56\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "56 -60\n",
+    "expected": "-4\n116\n-3360\n0\n56\n1\n0\n1\n1\n1\n56\n86\n-56\n-59\n56\n",
+    "stdout": "-4\n116\n-3360\n0\n56\n1\n0\n1\n1\n1\n56\n86\n-56\n-59\n56\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "99 -67\n",
+    "expected": "32\n166\n-6633\n-1\n32\n1\n0\n1\n1\n1\n99\n133\n-99\n-66\n99\n",
+    "stdout": "32\n166\n-6633\n-1\n32\n1\n0\n1\n1\n1\n99\n133\n-99\n-66\n99\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "99 -67\n",
+    "expected": "32\n166\n-6633\n-1\n32\n1\n0\n1\n1\n1\n99\n133\n-99\n-66\n99\n",
+    "stdout": "32\n166\n-6633\n-1\n32\n1\n0\n1\n1\n1\n99\n133\n-99\n-66\n99\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "99 -67\n",
+    "expected": "32\n166\n-6633\n-1\n32\n1\n0\n1\n1\n1\n99\n133\n-99\n-66\n99\n",
+    "stdout": "32\n166\n-6633\n-1\n32\n1\n0\n1\n1\n1\n99\n133\n-99\n-66\n99\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "99 -67\n",
+    "expected": "32\n166\n-6633\n-1\n32\n1\n0\n1\n1\n1\n99\n133\n-99\n-66\n99\n",
+    "stdout": "32\n166\n-6633\n-1\n32\n1\n0\n1\n1\n1\n99\n133\n-99\n-66\n99\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "99 -67\n",
+    "expected": "32\n166\n-6633\n-1\n32\n1\n0\n1\n1\n1\n99\n133\n-99\n-66\n99\n",
+    "stdout": "32\n166\n-6633\n-1\n32\n1\n0\n1\n1\n1\n99\n133\n-99\n-66\n99\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-66 -72\n",
+    "expected": "-138\n6\n4752\n0\n-66\n-1\n0\n1\n1\n0\n0\n-29\n66\n-71\n-66\n",
+    "stdout": "-138\n6\n4752\n0\n-66\n-1\n0\n1\n1\n0\n0\n-29\n66\n-71\n-66\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-66 -72\n",
+    "expected": "-138\n6\n4752\n0\n-66\n-1\n0\n1\n1\n0\n0\n-29\n66\n-71\n-66\n",
+    "stdout": "-138\n6\n4752\n0\n-66\n-1\n0\n1\n1\n0\n0\n-29\n66\n-71\n-66\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-66 -72\n",
+    "expected": "-138\n6\n4752\n0\n-66\n-1\n0\n1\n1\n0\n0\n-29\n66\n-71\n-66\n",
+    "stdout": "-138\n6\n4752\n0\n-66\n-1\n0\n1\n1\n0\n0\n-29\n66\n-71\n-66\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-66 -72\n",
+    "expected": "-138\n6\n4752\n0\n-66\n-1\n0\n1\n1\n0\n0\n-29\n66\n-71\n-66\n",
+    "stdout": "-138\n6\n4752\n0\n-66\n-1\n0\n1\n1\n0\n0\n-29\n66\n-71\n-66\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-66 -72\n",
+    "expected": "-138\n6\n4752\n0\n-66\n-1\n0\n1\n1\n0\n0\n-29\n66\n-71\n-66\n",
+    "stdout": "-138\n6\n4752\n0\n-66\n-1\n0\n1\n1\n0\n0\n-29\n66\n-71\n-66\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-66 75\n",
+    "expected": "9\n-141\n-4950\n0\n-66\n-1\n0\n1\n1\n0\n75\n-103\n66\n76\n-66\n",
+    "stdout": "9\n-141\n-4950\n0\n-66\n-1\n0\n1\n1\n0\n75\n-103\n66\n76\n-66\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-66 75\n",
+    "expected": "9\n-141\n-4950\n0\n-66\n-1\n0\n1\n1\n0\n75\n-103\n66\n76\n-66\n",
+    "stdout": "9\n-141\n-4950\n0\n-66\n-1\n0\n1\n1\n0\n75\n-103\n66\n76\n-66\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-66 75\n",
+    "expected": "9\n-141\n-4950\n0\n-66\n-1\n0\n1\n1\n0\n75\n-103\n66\n76\n-66\n",
+    "stdout": "9\n-141\n-4950\n0\n-66\n-1\n0\n1\n1\n0\n75\n-103\n66\n76\n-66\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-66 75\n",
+    "expected": "9\n-141\n-4950\n0\n-66\n-1\n0\n1\n1\n0\n75\n-103\n66\n76\n-66\n",
+    "stdout": "9\n-141\n-4950\n0\n-66\n-1\n0\n1\n1\n0\n75\n-103\n66\n76\n-66\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-66 75\n",
+    "expected": "9\n-141\n-4950\n0\n-66\n-1\n0\n1\n1\n0\n75\n-103\n66\n76\n-66\n",
+    "stdout": "9\n-141\n-4950\n0\n-66\n-1\n0\n1\n1\n0\n75\n-103\n66\n76\n-66\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "8 -44\n",
+    "expected": "-36\n52\n-352\n0\n8\n1\n0\n1\n1\n1\n8\n30\n-8\n-43\n8\n",
+    "stdout": "-36\n52\n-352\n0\n8\n1\n0\n1\n1\n1\n8\n30\n-8\n-43\n8\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "8 -44\n",
+    "expected": "-36\n52\n-352\n0\n8\n1\n0\n1\n1\n1\n8\n30\n-8\n-43\n8\n",
+    "stdout": "-36\n52\n-352\n0\n8\n1\n0\n1\n1\n1\n8\n30\n-8\n-43\n8\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "8 -44\n",
+    "expected": "-36\n52\n-352\n0\n8\n1\n0\n1\n1\n1\n8\n30\n-8\n-43\n8\n",
+    "stdout": "-36\n52\n-352\n0\n8\n1\n0\n1\n1\n1\n8\n30\n-8\n-43\n8\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "8 -44\n",
+    "expected": "-36\n52\n-352\n0\n8\n1\n0\n1\n1\n1\n8\n30\n-8\n-43\n8\n",
+    "stdout": "-36\n52\n-352\n0\n8\n1\n0\n1\n1\n1\n8\n30\n-8\n-43\n8\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "8 -44\n",
+    "expected": "-36\n52\n-352\n0\n8\n1\n0\n1\n1\n1\n8\n30\n-8\n-43\n8\n",
+    "stdout": "-36\n52\n-352\n0\n8\n1\n0\n1\n1\n1\n8\n30\n-8\n-43\n8\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-51 63\n",
+    "expected": "12\n-114\n-3213\n0\n-51\n-1\n0\n1\n1\n0\n63\n-82\n51\n64\n-51\n",
+    "stdout": "12\n-114\n-3213\n0\n-51\n-1\n0\n1\n1\n0\n63\n-82\n51\n64\n-51\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-51 63\n",
+    "expected": "12\n-114\n-3213\n0\n-51\n-1\n0\n1\n1\n0\n63\n-82\n51\n64\n-51\n",
+    "stdout": "12\n-114\n-3213\n0\n-51\n-1\n0\n1\n1\n0\n63\n-82\n51\n64\n-51\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-51 63\n",
+    "expected": "12\n-114\n-3213\n0\n-51\n-1\n0\n1\n1\n0\n63\n-82\n51\n64\n-51\n",
+    "stdout": "12\n-114\n-3213\n0\n-51\n-1\n0\n1\n1\n0\n63\n-82\n51\n64\n-51\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-51 63\n",
+    "expected": "12\n-114\n-3213\n0\n-51\n-1\n0\n1\n1\n0\n63\n-82\n51\n64\n-51\n",
+    "stdout": "12\n-114\n-3213\n0\n-51\n-1\n0\n1\n1\n0\n63\n-82\n51\n64\n-51\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-51 63\n",
+    "expected": "12\n-114\n-3213\n0\n-51\n-1\n0\n1\n1\n0\n63\n-82\n51\n64\n-51\n",
+    "stdout": "12\n-114\n-3213\n0\n-51\n-1\n0\n1\n1\n0\n63\n-82\n51\n64\n-51\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-54 67\n",
+    "expected": "13\n-121\n-3618\n0\n-54\n-1\n0\n1\n1\n0\n67\n-87\n54\n68\n-54\n",
+    "stdout": "13\n-121\n-3618\n0\n-54\n-1\n0\n1\n1\n0\n67\n-87\n54\n68\n-54\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-54 67\n",
+    "expected": "13\n-121\n-3618\n0\n-54\n-1\n0\n1\n1\n0\n67\n-87\n54\n68\n-54\n",
+    "stdout": "13\n-121\n-3618\n0\n-54\n-1\n0\n1\n1\n0\n67\n-87\n54\n68\n-54\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-54 67\n",
+    "expected": "13\n-121\n-3618\n0\n-54\n-1\n0\n1\n1\n0\n67\n-87\n54\n68\n-54\n",
+    "stdout": "13\n-121\n-3618\n0\n-54\n-1\n0\n1\n1\n0\n67\n-87\n54\n68\n-54\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-54 67\n",
+    "expected": "13\n-121\n-3618\n0\n-54\n-1\n0\n1\n1\n0\n67\n-87\n54\n68\n-54\n",
+    "stdout": "13\n-121\n-3618\n0\n-54\n-1\n0\n1\n1\n0\n67\n-87\n54\n68\n-54\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-54 67\n",
+    "expected": "13\n-121\n-3618\n0\n-54\n-1\n0\n1\n1\n0\n67\n-87\n54\n68\n-54\n",
+    "stdout": "13\n-121\n-3618\n0\n-54\n-1\n0\n1\n1\n0\n67\n-87\n54\n68\n-54\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-49 -98\n",
+    "expected": "-147\n49\n4802\n0\n-49\n-1\n0\n1\n1\n0\n0\n0\n49\n-97\n-49\n",
+    "stdout": "-147\n49\n4802\n0\n-49\n-1\n0\n1\n1\n0\n0\n0\n49\n-97\n-49\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-49 -98\n",
+    "expected": "-147\n49\n4802\n0\n-49\n-1\n0\n1\n1\n0\n0\n0\n49\n-97\n-49\n",
+    "stdout": "-147\n49\n4802\n0\n-49\n-1\n0\n1\n1\n0\n0\n0\n49\n-97\n-49\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-49 -98\n",
+    "expected": "-147\n49\n4802\n0\n-49\n-1\n0\n1\n1\n0\n0\n0\n49\n-97\n-49\n",
+    "stdout": "-147\n49\n4802\n0\n-49\n-1\n0\n1\n1\n0\n0\n0\n49\n-97\n-49\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-49 -98\n",
+    "expected": "-147\n49\n4802\n0\n-49\n-1\n0\n1\n1\n0\n0\n0\n49\n-97\n-49\n",
+    "stdout": "-147\n49\n4802\n0\n-49\n-1\n0\n1\n1\n0\n0\n0\n49\n-97\n-49\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-49 -98\n",
+    "expected": "-147\n49\n4802\n0\n-49\n-1\n0\n1\n1\n0\n0\n0\n49\n-97\n-49\n",
+    "stdout": "-147\n49\n4802\n0\n-49\n-1\n0\n1\n1\n0\n0\n0\n49\n-97\n-49\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "72 -93\n",
+    "expected": "-21\n165\n-6696\n0\n72\n1\n0\n1\n1\n1\n72\n119\n-72\n-92\n72\n",
+    "stdout": "-21\n165\n-6696\n0\n72\n1\n0\n1\n1\n1\n72\n119\n-72\n-92\n72\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "72 -93\n",
+    "expected": "-21\n165\n-6696\n0\n72\n1\n0\n1\n1\n1\n72\n119\n-72\n-92\n72\n",
+    "stdout": "-21\n165\n-6696\n0\n72\n1\n0\n1\n1\n1\n72\n119\n-72\n-92\n72\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "72 -93\n",
+    "expected": "-21\n165\n-6696\n0\n72\n1\n0\n1\n1\n1\n72\n119\n-72\n-92\n72\n",
+    "stdout": "-21\n165\n-6696\n0\n72\n1\n0\n1\n1\n1\n72\n119\n-72\n-92\n72\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "72 -93\n",
+    "expected": "-21\n165\n-6696\n0\n72\n1\n0\n1\n1\n1\n72\n119\n-72\n-92\n72\n",
+    "stdout": "-21\n165\n-6696\n0\n72\n1\n0\n1\n1\n1\n72\n119\n-72\n-92\n72\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "72 -93\n",
+    "expected": "-21\n165\n-6696\n0\n72\n1\n0\n1\n1\n1\n72\n119\n-72\n-92\n72\n",
+    "stdout": "-21\n165\n-6696\n0\n72\n1\n0\n1\n1\n1\n72\n119\n-72\n-92\n72\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-77 90\n",
+    "expected": "13\n-167\n-6930\n0\n-77\n-1\n0\n1\n1\n0\n90\n-121\n77\n91\n-77\n",
+    "stdout": "13\n-167\n-6930\n0\n-77\n-1\n0\n1\n1\n0\n90\n-121\n77\n91\n-77\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-77 90\n",
+    "expected": "13\n-167\n-6930\n0\n-77\n-1\n0\n1\n1\n0\n90\n-121\n77\n91\n-77\n",
+    "stdout": "13\n-167\n-6930\n0\n-77\n-1\n0\n1\n1\n0\n90\n-121\n77\n91\n-77\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-77 90\n",
+    "expected": "13\n-167\n-6930\n0\n-77\n-1\n0\n1\n1\n0\n90\n-121\n77\n91\n-77\n",
+    "stdout": "13\n-167\n-6930\n0\n-77\n-1\n0\n1\n1\n0\n90\n-121\n77\n91\n-77\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-77 90\n",
+    "expected": "13\n-167\n-6930\n0\n-77\n-1\n0\n1\n1\n0\n90\n-121\n77\n91\n-77\n",
+    "stdout": "13\n-167\n-6930\n0\n-77\n-1\n0\n1\n1\n0\n90\n-121\n77\n91\n-77\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-77 90\n",
+    "expected": "13\n-167\n-6930\n0\n-77\n-1\n0\n1\n1\n0\n90\n-121\n77\n91\n-77\n",
+    "stdout": "13\n-167\n-6930\n0\n-77\n-1\n0\n1\n1\n0\n90\n-121\n77\n91\n-77\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "15 0\n",
+    "expected": "15\n15\n0\n0\n0\n1\n0\n1\n0\n1\n15\n15\n-15\n1\n15\n",
+    "stdout": "15\n15\n0\n0\n0\n1\n0\n1\n0\n1\n15\n15\n-15\n1\n15\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "15 0\n",
+    "expected": "15\n15\n0\n0\n0\n1\n0\n1\n0\n1\n15\n15\n-15\n1\n15\n",
+    "stdout": "15\n15\n0\n0\n0\n1\n0\n1\n0\n1\n15\n15\n-15\n1\n15\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "15 0\n",
+    "expected": "15\n15\n0\n0\n0\n1\n0\n1\n0\n1\n15\n15\n-15\n1\n15\n",
+    "stdout": "15\n15\n0\n0\n0\n1\n0\n1\n0\n1\n15\n15\n-15\n1\n15\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "15 0\n",
+    "expected": "15\n15\n0\n0\n0\n1\n0\n1\n0\n1\n15\n15\n-15\n1\n15\n",
+    "stdout": "15\n15\n0\n0\n0\n1\n0\n1\n0\n1\n15\n15\n-15\n1\n15\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "15 0\n",
+    "expected": "15\n15\n0\n0\n0\n1\n0\n1\n0\n1\n15\n15\n-15\n1\n15\n",
+    "stdout": "15\n15\n0\n0\n0\n1\n0\n1\n0\n1\n15\n15\n-15\n1\n15\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "44 6\n",
+    "expected": "50\n38\n264\n7\n2\n1\n1\n1\n1\n1\n50\n41\n-44\n7\n44\n",
+    "stdout": "50\n38\n264\n7\n2\n1\n1\n1\n1\n1\n50\n41\n-44\n7\n44\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "44 6\n",
+    "expected": "50\n38\n264\n7\n2\n1\n1\n1\n1\n1\n50\n41\n-44\n7\n44\n",
+    "stdout": "50\n38\n264\n7\n2\n1\n1\n1\n1\n1\n50\n41\n-44\n7\n44\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "44 6\n",
+    "expected": "50\n38\n264\n7\n2\n1\n1\n1\n1\n1\n50\n41\n-44\n7\n44\n",
+    "stdout": "50\n38\n264\n7\n2\n1\n1\n1\n1\n1\n50\n41\n-44\n7\n44\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "44 6\n",
+    "expected": "50\n38\n264\n7\n2\n1\n1\n1\n1\n1\n50\n41\n-44\n7\n44\n",
+    "stdout": "50\n38\n264\n7\n2\n1\n1\n1\n1\n1\n50\n41\n-44\n7\n44\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "44 6\n",
+    "expected": "50\n38\n264\n7\n2\n1\n1\n1\n1\n1\n50\n41\n-44\n7\n44\n",
+    "stdout": "50\n38\n264\n7\n2\n1\n1\n1\n1\n1\n50\n41\n-44\n7\n44\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "33 68\n",
+    "expected": "101\n-35\n2244\n0\n33\n1\n0\n1\n1\n0\n101\n0\n-33\n69\n33\n",
+    "stdout": "101\n-35\n2244\n0\n33\n1\n0\n1\n1\n0\n101\n0\n-33\n69\n33\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "33 68\n",
+    "expected": "101\n-35\n2244\n0\n33\n1\n0\n1\n1\n0\n101\n0\n-33\n69\n33\n",
+    "stdout": "101\n-35\n2244\n0\n33\n1\n0\n1\n1\n0\n101\n0\n-33\n69\n33\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "33 68\n",
+    "expected": "101\n-35\n2244\n0\n33\n1\n0\n1\n1\n0\n101\n0\n-33\n69\n33\n",
+    "stdout": "101\n-35\n2244\n0\n33\n1\n0\n1\n1\n0\n101\n0\n-33\n69\n33\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "33 68\n",
+    "expected": "101\n-35\n2244\n0\n33\n1\n0\n1\n1\n0\n101\n0\n-33\n69\n33\n",
+    "stdout": "101\n-35\n2244\n0\n33\n1\n0\n1\n1\n0\n101\n0\n-33\n69\n33\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "33 68\n",
+    "expected": "101\n-35\n2244\n0\n33\n1\n0\n1\n1\n0\n101\n0\n-33\n69\n33\n",
+    "stdout": "101\n-35\n2244\n0\n33\n1\n0\n1\n1\n0\n101\n0\n-33\n69\n33\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-41 -26\n",
+    "expected": "-67\n-15\n1066\n1\n-15\n-1\n0\n1\n1\n0\n0\n-27\n41\n-25\n-41\n",
+    "stdout": "-67\n-15\n1066\n1\n-15\n-1\n0\n1\n1\n0\n0\n-27\n41\n-25\n-41\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-41 -26\n",
+    "expected": "-67\n-15\n1066\n1\n-15\n-1\n0\n1\n1\n0\n0\n-27\n41\n-25\n-41\n",
+    "stdout": "-67\n-15\n1066\n1\n-15\n-1\n0\n1\n1\n0\n0\n-27\n41\n-25\n-41\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-41 -26\n",
+    "expected": "-67\n-15\n1066\n1\n-15\n-1\n0\n1\n1\n0\n0\n-27\n41\n-25\n-41\n",
+    "stdout": "-67\n-15\n1066\n1\n-15\n-1\n0\n1\n1\n0\n0\n-27\n41\n-25\n-41\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-41 -26\n",
+    "expected": "-67\n-15\n1066\n1\n-15\n-1\n0\n1\n1\n0\n0\n-27\n41\n-25\n-41\n",
+    "stdout": "-67\n-15\n1066\n1\n-15\n-1\n0\n1\n1\n0\n0\n-27\n41\n-25\n-41\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-41 -26\n",
+    "expected": "-67\n-15\n1066\n1\n-15\n-1\n0\n1\n1\n0\n0\n-27\n41\n-25\n-41\n",
+    "stdout": "-67\n-15\n1066\n1\n-15\n-1\n0\n1\n1\n0\n0\n-27\n41\n-25\n-41\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-26 -73\n",
+    "expected": "-99\n47\n1898\n0\n-26\n-1\n0\n1\n1\n0\n0\n11\n26\n-72\n-26\n",
+    "stdout": "-99\n47\n1898\n0\n-26\n-1\n0\n1\n1\n0\n0\n11\n26\n-72\n-26\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-26 -73\n",
+    "expected": "-99\n47\n1898\n0\n-26\n-1\n0\n1\n1\n0\n0\n11\n26\n-72\n-26\n",
+    "stdout": "-99\n47\n1898\n0\n-26\n-1\n0\n1\n1\n0\n0\n11\n26\n-72\n-26\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-26 -73\n",
+    "expected": "-99\n47\n1898\n0\n-26\n-1\n0\n1\n1\n0\n0\n11\n26\n-72\n-26\n",
+    "stdout": "-99\n47\n1898\n0\n-26\n-1\n0\n1\n1\n0\n0\n11\n26\n-72\n-26\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-26 -73\n",
+    "expected": "-99\n47\n1898\n0\n-26\n-1\n0\n1\n1\n0\n0\n11\n26\n-72\n-26\n",
+    "stdout": "-99\n47\n1898\n0\n-26\n-1\n0\n1\n1\n0\n0\n11\n26\n-72\n-26\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-26 -73\n",
+    "expected": "-99\n47\n1898\n0\n-26\n-1\n0\n1\n1\n0\n0\n11\n26\n-72\n-26\n",
+    "stdout": "-99\n47\n1898\n0\n-26\n-1\n0\n1\n1\n0\n0\n11\n26\n-72\n-26\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-10 -62\n",
+    "expected": "-72\n52\n620\n0\n-10\n-1\n0\n1\n1\n0\n0\n21\n10\n-61\n-10\n",
+    "stdout": "-72\n52\n620\n0\n-10\n-1\n0\n1\n1\n0\n0\n21\n10\n-61\n-10\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-10 -62\n",
+    "expected": "-72\n52\n620\n0\n-10\n-1\n0\n1\n1\n0\n0\n21\n10\n-61\n-10\n",
+    "stdout": "-72\n52\n620\n0\n-10\n-1\n0\n1\n1\n0\n0\n21\n10\n-61\n-10\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-10 -62\n",
+    "expected": "-72\n52\n620\n0\n-10\n-1\n0\n1\n1\n0\n0\n21\n10\n-61\n-10\n",
+    "stdout": "-72\n52\n620\n0\n-10\n-1\n0\n1\n1\n0\n0\n21\n10\n-61\n-10\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-10 -62\n",
+    "expected": "-72\n52\n620\n0\n-10\n-1\n0\n1\n1\n0\n0\n21\n10\n-61\n-10\n",
+    "stdout": "-72\n52\n620\n0\n-10\n-1\n0\n1\n1\n0\n0\n21\n10\n-61\n-10\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-10 -62\n",
+    "expected": "-72\n52\n620\n0\n-10\n-1\n0\n1\n1\n0\n0\n21\n10\n-61\n-10\n",
+    "stdout": "-72\n52\n620\n0\n-10\n-1\n0\n1\n1\n0\n0\n21\n10\n-61\n-10\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-71 -8\n",
+    "expected": "-79\n-63\n568\n8\n-7\n-1\n1\n1\n1\n0\n0\n-66\n71\n-7\n-71\n",
+    "stdout": "-79\n-63\n568\n8\n-7\n-1\n1\n1\n1\n0\n0\n-66\n71\n-7\n-71\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-71 -8\n",
+    "expected": "-79\n-63\n568\n8\n-7\n-1\n1\n1\n1\n0\n0\n-66\n71\n-7\n-71\n",
+    "stdout": "-79\n-63\n568\n8\n-7\n-1\n1\n1\n1\n0\n0\n-66\n71\n-7\n-71\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-71 -8\n",
+    "expected": "-79\n-63\n568\n8\n-7\n-1\n1\n1\n1\n0\n0\n-66\n71\n-7\n-71\n",
+    "stdout": "-79\n-63\n568\n8\n-7\n-1\n1\n1\n1\n0\n0\n-66\n71\n-7\n-71\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-71 -8\n",
+    "expected": "-79\n-63\n568\n8\n-7\n-1\n1\n1\n1\n0\n0\n-66\n71\n-7\n-71\n",
+    "stdout": "-79\n-63\n568\n8\n-7\n-1\n1\n1\n1\n0\n0\n-66\n71\n-7\n-71\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-71 -8\n",
+    "expected": "-79\n-63\n568\n8\n-7\n-1\n1\n1\n1\n0\n0\n-66\n71\n-7\n-71\n",
+    "stdout": "-79\n-63\n568\n8\n-7\n-1\n1\n1\n1\n0\n0\n-66\n71\n-7\n-71\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "48 -76\n",
+    "expected": "-28\n124\n-3648\n0\n48\n1\n0\n1\n1\n1\n48\n86\n-48\n-75\n48\n",
+    "stdout": "-28\n124\n-3648\n0\n48\n1\n0\n1\n1\n1\n48\n86\n-48\n-75\n48\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "48 -76\n",
+    "expected": "-28\n124\n-3648\n0\n48\n1\n0\n1\n1\n1\n48\n86\n-48\n-75\n48\n",
+    "stdout": "-28\n124\n-3648\n0\n48\n1\n0\n1\n1\n1\n48\n86\n-48\n-75\n48\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "48 -76\n",
+    "expected": "-28\n124\n-3648\n0\n48\n1\n0\n1\n1\n1\n48\n86\n-48\n-75\n48\n",
+    "stdout": "-28\n124\n-3648\n0\n48\n1\n0\n1\n1\n1\n48\n86\n-48\n-75\n48\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "48 -76\n",
+    "expected": "-28\n124\n-3648\n0\n48\n1\n0\n1\n1\n1\n48\n86\n-48\n-75\n48\n",
+    "stdout": "-28\n124\n-3648\n0\n48\n1\n0\n1\n1\n1\n48\n86\n-48\n-75\n48\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "48 -76\n",
+    "expected": "-28\n124\n-3648\n0\n48\n1\n0\n1\n1\n1\n48\n86\n-48\n-75\n48\n",
+    "stdout": "-28\n124\n-3648\n0\n48\n1\n0\n1\n1\n1\n48\n86\n-48\n-75\n48\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "58 66\n",
+    "expected": "124\n-8\n3828\n0\n58\n1\n0\n1\n1\n0\n124\n25\n-58\n67\n58\n",
+    "stdout": "124\n-8\n3828\n0\n58\n1\n0\n1\n1\n0\n124\n25\n-58\n67\n58\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "58 66\n",
+    "expected": "124\n-8\n3828\n0\n58\n1\n0\n1\n1\n0\n124\n25\n-58\n67\n58\n",
+    "stdout": "124\n-8\n3828\n0\n58\n1\n0\n1\n1\n0\n124\n25\n-58\n67\n58\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "58 66\n",
+    "expected": "124\n-8\n3828\n0\n58\n1\n0\n1\n1\n0\n124\n25\n-58\n67\n58\n",
+    "stdout": "124\n-8\n3828\n0\n58\n1\n0\n1\n1\n0\n124\n25\n-58\n67\n58\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "58 66\n",
+    "expected": "124\n-8\n3828\n0\n58\n1\n0\n1\n1\n0\n124\n25\n-58\n67\n58\n",
+    "stdout": "124\n-8\n3828\n0\n58\n1\n0\n1\n1\n0\n124\n25\n-58\n67\n58\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "58 66\n",
+    "expected": "124\n-8\n3828\n0\n58\n1\n0\n1\n1\n0\n124\n25\n-58\n67\n58\n",
+    "stdout": "124\n-8\n3828\n0\n58\n1\n0\n1\n1\n0\n124\n25\n-58\n67\n58\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-99 -28\n",
+    "expected": "-127\n-71\n2772\n3\n-15\n-1\n1\n1\n1\n0\n0\n-84\n99\n-27\n-99\n",
+    "stdout": "-127\n-71\n2772\n3\n-15\n-1\n1\n1\n1\n0\n0\n-84\n99\n-27\n-99\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-99 -28\n",
+    "expected": "-127\n-71\n2772\n3\n-15\n-1\n1\n1\n1\n0\n0\n-84\n99\n-27\n-99\n",
+    "stdout": "-127\n-71\n2772\n3\n-15\n-1\n1\n1\n1\n0\n0\n-84\n99\n-27\n-99\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-99 -28\n",
+    "expected": "-127\n-71\n2772\n3\n-15\n-1\n1\n1\n1\n0\n0\n-84\n99\n-27\n-99\n",
+    "stdout": "-127\n-71\n2772\n3\n-15\n-1\n1\n1\n1\n0\n0\n-84\n99\n-27\n-99\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-99 -28\n",
+    "expected": "-127\n-71\n2772\n3\n-15\n-1\n1\n1\n1\n0\n0\n-84\n99\n-27\n-99\n",
+    "stdout": "-127\n-71\n2772\n3\n-15\n-1\n1\n1\n1\n0\n0\n-84\n99\n-27\n-99\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-99 -28\n",
+    "expected": "-127\n-71\n2772\n3\n-15\n-1\n1\n1\n1\n0\n0\n-84\n99\n-27\n-99\n",
+    "stdout": "-127\n-71\n2772\n3\n-15\n-1\n1\n1\n1\n0\n0\n-84\n99\n-27\n-99\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-91 6\n",
+    "expected": "-85\n-97\n-546\n-15\n-1\n-1\n0\n1\n1\n0\n6\n-93\n91\n7\n-91\n",
+    "stdout": "-85\n-97\n-546\n-15\n-1\n-1\n0\n1\n1\n0\n6\n-93\n91\n7\n-91\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-91 6\n",
+    "expected": "-85\n-97\n-546\n-15\n-1\n-1\n0\n1\n1\n0\n6\n-93\n91\n7\n-91\n",
+    "stdout": "-85\n-97\n-546\n-15\n-1\n-1\n0\n1\n1\n0\n6\n-93\n91\n7\n-91\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-91 6\n",
+    "expected": "-85\n-97\n-546\n-15\n-1\n-1\n0\n1\n1\n0\n6\n-93\n91\n7\n-91\n",
+    "stdout": "-85\n-97\n-546\n-15\n-1\n-1\n0\n1\n1\n0\n6\n-93\n91\n7\n-91\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-91 6\n",
+    "expected": "-85\n-97\n-546\n-15\n-1\n-1\n0\n1\n1\n0\n6\n-93\n91\n7\n-91\n",
+    "stdout": "-85\n-97\n-546\n-15\n-1\n-1\n0\n1\n1\n0\n6\n-93\n91\n7\n-91\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-91 6\n",
+    "expected": "-85\n-97\n-546\n-15\n-1\n-1\n0\n1\n1\n0\n6\n-93\n91\n7\n-91\n",
+    "stdout": "-85\n-97\n-546\n-15\n-1\n-1\n0\n1\n1\n0\n6\n-93\n91\n7\n-91\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-92 -35\n",
+    "expected": "-127\n-57\n3220\n2\n-22\n-1\n1\n1\n1\n0\n0\n-74\n92\n-34\n-92\n",
+    "stdout": "-127\n-57\n3220\n2\n-22\n-1\n1\n1\n1\n0\n0\n-74\n92\n-34\n-92\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-92 -35\n",
+    "expected": "-127\n-57\n3220\n2\n-22\n-1\n1\n1\n1\n0\n0\n-74\n92\n-34\n-92\n",
+    "stdout": "-127\n-57\n3220\n2\n-22\n-1\n1\n1\n1\n0\n0\n-74\n92\n-34\n-92\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-92 -35\n",
+    "expected": "-127\n-57\n3220\n2\n-22\n-1\n1\n1\n1\n0\n0\n-74\n92\n-34\n-92\n",
+    "stdout": "-127\n-57\n3220\n2\n-22\n-1\n1\n1\n1\n0\n0\n-74\n92\n-34\n-92\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-92 -35\n",
+    "expected": "-127\n-57\n3220\n2\n-22\n-1\n1\n1\n1\n0\n0\n-74\n92\n-34\n-92\n",
+    "stdout": "-127\n-57\n3220\n2\n-22\n-1\n1\n1\n1\n0\n0\n-74\n92\n-34\n-92\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-92 -35\n",
+    "expected": "-127\n-57\n3220\n2\n-22\n-1\n1\n1\n1\n0\n0\n-74\n92\n-34\n-92\n",
+    "stdout": "-127\n-57\n3220\n2\n-22\n-1\n1\n1\n1\n0\n0\n-74\n92\n-34\n-92\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-28 -81\n",
+    "expected": "-109\n53\n2268\n0\n-28\n-1\n0\n1\n1\n0\n0\n13\n28\n-80\n-28\n",
+    "stdout": "-109\n53\n2268\n0\n-28\n-1\n0\n1\n1\n0\n0\n13\n28\n-80\n-28\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-28 -81\n",
+    "expected": "-109\n53\n2268\n0\n-28\n-1\n0\n1\n1\n0\n0\n13\n28\n-80\n-28\n",
+    "stdout": "-109\n53\n2268\n0\n-28\n-1\n0\n1\n1\n0\n0\n13\n28\n-80\n-28\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-28 -81\n",
+    "expected": "-109\n53\n2268\n0\n-28\n-1\n0\n1\n1\n0\n0\n13\n28\n-80\n-28\n",
+    "stdout": "-109\n53\n2268\n0\n-28\n-1\n0\n1\n1\n0\n0\n13\n28\n-80\n-28\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-28 -81\n",
+    "expected": "-109\n53\n2268\n0\n-28\n-1\n0\n1\n1\n0\n0\n13\n28\n-80\n-28\n",
+    "stdout": "-109\n53\n2268\n0\n-28\n-1\n0\n1\n1\n0\n0\n13\n28\n-80\n-28\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-28 -81\n",
+    "expected": "-109\n53\n2268\n0\n-28\n-1\n0\n1\n1\n0\n0\n13\n28\n-80\n-28\n",
+    "stdout": "-109\n53\n2268\n0\n-28\n-1\n0\n1\n1\n0\n0\n13\n28\n-80\n-28\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-74 -70\n",
+    "expected": "-144\n-4\n5180\n1\n-4\n-1\n0\n1\n1\n0\n0\n-38\n74\n-69\n-74\n",
+    "stdout": "-144\n-4\n5180\n1\n-4\n-1\n0\n1\n1\n0\n0\n-38\n74\n-69\n-74\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-74 -70\n",
+    "expected": "-144\n-4\n5180\n1\n-4\n-1\n0\n1\n1\n0\n0\n-38\n74\n-69\n-74\n",
+    "stdout": "-144\n-4\n5180\n1\n-4\n-1\n0\n1\n1\n0\n0\n-38\n74\n-69\n-74\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-74 -70\n",
+    "expected": "-144\n-4\n5180\n1\n-4\n-1\n0\n1\n1\n0\n0\n-38\n74\n-69\n-74\n",
+    "stdout": "-144\n-4\n5180\n1\n-4\n-1\n0\n1\n1\n0\n0\n-38\n74\n-69\n-74\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-74 -70\n",
+    "expected": "-144\n-4\n5180\n1\n-4\n-1\n0\n1\n1\n0\n0\n-38\n74\n-69\n-74\n",
+    "stdout": "-144\n-4\n5180\n1\n-4\n-1\n0\n1\n1\n0\n0\n-38\n74\n-69\n-74\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-74 -70\n",
+    "expected": "-144\n-4\n5180\n1\n-4\n-1\n0\n1\n1\n0\n0\n-38\n74\n-69\n-74\n",
+    "stdout": "-144\n-4\n5180\n1\n-4\n-1\n0\n1\n1\n0\n0\n-38\n74\n-69\n-74\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-1 -63\n",
+    "expected": "-64\n62\n63\n0\n-1\n-1\n0\n1\n1\n0\n0\n31\n1\n-62\n-1\n",
+    "stdout": "-64\n62\n63\n0\n-1\n-1\n0\n1\n1\n0\n0\n31\n1\n-62\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-1 -63\n",
+    "expected": "-64\n62\n63\n0\n-1\n-1\n0\n1\n1\n0\n0\n31\n1\n-62\n-1\n",
+    "stdout": "-64\n62\n63\n0\n-1\n-1\n0\n1\n1\n0\n0\n31\n1\n-62\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-1 -63\n",
+    "expected": "-64\n62\n63\n0\n-1\n-1\n0\n1\n1\n0\n0\n31\n1\n-62\n-1\n",
+    "stdout": "-64\n62\n63\n0\n-1\n-1\n0\n1\n1\n0\n0\n31\n1\n-62\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-1 -63\n",
+    "expected": "-64\n62\n63\n0\n-1\n-1\n0\n1\n1\n0\n0\n31\n1\n-62\n-1\n",
+    "stdout": "-64\n62\n63\n0\n-1\n-1\n0\n1\n1\n0\n0\n31\n1\n-62\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-1 -63\n",
+    "expected": "-64\n62\n63\n0\n-1\n-1\n0\n1\n1\n0\n0\n31\n1\n-62\n-1\n",
+    "stdout": "-64\n62\n63\n0\n-1\n-1\n0\n1\n1\n0\n0\n31\n1\n-62\n-1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "86 44\n",
+    "expected": "130\n42\n3784\n1\n42\n1\n0\n1\n1\n1\n130\n64\n-86\n45\n86\n",
+    "stdout": "130\n42\n3784\n1\n42\n1\n0\n1\n1\n1\n130\n64\n-86\n45\n86\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "86 44\n",
+    "expected": "130\n42\n3784\n1\n42\n1\n0\n1\n1\n1\n130\n64\n-86\n45\n86\n",
+    "stdout": "130\n42\n3784\n1\n42\n1\n0\n1\n1\n1\n130\n64\n-86\n45\n86\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "86 44\n",
+    "expected": "130\n42\n3784\n1\n42\n1\n0\n1\n1\n1\n130\n64\n-86\n45\n86\n",
+    "stdout": "130\n42\n3784\n1\n42\n1\n0\n1\n1\n1\n130\n64\n-86\n45\n86\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "86 44\n",
+    "expected": "130\n42\n3784\n1\n42\n1\n0\n1\n1\n1\n130\n64\n-86\n45\n86\n",
+    "stdout": "130\n42\n3784\n1\n42\n1\n0\n1\n1\n1\n130\n64\n-86\n45\n86\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "86 44\n",
+    "expected": "130\n42\n3784\n1\n42\n1\n0\n1\n1\n1\n130\n64\n-86\n45\n86\n",
+    "stdout": "130\n42\n3784\n1\n42\n1\n0\n1\n1\n1\n130\n64\n-86\n45\n86\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-91 -17\n",
+    "expected": "-108\n-74\n1547\n5\n-6\n-1\n1\n1\n1\n0\n0\n-82\n91\n-16\n-91\n",
+    "stdout": "-108\n-74\n1547\n5\n-6\n-1\n1\n1\n1\n0\n0\n-82\n91\n-16\n-91\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-91 -17\n",
+    "expected": "-108\n-74\n1547\n5\n-6\n-1\n1\n1\n1\n0\n0\n-82\n91\n-16\n-91\n",
+    "stdout": "-108\n-74\n1547\n5\n-6\n-1\n1\n1\n1\n0\n0\n-82\n91\n-16\n-91\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-91 -17\n",
+    "expected": "-108\n-74\n1547\n5\n-6\n-1\n1\n1\n1\n0\n0\n-82\n91\n-16\n-91\n",
+    "stdout": "-108\n-74\n1547\n5\n-6\n-1\n1\n1\n1\n0\n0\n-82\n91\n-16\n-91\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-91 -17\n",
+    "expected": "-108\n-74\n1547\n5\n-6\n-1\n1\n1\n1\n0\n0\n-82\n91\n-16\n-91\n",
+    "stdout": "-108\n-74\n1547\n5\n-6\n-1\n1\n1\n1\n0\n0\n-82\n91\n-16\n-91\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-91 -17\n",
+    "expected": "-108\n-74\n1547\n5\n-6\n-1\n1\n1\n1\n0\n0\n-82\n91\n-16\n-91\n",
+    "stdout": "-108\n-74\n1547\n5\n-6\n-1\n1\n1\n1\n0\n0\n-82\n91\n-16\n-91\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "15 -55\n",
+    "expected": "-40\n70\n-825\n0\n15\n1\n0\n1\n1\n1\n15\n43\n-15\n-54\n15\n",
+    "stdout": "-40\n70\n-825\n0\n15\n1\n0\n1\n1\n1\n15\n43\n-15\n-54\n15\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "15 -55\n",
+    "expected": "-40\n70\n-825\n0\n15\n1\n0\n1\n1\n1\n15\n43\n-15\n-54\n15\n",
+    "stdout": "-40\n70\n-825\n0\n15\n1\n0\n1\n1\n1\n15\n43\n-15\n-54\n15\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "15 -55\n",
+    "expected": "-40\n70\n-825\n0\n15\n1\n0\n1\n1\n1\n15\n43\n-15\n-54\n15\n",
+    "stdout": "-40\n70\n-825\n0\n15\n1\n0\n1\n1\n1\n15\n43\n-15\n-54\n15\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "15 -55\n",
+    "expected": "-40\n70\n-825\n0\n15\n1\n0\n1\n1\n1\n15\n43\n-15\n-54\n15\n",
+    "stdout": "-40\n70\n-825\n0\n15\n1\n0\n1\n1\n1\n15\n43\n-15\n-54\n15\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "15 -55\n",
+    "expected": "-40\n70\n-825\n0\n15\n1\n0\n1\n1\n1\n15\n43\n-15\n-54\n15\n",
+    "stdout": "-40\n70\n-825\n0\n15\n1\n0\n1\n1\n1\n15\n43\n-15\n-54\n15\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-67 29\n",
+    "expected": "-38\n-96\n-1943\n-2\n-9\n-1\n0\n1\n1\n0\n29\n-81\n67\n30\n-67\n",
+    "stdout": "-38\n-96\n-1943\n-2\n-9\n-1\n0\n1\n1\n0\n29\n-81\n67\n30\n-67\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-67 29\n",
+    "expected": "-38\n-96\n-1943\n-2\n-9\n-1\n0\n1\n1\n0\n29\n-81\n67\n30\n-67\n",
+    "stdout": "-38\n-96\n-1943\n-2\n-9\n-1\n0\n1\n1\n0\n29\n-81\n67\n30\n-67\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-67 29\n",
+    "expected": "-38\n-96\n-1943\n-2\n-9\n-1\n0\n1\n1\n0\n29\n-81\n67\n30\n-67\n",
+    "stdout": "-38\n-96\n-1943\n-2\n-9\n-1\n0\n1\n1\n0\n29\n-81\n67\n30\n-67\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-67 29\n",
+    "expected": "-38\n-96\n-1943\n-2\n-9\n-1\n0\n1\n1\n0\n29\n-81\n67\n30\n-67\n",
+    "stdout": "-38\n-96\n-1943\n-2\n-9\n-1\n0\n1\n1\n0\n29\n-81\n67\n30\n-67\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-67 29\n",
+    "expected": "-38\n-96\n-1943\n-2\n-9\n-1\n0\n1\n1\n0\n29\n-81\n67\n30\n-67\n",
+    "stdout": "-38\n-96\n-1943\n-2\n-9\n-1\n0\n1\n1\n0\n29\n-81\n67\n30\n-67\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-96 79\n",
+    "expected": "-17\n-175\n-7584\n-1\n-17\n-1\n0\n1\n1\n0\n79\n-135\n96\n80\n-96\n",
+    "stdout": "-17\n-175\n-7584\n-1\n-17\n-1\n0\n1\n1\n0\n79\n-135\n96\n80\n-96\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-96 79\n",
+    "expected": "-17\n-175\n-7584\n-1\n-17\n-1\n0\n1\n1\n0\n79\n-135\n96\n80\n-96\n",
+    "stdout": "-17\n-175\n-7584\n-1\n-17\n-1\n0\n1\n1\n0\n79\n-135\n96\n80\n-96\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-96 79\n",
+    "expected": "-17\n-175\n-7584\n-1\n-17\n-1\n0\n1\n1\n0\n79\n-135\n96\n80\n-96\n",
+    "stdout": "-17\n-175\n-7584\n-1\n-17\n-1\n0\n1\n1\n0\n79\n-135\n96\n80\n-96\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-96 79\n",
+    "expected": "-17\n-175\n-7584\n-1\n-17\n-1\n0\n1\n1\n0\n79\n-135\n96\n80\n-96\n",
+    "stdout": "-17\n-175\n-7584\n-1\n-17\n-1\n0\n1\n1\n0\n79\n-135\n96\n80\n-96\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-96 79\n",
+    "expected": "-17\n-175\n-7584\n-1\n-17\n-1\n0\n1\n1\n0\n79\n-135\n96\n80\n-96\n",
+    "stdout": "-17\n-175\n-7584\n-1\n-17\n-1\n0\n1\n1\n0\n79\n-135\n96\n80\n-96\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-79 57\n",
+    "expected": "-22\n-136\n-4503\n-1\n-22\n-1\n0\n1\n1\n0\n57\n-107\n79\n58\n-79\n",
+    "stdout": "-22\n-136\n-4503\n-1\n-22\n-1\n0\n1\n1\n0\n57\n-107\n79\n58\n-79\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-79 57\n",
+    "expected": "-22\n-136\n-4503\n-1\n-22\n-1\n0\n1\n1\n0\n57\n-107\n79\n58\n-79\n",
+    "stdout": "-22\n-136\n-4503\n-1\n-22\n-1\n0\n1\n1\n0\n57\n-107\n79\n58\n-79\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-79 57\n",
+    "expected": "-22\n-136\n-4503\n-1\n-22\n-1\n0\n1\n1\n0\n57\n-107\n79\n58\n-79\n",
+    "stdout": "-22\n-136\n-4503\n-1\n-22\n-1\n0\n1\n1\n0\n57\n-107\n79\n58\n-79\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-79 57\n",
+    "expected": "-22\n-136\n-4503\n-1\n-22\n-1\n0\n1\n1\n0\n57\n-107\n79\n58\n-79\n",
+    "stdout": "-22\n-136\n-4503\n-1\n-22\n-1\n0\n1\n1\n0\n57\n-107\n79\n58\n-79\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-79 57\n",
+    "expected": "-22\n-136\n-4503\n-1\n-22\n-1\n0\n1\n1\n0\n57\n-107\n79\n58\n-79\n",
+    "stdout": "-22\n-136\n-4503\n-1\n-22\n-1\n0\n1\n1\n0\n57\n-107\n79\n58\n-79\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-46 8\n",
+    "expected": "-38\n-54\n-368\n-5\n-6\n-1\n0\n1\n1\n0\n8\n-49\n46\n9\n-46\n",
+    "stdout": "-38\n-54\n-368\n-5\n-6\n-1\n0\n1\n1\n0\n8\n-49\n46\n9\n-46\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-46 8\n",
+    "expected": "-38\n-54\n-368\n-5\n-6\n-1\n0\n1\n1\n0\n8\n-49\n46\n9\n-46\n",
+    "stdout": "-38\n-54\n-368\n-5\n-6\n-1\n0\n1\n1\n0\n8\n-49\n46\n9\n-46\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-46 8\n",
+    "expected": "-38\n-54\n-368\n-5\n-6\n-1\n0\n1\n1\n0\n8\n-49\n46\n9\n-46\n",
+    "stdout": "-38\n-54\n-368\n-5\n-6\n-1\n0\n1\n1\n0\n8\n-49\n46\n9\n-46\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-46 8\n",
+    "expected": "-38\n-54\n-368\n-5\n-6\n-1\n0\n1\n1\n0\n8\n-49\n46\n9\n-46\n",
+    "stdout": "-38\n-54\n-368\n-5\n-6\n-1\n0\n1\n1\n0\n8\n-49\n46\n9\n-46\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-46 8\n",
+    "expected": "-38\n-54\n-368\n-5\n-6\n-1\n0\n1\n1\n0\n8\n-49\n46\n9\n-46\n",
+    "stdout": "-38\n-54\n-368\n-5\n-6\n-1\n0\n1\n1\n0\n8\n-49\n46\n9\n-46\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-47 -7\n",
+    "expected": "-54\n-40\n329\n6\n-5\n-1\n1\n1\n1\n0\n0\n-43\n47\n-6\n-47\n",
+    "stdout": "-54\n-40\n329\n6\n-5\n-1\n1\n1\n1\n0\n0\n-43\n47\n-6\n-47\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-47 -7\n",
+    "expected": "-54\n-40\n329\n6\n-5\n-1\n1\n1\n1\n0\n0\n-43\n47\n-6\n-47\n",
+    "stdout": "-54\n-40\n329\n6\n-5\n-1\n1\n1\n1\n0\n0\n-43\n47\n-6\n-47\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-47 -7\n",
+    "expected": "-54\n-40\n329\n6\n-5\n-1\n1\n1\n1\n0\n0\n-43\n47\n-6\n-47\n",
+    "stdout": "-54\n-40\n329\n6\n-5\n-1\n1\n1\n1\n0\n0\n-43\n47\n-6\n-47\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-47 -7\n",
+    "expected": "-54\n-40\n329\n6\n-5\n-1\n1\n1\n1\n0\n0\n-43\n47\n-6\n-47\n",
+    "stdout": "-54\n-40\n329\n6\n-5\n-1\n1\n1\n1\n0\n0\n-43\n47\n-6\n-47\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-47 -7\n",
+    "expected": "-54\n-40\n329\n6\n-5\n-1\n1\n1\n1\n0\n0\n-43\n47\n-6\n-47\n",
+    "stdout": "-54\n-40\n329\n6\n-5\n-1\n1\n1\n1\n0\n0\n-43\n47\n-6\n-47\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "1 -100\n",
+    "expected": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stdout": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "1 -100\n",
+    "expected": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stdout": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "1 -100\n",
+    "expected": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stdout": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "1 -100\n",
+    "expected": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stdout": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "1 -100\n",
+    "expected": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stdout": "-99\n101\n-100\n0\n1\n1\n0\n1\n1\n1\n1\n51\n-1\n-99\n1\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-21 15\n",
+    "expected": "-6\n-36\n-315\n-1\n-6\n-1\n0\n1\n1\n0\n15\n-28\n21\n16\n-21\n",
+    "stdout": "-6\n-36\n-315\n-1\n-6\n-1\n0\n1\n1\n0\n15\n-28\n21\n16\n-21\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-21 15\n",
+    "expected": "-6\n-36\n-315\n-1\n-6\n-1\n0\n1\n1\n0\n15\n-28\n21\n16\n-21\n",
+    "stdout": "-6\n-36\n-315\n-1\n-6\n-1\n0\n1\n1\n0\n15\n-28\n21\n16\n-21\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-21 15\n",
+    "expected": "-6\n-36\n-315\n-1\n-6\n-1\n0\n1\n1\n0\n15\n-28\n21\n16\n-21\n",
+    "stdout": "-6\n-36\n-315\n-1\n-6\n-1\n0\n1\n1\n0\n15\n-28\n21\n16\n-21\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-21 15\n",
+    "expected": "-6\n-36\n-315\n-1\n-6\n-1\n0\n1\n1\n0\n15\n-28\n21\n16\n-21\n",
+    "stdout": "-6\n-36\n-315\n-1\n-6\n-1\n0\n1\n1\n0\n15\n-28\n21\n16\n-21\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-21 15\n",
+    "expected": "-6\n-36\n-315\n-1\n-6\n-1\n0\n1\n1\n0\n15\n-28\n21\n16\n-21\n",
+    "stdout": "-6\n-36\n-315\n-1\n-6\n-1\n0\n1\n1\n0\n15\n-28\n21\n16\n-21\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "84 52\n",
+    "expected": "136\n32\n4368\n1\n32\n1\n0\n1\n1\n1\n136\n58\n-84\n53\n84\n",
+    "stdout": "136\n32\n4368\n1\n32\n1\n0\n1\n1\n1\n136\n58\n-84\n53\n84\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "84 52\n",
+    "expected": "136\n32\n4368\n1\n32\n1\n0\n1\n1\n1\n136\n58\n-84\n53\n84\n",
+    "stdout": "136\n32\n4368\n1\n32\n1\n0\n1\n1\n1\n136\n58\n-84\n53\n84\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "84 52\n",
+    "expected": "136\n32\n4368\n1\n32\n1\n0\n1\n1\n1\n136\n58\n-84\n53\n84\n",
+    "stdout": "136\n32\n4368\n1\n32\n1\n0\n1\n1\n1\n136\n58\n-84\n53\n84\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "84 52\n",
+    "expected": "136\n32\n4368\n1\n32\n1\n0\n1\n1\n1\n136\n58\n-84\n53\n84\n",
+    "stdout": "136\n32\n4368\n1\n32\n1\n0\n1\n1\n1\n136\n58\n-84\n53\n84\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "84 52\n",
+    "expected": "136\n32\n4368\n1\n32\n1\n0\n1\n1\n1\n136\n58\n-84\n53\n84\n",
+    "stdout": "136\n32\n4368\n1\n32\n1\n0\n1\n1\n1\n136\n58\n-84\n53\n84\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O0",
+    "input": "-85 34\n",
+    "expected": "-51\n-119\n-2890\n-2\n-17\n-1\n0\n1\n1\n0\n34\n-101\n85\n35\n-85\n",
+    "stdout": "-51\n-119\n-2890\n-2\n-17\n-1\n0\n1\n1\n0\n34\n-101\n85\n35\n-85\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-source-O2",
+    "input": "-85 34\n",
+    "expected": "-51\n-119\n-2890\n-2\n-17\n-1\n0\n1\n1\n0\n34\n-101\n85\n35\n-85\n",
+    "stdout": "-51\n-119\n-2890\n-2\n-17\n-1\n0\n1\n1\n0\n34\n-101\n85\n35\n-85\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O0",
+    "input": "-85 34\n",
+    "expected": "-51\n-119\n-2890\n-2\n-17\n-1\n0\n1\n1\n0\n34\n-101\n85\n35\n-85\n",
+    "stdout": "-51\n-119\n-2890\n-2\n-17\n-1\n0\n1\n1\n0\n34\n-101\n85\n35\n-85\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-ir-O2",
+    "input": "-85 34\n",
+    "expected": "-51\n-119\n-2890\n-2\n-17\n-1\n0\n1\n1\n0\n34\n-101\n85\n35\n-85\n",
+    "stdout": "-51\n-119\n-2890\n-2\n-17\n-1\n0\n1\n1\n0\n34\n-101\n85\n35\n-85\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "executable": "features-asm",
+    "input": "-85 34\n",
+    "expected": "-51\n-119\n-2890\n-2\n-17\n-1\n0\n1\n1\n0\n34\n-101\n85\n35\n-85\n",
+    "stdout": "-51\n-119\n-2890\n-2\n-17\n-1\n0\n1\n1\n0\n34\n-101\n85\n35\n-85\n",
+    "stderr": "TOTAL: 0H-0M-0S-0us\n",
+    "exit_code": 0,
+    "passed": true
+  }
+]

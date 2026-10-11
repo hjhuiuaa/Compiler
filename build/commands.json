@@ -1,0 +1,1023 @@
+[
+  {
+    "command": [
+      "python3",
+      "scripts/port_ir.py"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "ld.lld",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-ar",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-objdump",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "qemu-riscv64",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-O2",
+      "-c",
+      "runtime/lib/sylib.c",
+      "-o",
+      "build/sylib.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-ar",
+      "rcs",
+      "build/libsysy_riscv.a",
+      "build/sylib.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-x",
+      "c",
+      "-include",
+      "include/sysy_decls.h",
+      "-O0",
+      "-c",
+      "fib.sy",
+      "-o",
+      "build/fib-source-O0.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-nostdlib",
+      "-static",
+      "-fuse-ld=lld",
+      "-Wl,--no-relax,-e,_start",
+      "-Wl,-Map=build/fib-source-O0.map",
+      "/opt/riscv-sysroot/usr/lib/crt1.o",
+      "/opt/riscv-sysroot/usr/lib/crti.o",
+      "build/fib-source-O0.o",
+      "build/libsysy_riscv.a",
+      "/opt/riscv-sysroot/usr/lib/libc.a",
+      "/opt/riscv-sysroot/usr/lib/llvm20/lib/clang/20/lib/riscv64-alpine-linux-musl/libclang_rt.builtins-riscv64.a",
+      "/opt/riscv-sysroot/usr/lib/crtn.o",
+      "-o",
+      "build/fib-source-O0"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-O0",
+      "-c",
+      "ir/fib-riscv.ll",
+      "-o",
+      "build/fib-ir-O0.o"
+    ],
+    "exit_code": 0,
+    "stderr": "warning: overriding the module target triple with riscv64-unknown-linux-musl [-Woverride-module]\n1 warning generated.\n"
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-nostdlib",
+      "-static",
+      "-fuse-ld=lld",
+      "-Wl,--no-relax,-e,_start",
+      "-Wl,-Map=build/fib-ir-O0.map",
+      "/opt/riscv-sysroot/usr/lib/crt1.o",
+      "/opt/riscv-sysroot/usr/lib/crti.o",
+      "build/fib-ir-O0.o",
+      "build/libsysy_riscv.a",
+      "/opt/riscv-sysroot/usr/lib/libc.a",
+      "/opt/riscv-sysroot/usr/lib/llvm20/lib/clang/20/lib/riscv64-alpine-linux-musl/libclang_rt.builtins-riscv64.a",
+      "/opt/riscv-sysroot/usr/lib/crtn.o",
+      "-o",
+      "build/fib-ir-O0"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-x",
+      "c",
+      "-include",
+      "include/sysy_decls.h",
+      "-O2",
+      "-c",
+      "fib.sy",
+      "-o",
+      "build/fib-source-O2.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-nostdlib",
+      "-static",
+      "-fuse-ld=lld",
+      "-Wl,--no-relax,-e,_start",
+      "-Wl,-Map=build/fib-source-O2.map",
+      "/opt/riscv-sysroot/usr/lib/crt1.o",
+      "/opt/riscv-sysroot/usr/lib/crti.o",
+      "build/fib-source-O2.o",
+      "build/libsysy_riscv.a",
+      "/opt/riscv-sysroot/usr/lib/libc.a",
+      "/opt/riscv-sysroot/usr/lib/llvm20/lib/clang/20/lib/riscv64-alpine-linux-musl/libclang_rt.builtins-riscv64.a",
+      "/opt/riscv-sysroot/usr/lib/crtn.o",
+      "-o",
+      "build/fib-source-O2"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-O2",
+      "-c",
+      "ir/fib-riscv.ll",
+      "-o",
+      "build/fib-ir-O2.o"
+    ],
+    "exit_code": 0,
+    "stderr": "warning: overriding the module target triple with riscv64-unknown-linux-musl [-Woverride-module]\n1 warning generated.\n"
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-nostdlib",
+      "-static",
+      "-fuse-ld=lld",
+      "-Wl,--no-relax,-e,_start",
+      "-Wl,-Map=build/fib-ir-O2.map",
+      "/opt/riscv-sysroot/usr/lib/crt1.o",
+      "/opt/riscv-sysroot/usr/lib/crti.o",
+      "build/fib-ir-O2.o",
+      "build/libsysy_riscv.a",
+      "/opt/riscv-sysroot/usr/lib/libc.a",
+      "/opt/riscv-sysroot/usr/lib/llvm20/lib/clang/20/lib/riscv64-alpine-linux-musl/libclang_rt.builtins-riscv64.a",
+      "/opt/riscv-sysroot/usr/lib/crtn.o",
+      "-o",
+      "build/fib-ir-O2"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-c",
+      "asm/fib-riscv.S",
+      "-o",
+      "build/fib-asm.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-nostdlib",
+      "-static",
+      "-fuse-ld=lld",
+      "-Wl,--no-relax,-e,_start",
+      "-Wl,-Map=build/fib-asm.map",
+      "/opt/riscv-sysroot/usr/lib/crt1.o",
+      "/opt/riscv-sysroot/usr/lib/crti.o",
+      "build/fib-asm.o",
+      "build/libsysy_riscv.a",
+      "/opt/riscv-sysroot/usr/lib/libc.a",
+      "/opt/riscv-sysroot/usr/lib/llvm20/lib/clang/20/lib/riscv64-alpine-linux-musl/libclang_rt.builtins-riscv64.a",
+      "/opt/riscv-sysroot/usr/lib/crtn.o",
+      "-o",
+      "build/fib-asm"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-objdump",
+      "-dr",
+      "build/fib-asm.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-readelf",
+      "-h",
+      "-A",
+      "-s",
+      "-r",
+      "build/fib-asm.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-nm",
+      "build/fib-asm.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-objdump",
+      "-d",
+      "build/fib-asm"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-nm",
+      "build/fib-asm"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-as",
+      "ir/fib-riscv.ll",
+      "-o",
+      "build/fib.bc"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "opt",
+      "-passes=verify",
+      "build/fib.bc",
+      "-disable-output"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-x",
+      "c",
+      "-include",
+      "include/sysy_decls.h",
+      "-O0",
+      "-c",
+      "examples/features.sy",
+      "-o",
+      "build/features-source-O0.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-nostdlib",
+      "-static",
+      "-fuse-ld=lld",
+      "-Wl,--no-relax,-e,_start",
+      "-Wl,-Map=build/features-source-O0.map",
+      "/opt/riscv-sysroot/usr/lib/crt1.o",
+      "/opt/riscv-sysroot/usr/lib/crti.o",
+      "build/features-source-O0.o",
+      "build/libsysy_riscv.a",
+      "/opt/riscv-sysroot/usr/lib/libc.a",
+      "/opt/riscv-sysroot/usr/lib/llvm20/lib/clang/20/lib/riscv64-alpine-linux-musl/libclang_rt.builtins-riscv64.a",
+      "/opt/riscv-sysroot/usr/lib/crtn.o",
+      "-o",
+      "build/features-source-O0"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-O0",
+      "-c",
+      "ir/features-riscv.ll",
+      "-o",
+      "build/features-ir-O0.o"
+    ],
+    "exit_code": 0,
+    "stderr": "warning: overriding the module target triple with riscv64-unknown-linux-musl [-Woverride-module]\n1 warning generated.\n"
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-nostdlib",
+      "-static",
+      "-fuse-ld=lld",
+      "-Wl,--no-relax,-e,_start",
+      "-Wl,-Map=build/features-ir-O0.map",
+      "/opt/riscv-sysroot/usr/lib/crt1.o",
+      "/opt/riscv-sysroot/usr/lib/crti.o",
+      "build/features-ir-O0.o",
+      "build/libsysy_riscv.a",
+      "/opt/riscv-sysroot/usr/lib/libc.a",
+      "/opt/riscv-sysroot/usr/lib/llvm20/lib/clang/20/lib/riscv64-alpine-linux-musl/libclang_rt.builtins-riscv64.a",
+      "/opt/riscv-sysroot/usr/lib/crtn.o",
+      "-o",
+      "build/features-ir-O0"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-x",
+      "c",
+      "-include",
+      "include/sysy_decls.h",
+      "-O2",
+      "-c",
+      "examples/features.sy",
+      "-o",
+      "build/features-source-O2.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-nostdlib",
+      "-static",
+      "-fuse-ld=lld",
+      "-Wl,--no-relax,-e,_start",
+      "-Wl,-Map=build/features-source-O2.map",
+      "/opt/riscv-sysroot/usr/lib/crt1.o",
+      "/opt/riscv-sysroot/usr/lib/crti.o",
+      "build/features-source-O2.o",
+      "build/libsysy_riscv.a",
+      "/opt/riscv-sysroot/usr/lib/libc.a",
+      "/opt/riscv-sysroot/usr/lib/llvm20/lib/clang/20/lib/riscv64-alpine-linux-musl/libclang_rt.builtins-riscv64.a",
+      "/opt/riscv-sysroot/usr/lib/crtn.o",
+      "-o",
+      "build/features-source-O2"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-O2",
+      "-c",
+      "ir/features-riscv.ll",
+      "-o",
+      "build/features-ir-O2.o"
+    ],
+    "exit_code": 0,
+    "stderr": "warning: overriding the module target triple with riscv64-unknown-linux-musl [-Woverride-module]\n1 warning generated.\n"
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-nostdlib",
+      "-static",
+      "-fuse-ld=lld",
+      "-Wl,--no-relax,-e,_start",
+      "-Wl,-Map=build/features-ir-O2.map",
+      "/opt/riscv-sysroot/usr/lib/crt1.o",
+      "/opt/riscv-sysroot/usr/lib/crti.o",
+      "build/features-ir-O2.o",
+      "build/libsysy_riscv.a",
+      "/opt/riscv-sysroot/usr/lib/libc.a",
+      "/opt/riscv-sysroot/usr/lib/llvm20/lib/clang/20/lib/riscv64-alpine-linux-musl/libclang_rt.builtins-riscv64.a",
+      "/opt/riscv-sysroot/usr/lib/crtn.o",
+      "-o",
+      "build/features-ir-O2"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-c",
+      "asm/features-riscv.S",
+      "-o",
+      "build/features-asm.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-nostdlib",
+      "-static",
+      "-fuse-ld=lld",
+      "-Wl,--no-relax,-e,_start",
+      "-Wl,-Map=build/features-asm.map",
+      "/opt/riscv-sysroot/usr/lib/crt1.o",
+      "/opt/riscv-sysroot/usr/lib/crti.o",
+      "build/features-asm.o",
+      "build/libsysy_riscv.a",
+      "/opt/riscv-sysroot/usr/lib/libc.a",
+      "/opt/riscv-sysroot/usr/lib/llvm20/lib/clang/20/lib/riscv64-alpine-linux-musl/libclang_rt.builtins-riscv64.a",
+      "/opt/riscv-sysroot/usr/lib/crtn.o",
+      "-o",
+      "build/features-asm"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-objdump",
+      "-dr",
+      "build/features-asm.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-readelf",
+      "-h",
+      "-A",
+      "-s",
+      "-r",
+      "build/features-asm.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-nm",
+      "build/features-asm.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-objdump",
+      "-d",
+      "build/features-asm"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-nm",
+      "build/features-asm"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-as",
+      "ir/features-riscv.ll",
+      "-o",
+      "build/features.bc"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "opt",
+      "-passes=verify",
+      "build/features.bc",
+      "-disable-output"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-E",
+      "fib.c",
+      "-o",
+      "build/stages/fib.i"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-fsyntax-only",
+      "-Xclang",
+      "-dump-tokens",
+      "fib.c"
+    ],
+    "exit_code": 0,
+    "stderr": "typedef 'typedef'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:48:1>\nunsigned 'unsigned'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:48:9>\nlong 'long'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:48:18 <Spelling=/opt/riscv-sysroot/usr/include/bits/alltypes.h:1:15>>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:48:24>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:48:30>\ntypedef 'typedef'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:63:1>\nlong 'long'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:63:9 <Spelling=/opt/riscv-sysroot/usr/include/bits/alltypes.h:1:15>>\nidentifier 'ssize_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:63:15>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:63:22>\ntypedef 'typedef'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:160:1>\nlong 'long'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:160:9 <Spelling=/opt/riscv-sysroot/usr/include/bits/alltypes.h:2:16>>\nidentifier 'off_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:160:16>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:160:21>\ntypedef 'typedef'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:318:1>\nstruct 'struct'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:318:9>\nidentifier '_IO_FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:318:16>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:318:25>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:318:29>\ntypedef 'typedef'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:324:1>\nidentifier '__builtin_va_list'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:324:9>\nidentifier 'va_list'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:324:27>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:324:34>\ntypedef 'typedef'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:329:1>\nidentifier '__builtin_va_list'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:329:9>\nidentifier '__isoc_va_list'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:329:27>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/bits/alltypes.h:329:41>\ntypedef 'typedef'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:56:1>\nunion 'union'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:56:9>\nidentifier '_G_fpos64_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:56:15>\nl_brace '{'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:56:27>\nchar 'char'\t [StartOfLine] [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:57:2>\nidentifier '__opaque'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:57:7>\nl_square '['\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:57:15>\nnumeric_constant '16'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:57:16>\nr_square ']'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:57:18>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:57:19>\nlong 'long'\t [StartOfLine] [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:58:2>\nlong 'long'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:58:7>\nidentifier '__lldata'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:58:12>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:58:20>\ndouble 'double'\t [StartOfLine] [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:59:2>\nidentifier '__align'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:59:9>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:59:16>\nr_brace '}'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:60:1>\nidentifier 'fpos_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:60:3>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:60:9>\nextern 'extern'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:62:1>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:62:8>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:62:13>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:62:14>\nidentifier 'stdin'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:62:20>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:62:25>\nextern 'extern'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:63:1>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:63:8>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:63:13>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:63:14>\nidentifier 'stdout'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:63:20>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:63:26>\nextern 'extern'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:64:1>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:64:8>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:64:13>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:64:14>\nidentifier 'stderr'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:64:20>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:64:26>\nidentifier 'FILE'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:70:1>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:70:6>\nidentifier 'fopen'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:70:7>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:70:12>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:70:13>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:70:19>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:70:24>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:70:25 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:70:35>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:70:37>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:70:43>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:70:48>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:70:49 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:70:59>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:70:60>\nidentifier 'FILE'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:1>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:6>\nidentifier 'freopen'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:7>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:14>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:15>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:21>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:26>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:27 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:37>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:39>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:45>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:50>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:51 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:61>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:63>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:68>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:69 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:79>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:71:80>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:72:1>\nidentifier 'fclose'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:72:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:72:11>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:72:12>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:72:17>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:72:18>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:72:19>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:74:1>\nidentifier 'remove'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:74:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:74:11>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:74:12>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:74:18>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:74:23>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:74:24>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:74:25>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:75:1>\nidentifier 'rename'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:75:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:75:11>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:75:12>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:75:18>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:75:23>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:75:24>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:75:26>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:75:32>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:75:37>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:75:38>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:75:39>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:77:1>\nidentifier 'feof'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:77:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:77:9>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:77:10>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:77:15>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:77:16>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:77:17>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:78:1>\nidentifier 'ferror'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:78:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:78:11>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:78:12>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:78:17>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:78:18>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:78:19>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:79:1>\nidentifier 'fflush'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:79:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:79:11>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:79:12>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:79:17>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:79:18>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:79:19>\nvoid 'void'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:80:1>\nidentifier 'clearerr'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:80:6>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:80:14>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:80:15>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:80:20>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:80:21>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:80:22>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:82:1>\nidentifier 'fseek'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:82:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:82:10>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:82:11>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:82:16>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:82:17>\nlong 'long'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:82:19>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:82:23>\nint 'int'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:82:25>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:82:28>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:82:29>\nlong 'long'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:83:1>\nidentifier 'ftell'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:83:6>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:83:11>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:83:12>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:83:17>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:83:18>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:83:19>\nvoid 'void'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:84:1>\nidentifier 'rewind'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:84:6>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:84:12>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:84:13>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:84:18>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:84:19>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:84:20>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:86:1>\nidentifier 'fgetpos'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:86:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:86:12>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:86:13>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:86:18>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:86:19 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:86:29>\nidentifier 'fpos_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:86:31>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:86:38>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:86:39 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:86:49>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:86:50>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:87:1>\nidentifier 'fsetpos'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:87:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:87:12>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:87:13>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:87:18>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:87:19>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:87:21>\nidentifier 'fpos_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:87:27>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:87:34>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:87:35>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:87:36>\nidentifier 'size_t'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:89:1>\nidentifier 'fread'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:89:8>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:89:13>\nvoid 'void'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:89:14>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:89:19>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:89:20 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:89:30>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:89:32>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:89:38>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:89:40>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:89:46>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:89:48>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:89:53>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:89:54 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:89:64>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:89:65>\nidentifier 'size_t'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:90:1>\nidentifier 'fwrite'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:90:8>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:90:14>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:90:15>\nvoid 'void'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:90:21>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:90:26>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:90:27 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:90:37>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:90:39>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:90:45>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:90:47>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:90:53>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:90:55>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:90:60>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:90:61 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:90:71>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:90:72>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:92:1>\nidentifier 'fgetc'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:92:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:92:10>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:92:11>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:92:16>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:92:17>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:92:18>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:93:1>\nidentifier 'getc'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:93:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:93:9>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:93:10>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:93:15>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:93:16>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:93:17>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:94:1>\nidentifier 'getchar'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:94:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:94:12>\nvoid 'void'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:94:13>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:94:17>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:94:18>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:95:1>\nidentifier 'ungetc'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:95:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:95:11>\nint 'int'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:95:12>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:95:15>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:95:17>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:95:22>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:95:23>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:95:24>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:97:1>\nidentifier 'fputc'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:97:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:97:10>\nint 'int'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:97:11>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:97:14>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:97:16>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:97:21>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:97:22>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:97:23>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:98:1>\nidentifier 'putc'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:98:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:98:9>\nint 'int'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:98:10>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:98:13>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:98:15>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:98:20>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:98:21>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:98:22>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:99:1>\nidentifier 'putchar'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:99:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:99:12>\nint 'int'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:99:13>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:99:16>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:99:17>\nchar 'char'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:101:1>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:101:6>\nidentifier 'fgets'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:101:7>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:101:12>\nchar 'char'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:101:13>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:101:18>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:101:19 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:101:29>\nint 'int'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:101:31>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:101:34>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:101:36>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:101:41>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:101:42 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:101:52>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:101:53>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:106:1>\nidentifier 'fputs'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:106:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:106:10>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:106:11>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:106:17>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:106:22>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:106:23 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:106:33>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:106:35>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:106:40>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:106:41 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:106:51>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:106:52>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:107:1>\nidentifier 'puts'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:107:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:107:9>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:107:10>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:107:16>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:107:21>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:107:22>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:107:23>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:109:1>\nidentifier 'printf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:109:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:109:11>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:109:12>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:109:18>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:109:23>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:109:24 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:109:34>\nellipsis '...'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:109:36>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:109:39>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:109:40>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:110:1>\nidentifier 'fprintf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:110:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:110:12>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:110:13>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:110:18>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:110:19 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:110:29>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:110:31>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:110:37>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:110:42>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:110:43 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:110:53>\nellipsis '...'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:110:55>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:110:58>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:110:59>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:111:1>\nidentifier 'sprintf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:111:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:111:12>\nchar 'char'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:111:13>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:111:18>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:111:19 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:111:29>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:111:31>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:111:37>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:111:42>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:111:43 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:111:53>\nellipsis '...'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:111:55>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:111:58>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:111:59>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:112:1>\nidentifier 'snprintf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:112:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:112:13>\nchar 'char'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:112:14>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:112:19>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:112:20 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:112:30>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:112:32>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:112:38>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:112:40>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:112:46>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:112:51>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:112:52 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:112:62>\nellipsis '...'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:112:64>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:112:67>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:112:68>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:114:1>\nidentifier 'vprintf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:114:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:114:12>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:114:13>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:114:19>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:114:24>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:114:25 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:114:35>\nidentifier '__isoc_va_list'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:114:37>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:114:51>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:114:52>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:115:1>\nidentifier 'vfprintf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:115:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:115:13>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:115:14>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:115:19>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:115:20 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:115:30>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:115:32>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:115:38>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:115:43>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:115:44 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:115:54>\nidentifier '__isoc_va_list'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:115:56>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:115:70>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:115:71>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:116:1>\nidentifier 'vsprintf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:116:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:116:13>\nchar 'char'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:116:14>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:116:19>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:116:20 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:116:30>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:116:32>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:116:38>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:116:43>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:116:44 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:116:54>\nidentifier '__isoc_va_list'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:116:56>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:116:70>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:116:71>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:117:1>\nidentifier 'vsnprintf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:117:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:117:14>\nchar 'char'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:117:15>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:117:20>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:117:21 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:117:31>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:117:33>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:117:39>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:117:41>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:117:47>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:117:52>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:117:53 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:117:63>\nidentifier '__isoc_va_list'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:117:65>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:117:79>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:117:80>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:119:1>\nidentifier 'scanf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:119:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:119:10>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:119:11>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:119:17>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:119:22>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:119:23 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:119:33>\nellipsis '...'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:119:35>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:119:38>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:119:39>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:120:1>\nidentifier 'fscanf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:120:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:120:11>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:120:12>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:120:17>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:120:18 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:120:28>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:120:30>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:120:36>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:120:41>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:120:42 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:120:52>\nellipsis '...'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:120:54>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:120:57>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:120:58>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:121:1>\nidentifier 'sscanf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:121:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:121:11>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:121:12>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:121:18>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:121:23>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:121:24 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:121:34>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:121:36>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:121:42>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:121:47>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:121:48 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:121:58>\nellipsis '...'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:121:60>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:121:63>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:121:64>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:122:1>\nidentifier 'vscanf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:122:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:122:11>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:122:12>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:122:18>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:122:23>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:122:24 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:122:34>\nidentifier '__isoc_va_list'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:122:36>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:122:50>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:122:51>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:123:1>\nidentifier 'vfscanf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:123:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:123:12>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:123:13>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:123:18>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:123:19 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:123:29>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:123:31>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:123:37>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:123:42>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:123:43 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:123:53>\nidentifier '__isoc_va_list'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:123:55>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:123:69>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:123:70>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:124:1>\nidentifier 'vsscanf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:124:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:124:12>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:124:13>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:124:19>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:124:24>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:124:25 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:124:35>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:124:37>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:124:43>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:124:48>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:124:49 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:124:59>\nidentifier '__isoc_va_list'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:124:61>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:124:75>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:124:76>\nvoid 'void'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:126:1>\nidentifier 'perror'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:126:6>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:126:12>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:126:13>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:126:19>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:126:24>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:126:25>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:126:26>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:128:1>\nidentifier 'setvbuf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:128:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:128:12>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:128:13>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:128:18>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:128:19 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:128:29>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:128:31>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:128:36>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:128:37 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:128:47>\nint 'int'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:128:49>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:128:52>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:128:54>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:128:60>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:128:61>\nvoid 'void'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:129:1>\nidentifier 'setbuf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:129:6>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:129:12>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:129:13>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:129:18>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:129:19 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:129:29>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:129:31>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:129:36>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:129:37 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:129:47>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:129:48>\nchar 'char'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:131:1>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:131:6>\nidentifier 'tmpnam'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:131:7>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:131:13>\nchar 'char'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:131:14>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:131:19>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:131:20>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:131:21>\nidentifier 'FILE'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:132:1>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:132:6>\nidentifier 'tmpfile'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:132:7>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:132:14>\nvoid 'void'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:132:15>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:132:19>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:132:20>\nidentifier 'FILE'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:137:1>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:137:6>\nidentifier 'fmemopen'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:137:7>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:137:15>\nvoid 'void'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:137:16>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:137:21>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:137:22 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:137:32>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:137:34>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:137:40>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:137:42>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:137:48>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:137:53>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:137:54 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:137:64>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:137:65>\nidentifier 'FILE'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:138:1>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:138:6>\nidentifier 'open_memstream'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:138:7>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:138:21>\nchar 'char'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:138:22>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:138:27>\nstar '*'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:138:28>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:138:29>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:138:31>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:138:38>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:138:39>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:138:40>\nidentifier 'FILE'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:139:1>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:139:6>\nidentifier 'fdopen'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:139:7>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:139:13>\nint 'int'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:139:14>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:139:17>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:139:19>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:139:25>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:139:30>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:139:31>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:139:32>\nidentifier 'FILE'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:140:1>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:140:6>\nidentifier 'popen'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:140:7>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:140:12>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:140:13>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:140:19>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:140:24>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:140:25>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:140:27>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:140:33>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:140:38>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:140:39>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:140:40>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:141:1>\nidentifier 'pclose'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:141:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:141:11>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:141:12>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:141:17>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:141:18>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:141:19>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:142:1>\nidentifier 'fileno'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:142:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:142:11>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:142:12>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:142:17>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:142:18>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:142:19>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:143:1>\nidentifier 'fseeko'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:143:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:143:11>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:143:12>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:143:17>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:143:18>\nidentifier 'off_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:143:20>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:143:25>\nint 'int'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:143:27>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:143:30>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:143:31>\nidentifier 'off_t'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:144:1>\nidentifier 'ftello'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:144:7>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:144:13>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:144:14>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:144:19>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:144:20>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:144:21>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:145:1>\nidentifier 'dprintf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:145:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:145:12>\nint 'int'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:145:13>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:145:16>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:145:18>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:145:24>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:145:29>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:145:30 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:145:40>\nellipsis '...'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:145:42>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:145:45>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:145:46>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:146:1>\nidentifier 'vdprintf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:146:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:146:13>\nint 'int'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:146:14>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:146:17>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:146:19>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:146:25>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:146:30>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:146:31 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:146:41>\nidentifier '__isoc_va_list'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:146:43>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:146:57>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:146:58>\nvoid 'void'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:147:1>\nidentifier 'flockfile'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:147:6>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:147:15>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:147:16>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:147:21>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:147:22>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:147:23>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:148:1>\nidentifier 'ftrylockfile'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:148:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:148:17>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:148:18>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:148:23>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:148:24>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:148:25>\nvoid 'void'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:149:1>\nidentifier 'funlockfile'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:149:6>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:149:17>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:149:18>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:149:23>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:149:24>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:149:25>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:150:1>\nidentifier 'getc_unlocked'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:150:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:150:18>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:150:19>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:150:24>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:150:25>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:150:26>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:151:1>\nidentifier 'getchar_unlocked'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:151:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:151:21>\nvoid 'void'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:151:22>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:151:26>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:151:27>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:152:1>\nidentifier 'putc_unlocked'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:152:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:152:18>\nint 'int'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:152:19>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:152:22>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:152:24>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:152:29>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:152:30>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:152:31>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:153:1>\nidentifier 'putchar_unlocked'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:153:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:153:21>\nint 'int'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:153:22>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:153:25>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:153:26>\nidentifier 'ssize_t'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:1>\nidentifier 'getdelim'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:9>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:17>\nchar 'char'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:18>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:23>\nstar '*'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:24>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:25 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:35>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:37>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:44>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:45 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:55>\nint 'int'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:57>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:60>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:62>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:67>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:68 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:78>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:154:79>\nidentifier 'ssize_t'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:155:1>\nidentifier 'getline'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:155:9>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:155:16>\nchar 'char'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:155:17>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:155:22>\nstar '*'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:155:23>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:155:24 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:155:34>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:155:36>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:155:43>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:155:44 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:155:54>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:155:56>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:155:61>\nrestrict 'restrict'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:155:62 <Spelling=/opt/riscv-sysroot/usr/include/features.h:20:20>>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:155:72>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:155:73>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:156:1>\nidentifier 'renameat'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:156:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:156:13>\nint 'int'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:156:14>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:156:17>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:156:19>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:156:25>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:156:30>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:156:31>\nint 'int'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:156:33>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:156:36>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:156:38>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:156:44>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:156:49>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:156:50>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:156:51>\nchar 'char'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:157:1>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:157:6>\nidentifier 'ctermid'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:157:7>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:157:14>\nchar 'char'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:157:15>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:157:20>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:157:21>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:157:22>\nchar 'char'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:165:1>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:165:6>\nidentifier 'tempnam'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:165:7>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:165:14>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:165:15>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:165:21>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:165:26>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:165:27>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:165:29>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:165:35>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:165:40>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:165:41>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:165:42>\nchar 'char'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:170:1>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:170:6>\nidentifier 'cuserid'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:170:7>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:170:14>\nchar 'char'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:170:15>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:170:20>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:170:21>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:170:22>\nvoid 'void'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:171:1>\nidentifier 'setlinebuf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:171:6>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:171:16>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:171:17>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:171:22>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:171:23>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:171:24>\nvoid 'void'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:172:1>\nidentifier 'setbuffer'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:172:6>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:172:15>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:172:16>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:172:21>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:172:22>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:172:24>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:172:29>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:172:30>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:172:32>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:172:38>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:172:39>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:173:1>\nidentifier 'fgetc_unlocked'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:173:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:173:19>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:173:20>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:173:25>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:173:26>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:173:27>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:174:1>\nidentifier 'fputc_unlocked'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:174:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:174:19>\nint 'int'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:174:20>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:174:23>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:174:25>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:174:30>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:174:31>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:174:32>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:175:1>\nidentifier 'fflush_unlocked'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:175:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:175:20>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:175:21>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:175:26>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:175:27>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:175:28>\nidentifier 'size_t'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:176:1>\nidentifier 'fread_unlocked'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:176:8>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:176:22>\nvoid 'void'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:176:23>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:176:28>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:176:29>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:176:31>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:176:37>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:176:39>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:176:45>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:176:47>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:176:52>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:176:53>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:176:54>\nidentifier 'size_t'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:177:1>\nidentifier 'fwrite_unlocked'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:177:8>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:177:23>\nconst 'const'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:177:24>\nvoid 'void'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:177:30>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:177:35>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:177:36>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:177:38>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:177:44>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:177:46>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:177:52>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:177:54>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:177:59>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:177:60>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:177:61>\nvoid 'void'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:178:1>\nidentifier 'clearerr_unlocked'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:178:6>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:178:23>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:178:24>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:178:29>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:178:30>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:178:31>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:179:1>\nidentifier 'feof_unlocked'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:179:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:179:18>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:179:19>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:179:24>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:179:25>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:179:26>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:180:1>\nidentifier 'ferror_unlocked'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:180:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:180:20>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:180:21>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:180:26>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:180:27>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:180:28>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:181:1>\nidentifier 'fileno_unlocked'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:181:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:181:20>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:181:21>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:181:26>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:181:27>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:181:28>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:182:1>\nidentifier 'getw'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:182:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:182:9>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:182:10>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:182:15>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:182:16>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:182:17>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:183:1>\nidentifier 'putw'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:183:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:183:9>\nint 'int'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:183:10>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:183:13>\nidentifier 'FILE'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:183:15>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:183:20>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:183:21>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:183:22>\nchar 'char'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:184:1>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:184:6>\nidentifier 'fgetln'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:184:7>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:184:13>\nidentifier 'FILE'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:184:14>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:184:19>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:184:20>\nidentifier 'size_t'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:184:22>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:184:29>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:184:30>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:184:31>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:185:1>\nidentifier 'asprintf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:185:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:185:13>\nchar 'char'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:185:14>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:185:19>\nstar '*'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:185:20>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:185:21>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:185:23>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:185:29>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:185:34>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:185:35>\nellipsis '...'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:185:37>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:185:40>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:185:41>\nint 'int'\t [StartOfLine]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:186:1>\nidentifier 'vasprintf'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:186:5>\nl_paren '('\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:186:14>\nchar 'char'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:186:15>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:186:20>\nstar '*'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:186:21>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:186:22>\nconst 'const'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:186:24>\nchar 'char'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:186:30>\nstar '*'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:186:35>\ncomma ','\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:186:36>\nidentifier '__isoc_va_list'\t [LeadingSpace]\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:186:38>\nr_paren ')'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:186:52>\nsemi ';'\t\tLoc=</opt/riscv-sysroot/usr/include/stdio.h:186:53>\nint 'int'\t [StartOfLine]\tLoc=<fib.c:2:1>\nidentifier 'main'\t [LeadingSpace]\tLoc=<fib.c:2:5>\nl_paren '('\t\tLoc=<fib.c:2:9>\nvoid 'void'\t\tLoc=<fib.c:2:10>\nr_paren ')'\t\tLoc=<fib.c:2:14>\nl_brace '{'\t [LeadingSpace]\tLoc=<fib.c:2:16>\nint 'int'\t [StartOfLine] [LeadingSpace]\tLoc=<fib.c:3:5>\nidentifier 'a'\t [LeadingSpace]\tLoc=<fib.c:3:9>\ncomma ','\t\tLoc=<fib.c:3:10>\nidentifier 'b'\t [LeadingSpace]\tLoc=<fib.c:3:12>\ncomma ','\t\tLoc=<fib.c:3:13>\nidentifier 'i'\t [LeadingSpace]\tLoc=<fib.c:3:15>\ncomma ','\t\tLoc=<fib.c:3:16>\nidentifier 't'\t [LeadingSpace]\tLoc=<fib.c:3:18>\ncomma ','\t\tLoc=<fib.c:3:19>\nidentifier 'n'\t [LeadingSpace]\tLoc=<fib.c:3:21>\nsemi ';'\t\tLoc=<fib.c:3:22>\nidentifier 'a'\t [StartOfLine] [LeadingSpace]\tLoc=<fib.c:4:5>\nequal '='\t [LeadingSpace]\tLoc=<fib.c:4:7>\nnumeric_constant '0'\t [LeadingSpace]\tLoc=<fib.c:4:9>\nsemi ';'\t\tLoc=<fib.c:4:10>\nidentifier 'b'\t [StartOfLine] [LeadingSpace]\tLoc=<fib.c:5:5>\nequal '='\t [LeadingSpace]\tLoc=<fib.c:5:7>\nnumeric_constant '1'\t [LeadingSpace]\tLoc=<fib.c:5:9>\nsemi ';'\t\tLoc=<fib.c:5:10>\nidentifier 'i'\t [StartOfLine] [LeadingSpace]\tLoc=<fib.c:6:5>\nequal '='\t [LeadingSpace]\tLoc=<fib.c:6:7>\nnumeric_constant '1'\t [LeadingSpace]\tLoc=<fib.c:6:9>\nsemi ';'\t\tLoc=<fib.c:6:10>\nidentifier 'scanf'\t [StartOfLine] [LeadingSpace]\tLoc=<fib.c:7:5>\nl_paren '('\t\tLoc=<fib.c:7:10>\nstring_literal '\"%d\"'\t\tLoc=<fib.c:7:11>\ncomma ','\t\tLoc=<fib.c:7:15>\namp '&'\t [LeadingSpace]\tLoc=<fib.c:7:17>\nidentifier 'n'\t\tLoc=<fib.c:7:18>\nr_paren ')'\t\tLoc=<fib.c:7:19>\nsemi ';'\t\tLoc=<fib.c:7:20>\nidentifier 'printf'\t [StartOfLine] [LeadingSpace]\tLoc=<fib.c:8:5>\nl_paren '('\t\tLoc=<fib.c:8:11>\nstring_literal '\"%d\\n\"'\t\tLoc=<fib.c:8:12>\ncomma ','\t\tLoc=<fib.c:8:18>\nidentifier 'a'\t [LeadingSpace]\tLoc=<fib.c:8:20>\nr_paren ')'\t\tLoc=<fib.c:8:21>\nsemi ';'\t\tLoc=<fib.c:8:22>\nidentifier 'printf'\t [StartOfLine] [LeadingSpace]\tLoc=<fib.c:9:5>\nl_paren '('\t\tLoc=<fib.c:9:11>\nstring_literal '\"%d\\n\"'\t\tLoc=<fib.c:9:12>\ncomma ','\t\tLoc=<fib.c:9:18>\nidentifier 'b'\t [LeadingSpace]\tLoc=<fib.c:9:20>\nr_paren ')'\t\tLoc=<fib.c:9:21>\nsemi ';'\t\tLoc=<fib.c:9:22>\nwhile 'while'\t [StartOfLine] [LeadingSpace]\tLoc=<fib.c:10:5>\nl_paren '('\t [LeadingSpace]\tLoc=<fib.c:10:11>\nidentifier 'i'\t\tLoc=<fib.c:10:12>\nless '<'\t [LeadingSpace]\tLoc=<fib.c:10:14>\nidentifier 'n'\t [LeadingSpace]\tLoc=<fib.c:10:16>\nr_paren ')'\t\tLoc=<fib.c:10:17>\nl_brace '{'\t [LeadingSpace]\tLoc=<fib.c:10:19>\nidentifier 't'\t [StartOfLine] [LeadingSpace]\tLoc=<fib.c:11:9>\nequal '='\t [LeadingSpace]\tLoc=<fib.c:11:11>\nidentifier 'b'\t [LeadingSpace]\tLoc=<fib.c:11:13>\nsemi ';'\t\tLoc=<fib.c:11:14>\nidentifier 'b'\t [StartOfLine] [LeadingSpace]\tLoc=<fib.c:12:9>\nequal '='\t [LeadingSpace]\tLoc=<fib.c:12:11>\nidentifier 'a'\t [LeadingSpace]\tLoc=<fib.c:12:13>\nplus '+'\t [LeadingSpace]\tLoc=<fib.c:12:15>\nidentifier 'b'\t [LeadingSpace]\tLoc=<fib.c:12:17>\nsemi ';'\t\tLoc=<fib.c:12:18>\nidentifier 'printf'\t [StartOfLine] [LeadingSpace]\tLoc=<fib.c:13:9>\nl_paren '('\t\tLoc=<fib.c:13:15>\nstring_literal '\"%d\\n\"'\t\tLoc=<fib.c:13:16>\ncomma ','\t\tLoc=<fib.c:13:22>\nidentifier 'b'\t [LeadingSpace]\tLoc=<fib.c:13:24>\nr_paren ')'\t\tLoc=<fib.c:13:25>\nsemi ';'\t\tLoc=<fib.c:13:26>\nidentifier 'a'\t [StartOfLine] [LeadingSpace]\tLoc=<fib.c:14:9>\nequal '='\t [LeadingSpace]\tLoc=<fib.c:14:11>\nidentifier 't'\t [LeadingSpace]\tLoc=<fib.c:14:13>\nsemi ';'\t\tLoc=<fib.c:14:14>\nidentifier 'i'\t [StartOfLine] [LeadingSpace]\tLoc=<fib.c:15:9>\nequal '='\t [LeadingSpace]\tLoc=<fib.c:15:11>\nidentifier 'i'\t [LeadingSpace]\tLoc=<fib.c:15:13>\nplus '+'\t [LeadingSpace]\tLoc=<fib.c:15:15>\nnumeric_constant '1'\t [LeadingSpace]\tLoc=<fib.c:15:17>\nsemi ';'\t\tLoc=<fib.c:15:18>\nr_brace '}'\t [StartOfLine] [LeadingSpace]\tLoc=<fib.c:16:5>\nreturn 'return'\t [StartOfLine] [LeadingSpace]\tLoc=<fib.c:17:5>\nnumeric_constant '0'\t [LeadingSpace]\tLoc=<fib.c:17:12>\nsemi ';'\t\tLoc=<fib.c:17:13>\nr_brace '}'\t [StartOfLine]\tLoc=<fib.c:18:1>\neof ''\t\tLoc=<fib.c:18:2>\n"
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-fsyntax-only",
+      "-Xclang",
+      "-ast-dump",
+      "fib.c"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-O0",
+      "-S",
+      "-emit-llvm",
+      "fib.c",
+      "-o",
+      "build/stages/fib.O0.ll"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-O0",
+      "-S",
+      "fib.c",
+      "-o",
+      "build/stages/fib.O0.s"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-c",
+      "build/stages/fib.O0.s",
+      "-o",
+      "build/fib-c-O0.o"
+    ],
+    "exit_code": 0,
+    "stderr": "clang: warning: argument unused during compilation: '-mcmodel=medany' [-Wunused-command-line-argument]\nclang: warning: argument unused during compilation: '-fno-stack-protector' [-Wunused-command-line-argument]\nclang: warning: argument unused during compilation: '-ffp-contract=off' [-Wunused-command-line-argument]\n"
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-nostdlib",
+      "-static",
+      "-fuse-ld=lld",
+      "-Wl,--no-relax,-e,_start",
+      "-Wl,-Map=build/fib-c-O0.map",
+      "/opt/riscv-sysroot/usr/lib/crt1.o",
+      "/opt/riscv-sysroot/usr/lib/crti.o",
+      "build/fib-c-O0.o",
+      "build/libsysy_riscv.a",
+      "/opt/riscv-sysroot/usr/lib/libc.a",
+      "/opt/riscv-sysroot/usr/lib/llvm20/lib/clang/20/lib/riscv64-alpine-linux-musl/libclang_rt.builtins-riscv64.a",
+      "/opt/riscv-sysroot/usr/lib/crtn.o",
+      "-o",
+      "build/fib-c-O0"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-O2",
+      "-S",
+      "-emit-llvm",
+      "fib.c",
+      "-o",
+      "build/stages/fib.O2.ll"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-O2",
+      "-S",
+      "fib.c",
+      "-o",
+      "build/stages/fib.O2.s"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-c",
+      "build/stages/fib.O2.s",
+      "-o",
+      "build/fib-c-O2.o"
+    ],
+    "exit_code": 0,
+    "stderr": "clang: warning: argument unused during compilation: '-mcmodel=medany' [-Wunused-command-line-argument]\nclang: warning: argument unused during compilation: '-fno-stack-protector' [-Wunused-command-line-argument]\nclang: warning: argument unused during compilation: '-ffp-contract=off' [-Wunused-command-line-argument]\n"
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-nostdlib",
+      "-static",
+      "-fuse-ld=lld",
+      "-Wl,--no-relax,-e,_start",
+      "-Wl,-Map=build/fib-c-O2.map",
+      "/opt/riscv-sysroot/usr/lib/crt1.o",
+      "/opt/riscv-sysroot/usr/lib/crti.o",
+      "build/fib-c-O2.o",
+      "build/libsysy_riscv.a",
+      "/opt/riscv-sysroot/usr/lib/libc.a",
+      "/opt/riscv-sysroot/usr/lib/llvm20/lib/clang/20/lib/riscv64-alpine-linux-musl/libclang_rt.builtins-riscv64.a",
+      "/opt/riscv-sysroot/usr/lib/crtn.o",
+      "-o",
+      "build/fib-c-O2"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-O0",
+      "-g",
+      "-c",
+      "fib.c",
+      "-o",
+      "build/stages/fib.debug.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-readelf",
+      "-S",
+      "build/stages/fib.debug.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "opt",
+      "-S",
+      "-passes=mem2reg",
+      "ir/features-riscv.ll",
+      "-o",
+      "build/stages/features.mem2reg.ll"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-size",
+      "build/features-asm.o",
+      "build/features-ir-O0.o",
+      "build/features-ir-O2.o",
+      "build/features-source-O0.o",
+      "build/features-source-O2.o",
+      "build/fib-asm.o",
+      "build/fib-c-O0.o",
+      "build/fib-c-O2.o",
+      "build/fib-ir-O0.o",
+      "build/fib-ir-O2.o",
+      "build/fib-source-O0.o",
+      "build/fib-source-O2.o",
+      "build/sylib.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-readelf",
+      "-h",
+      "-l",
+      "build/fib-asm"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  }
+]

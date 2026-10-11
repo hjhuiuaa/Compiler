@@ -1,0 +1,32 @@
+There are 23 section headers, starting at offset 0x1868:
+
+Section Headers:
+  [Nr] Name              Type            Address          Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            0000000000000000 000000 000000 00      0   0  0
+  [ 1] .strtab           STRTAB          0000000000000000 001712 000152 00      0   0  1
+  [ 2] .text             PROGBITS        0000000000000000 000040 0000b0 00  AX  0   0  2
+  [ 3] .rela.text        RELA            0000000000000000 000c78 000240 18   I 22   2  8
+  [ 4] .rodata.str1.1    PROGBITS        0000000000000000 0000f0 000007 01 AMS  0   0  1
+  [ 5] .debug_abbrev     PROGBITS        0000000000000000 0000f7 000071 00      0   0  1
+  [ 6] .debug_info       PROGBITS        0000000000000000 000168 0000a3 00      0   0  1
+  [ 7] .rela.debug_info  RELA            0000000000000000 000eb8 0000c0 18   I 22   6  8
+  [ 8] .debug_str_offsets PROGBITS       0000000000000000 00020b 000038 00      0   0  1
+  [ 9] .rela.debug_str_offsets RELA      0000000000000000 000f78 000120 18   I 22   8  8
+  [10] .debug_str        PROGBITS        0000000000000000 000243 00008f 01  MS  0   0  1
+  [11] .debug_addr       PROGBITS        0000000000000000 0002d2 000020 00      0   0  1
+  [12] .rela.debug_addr  RELA            0000000000000000 001098 000048 18   I 22  11  8
+  [13] .comment          PROGBITS        0000000000000000 0002f2 00001d 01  MS  0   0  1
+  [14] .note.GNU-stack   PROGBITS        0000000000000000 00030f 000000 00      0   0  1
+  [15] .riscv.attributes RISCV_ATTRIBUTES 0000000000000000 00030f 000066 00      0   0  1
+  [16] .eh_frame         PROGBITS        0000000000000000 000378 000040 00   A  0   0  8
+  [17] .rela.eh_frame    RELA            0000000000000000 0010e0 000078 18   I 22  16  8
+  [18] .debug_line       PROGBITS        0000000000000000 0003b8 000141 00      0   0  1
+  [19] .rela.debug_line  RELA            0000000000000000 001158 0005b8 18   I 22  18  8
+  [20] .debug_line_str   PROGBITS        0000000000000000 0004f9 000047 01  MS  0   0  1
+  [21] .llvm_addrsig     LLVM_ADDRSIG    0000000000000000 001710 000002 00   E 22   0  1
+  [22] .symtab           SYMTAB          0000000000000000 000540 000738 18      1  74  8
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  R (retain), p (processor specific)

@@ -1,0 +1,132 @@
+[
+  {
+    "command": [
+      "python3",
+      "scripts/port_ir.py"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "ld.lld",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-ar",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-objdump",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "qemu-riscv64",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-O2",
+      "-c",
+      "runtime/lib/sylib.c",
+      "-o",
+      "build/sylib.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "llvm-ar",
+      "rcs",
+      "build/libsysy_riscv.a",
+      "build/sylib.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-x",
+      "c",
+      "-include",
+      "include/sysy_decls.h",
+      "-O0",
+      "-c",
+      "fib.sy",
+      "-o",
+      "build/fib-source-O0.o"
+    ],
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "--target=riscv64-linux-musl",
+      "--sysroot=/opt/riscv-sysroot",
+      "-march=rv64gc",
+      "-mabi=lp64d",
+      "-mcmodel=medany",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-ffp-contract=off",
+      "-nostdlib",
+      "-static",
+      "-fuse-ld=lld",
+      "-Wl,--no-relax,-e,_start",
+      "-Wl,-Map=build/fib-source-O0.map",
+      "/opt/riscv-sysroot/usr/lib/crt1.o",
+      "/opt/riscv-sysroot/usr/lib/crti.o",
+      "build/fib-source-O0.o",
+      "build/libsysy_riscv.a",
+      "/opt/riscv-sysroot/usr/lib/libc.a",
+      "/opt/riscv-sysroot/usr/lib/crtn.o",
+      "-o",
+      "build/fib-source-O0"
+    ],
+    "exit_code": 1,
+    "stderr": "ld.lld: error: undefined symbol: __extenddftf2\n>>> referenced by vfprintf.c:111 (src/stdio/vfprintf.c:111)\n>>>               vfprintf.lo:(pop_arg) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by floatscan.c:86 (src/internal/floatscan.c:86)\n>>>               floatscan.lo:(decfloat) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by floatscan.c:70 (src/internal/floatscan.c:70)\n>>>               floatscan.lo:(decfloat) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced 4 more times\n\nld.lld: error: undefined symbol: __addtf3\n>>> referenced by vfprintf.c:192 (src/stdio/vfprintf.c:192)\n>>>               vfprintf.lo:(fmt_fp) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by vfprintf.c:192 (src/stdio/vfprintf.c:192)\n>>>               vfprintf.lo:(fmt_fp) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by vfprintf.c:192 (src/stdio/vfprintf.c:192)\n>>>               vfprintf.lo:(fmt_fp) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced 14 more times\n\nld.lld: error: undefined symbol: __netf2\n>>> referenced by vfprintf.c:181 (src/stdio/vfprintf.c:181)\n>>>               vfprintf.lo:(fmt_fp) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by vfprintf.c:185 (src/stdio/vfprintf.c:185)\n>>>               vfprintf.lo:(fmt_fp) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by vfprintf.c:181 (src/stdio/vfprintf.c:181)\n>>>               vfprintf.lo:(fmt_fp) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced 7 more times\n\nld.lld: error: undefined symbol: __multf3\n>>> referenced by vfprintf.c:187 (src/stdio/vfprintf.c:187)\n>>>               vfprintf.lo:(fmt_fp) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by vfprintf.c:188 (src/stdio/vfprintf.c:188)\n>>>               vfprintf.lo:(fmt_fp) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by vfprintf.c:192 (src/stdio/vfprintf.c:192)\n>>>               vfprintf.lo:(fmt_fp) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced 30 more times\n\nld.lld: error: undefined symbol: __fixunstfsi\n>>> referenced by vfprintf.c:187 (src/stdio/vfprintf.c:187)\n>>>               vfprintf.lo:(fmt_fp) in archive /opt/riscv-sysroot/usr/lib/libc.a\n\nld.lld: error: undefined symbol: __floatunsitf\n>>> referenced by vfprintf.c:188 (src/stdio/vfprintf.c:188)\n>>>               vfprintf.lo:(fmt_fp) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by floatscan.c:86 (src/internal/floatscan.c:86)\n>>>               floatscan.lo:(decfloat) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by floatscan.c:86 (src/internal/floatscan.c:86)\n>>>               floatscan.lo:(decfloat) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced 7 more times\n\nld.lld: error: undefined symbol: __subtf3\n>>> referenced by vfprintf.c:188 (src/stdio/vfprintf.c:188)\n>>>               vfprintf.lo:(fmt_fp) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by vfprintf.c:192 (src/stdio/vfprintf.c:192)\n>>>               vfprintf.lo:(fmt_fp) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by vfprintf.c:192 (src/stdio/vfprintf.c:192)\n>>>               vfprintf.lo:(fmt_fp) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced 5 more times\n\nld.lld: error: undefined symbol: __fixtfsi\n>>> referenced by vfprintf.c:187 (src/stdio/vfprintf.c:187)\n>>>               vfprintf.lo:(fmt_fp) in archive /opt/riscv-sysroot/usr/lib/libc.a\n\nld.lld: error: undefined symbol: __floatsitf\n>>> referenced by vfprintf.c:187 (src/stdio/vfprintf.c:187)\n>>>               vfprintf.lo:(fmt_fp) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by floatscan.c:64 (src/internal/floatscan.c:64)\n>>>               floatscan.lo:(decfloat) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by floatscan.c:86 (src/internal/floatscan.c:86)\n>>>               floatscan.lo:(decfloat) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced 8 more times\n\nld.lld: error: undefined symbol: __trunctfsf2\n>>> referenced by vfscanf.c:87 (src/stdio/vfscanf.c:87)\n>>>               vfscanf.lo:(vfscanf) in archive /opt/riscv-sysroot/usr/lib/libc.a\n\nld.lld: error: undefined symbol: __trunctfdf2\n>>> referenced by vfscanf.c:87 (src/stdio/vfscanf.c:87)\n>>>               vfscanf.lo:(vfscanf) in archive /opt/riscv-sysroot/usr/lib/libc.a\n\nld.lld: error: undefined symbol: __divtf3\n>>> referenced by floatscan.c:86 (src/internal/floatscan.c:86)\n>>>               floatscan.lo:(decfloat) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by fmodl.c:12 (src/math/fmodl.c:12)\n>>>               fmodl.lo:(fmodl) in archive /opt/riscv-sysroot/usr/lib/libc.a\n\nld.lld: error: undefined symbol: __eqtf2\n>>> referenced by floatscan.c:98 (src/internal/floatscan.c:98)\n>>>               floatscan.lo:(decfloat) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by fmodl.c:16 (src/math/fmodl.c:16)\n>>>               fmodl.lo:(fmodl) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by fmodl.c:16 (src/math/fmodl.c:16)\n>>>               fmodl.lo:(fmodl) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced 1 more times\n\nld.lld: error: undefined symbol: __getf2\n>>> referenced by floatscan.c:110 (src/internal/floatscan.c:110)\n>>>               floatscan.lo:(decfloat) in archive /opt/riscv-sysroot/usr/lib/libc.a\n>>> referenced by floatscan.c:455 (src/internal/floatscan.c:455)\n>>>               floatscan.lo:(__floatscan) in archive /opt/riscv-sysroot/usr/lib/libc.a\n\nld.lld: error: undefined symbol: __letf2\n>>> referenced by fmodl.c:10 (src/math/fmodl.c:10)\n>>>               fmodl.lo:(fmodl) in archive /opt/riscv-sysroot/usr/lib/libc.a\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n"
+  }
+]
