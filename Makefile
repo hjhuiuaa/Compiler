@@ -67,13 +67,15 @@ $(GEN_OBJECTS): $(LEXER_FILES)
 
 $(BISON_H) $(BISON_C) $(LOC_H): $(BISON_SRC)
 	@bison -d --language=c++ --defines=$(BISON_H) -o $(BISON_C) $(BISON_SRC)
-	@if [ -f $(BISON_H) ]; then clang-format -i $(BISON_H); fi
-	@if [ -f $(BISON_C) ]; then clang-format -i $(BISON_C); fi
-	@if [ -f $(LOC_H) ]; then clang-format -i $(LOC_H); fi
+	@if command -v clang-format >/dev/null 2>&1; then \
+		if [ -f $(BISON_H) ]; then clang-format -i $(BISON_H); fi; \
+		if [ -f $(BISON_C) ]; then clang-format -i $(BISON_C); fi; \
+		if [ -f $(LOC_H) ]; then clang-format -i $(LOC_H); fi; \
+	fi
 
 $(LEXER_C): $(LEXER_SRC) $(BISON_H)
 	@flex --c++ --outfile=$(LEXER_C) $(LEXER_SRC)
-	@if [ -f $(LEXER_C) ]; then clang-format -i $(LEXER_C); fi
+	@if command -v clang-format >/dev/null 2>&1 && [ -f $(LEXER_C) ]; then clang-format -i $(LEXER_C); fi
 
 clean:
 	rm -rf $(OBJ_DIR) $(BIN_DIR)

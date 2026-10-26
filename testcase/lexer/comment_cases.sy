@@ -1,0 +1,10 @@
+// */
+int f;
+f = g/**//h;
+/*//*/ l();
+m = n//**/o
++ p;
+/* comment */ a = b + c * d / e // equivalent to a = b + c * d / e
+int tab	x;
+int y@z;
+/* unterminated

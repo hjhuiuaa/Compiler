@@ -32,6 +32,9 @@
     long long convertToInt(const char* str, const char end, bool& isLongLong);
     float convertToFloatDec(const char* str);
     float convertToFloatHex(const char* str);
+    YaccParser::symbol_type makeIntConst(const char* text, const location& loc, Parser& parser);
+    YaccParser::symbol_type makeFloatDec(const char* text, const location& loc, Parser& parser);
+    YaccParser::symbol_type makeFloatHex(const char* text, const location& loc, Parser& parser);
 %}
 
 %option c++
@@ -39,87 +42,113 @@
 %option yyclass="Scanner"
 %option prefix="Yacc_"
 
+%x COMMENT
+
+digit       [0-9]
+nonzero     [1-9]
+octdigit    [0-7]
+hexdigit    [0-9a-fA-F]
+ident       [A-Za-z_][A-Za-z0-9_]*
+hex_prefix  0[xX]
+dec_exp     [eE][+-]?{digit}+
+hex_exp     [pP][+-]?{digit}+
+dec_float   ({digit}*\.{digit}+|{digit}+\.){dec_exp}?|{digit}+{dec_exp}
+hex_float   {hex_prefix}({hexdigit}+(\.{hexdigit}*)?|\.{hexdigit}+){hex_exp}
+hex_int     {hex_prefix}{hexdigit}+
+oct_int     0{octdigit}*
+dec_int     {nonzero}{digit}*
+
 %%
-
-%{
-/*
-在词法分析中，你需要重点考虑result的四种类型，分别为int_token, float_token, string_token, symbol_token。
-之所以要定义这四种类型，是因为我们只返回这个token的类型是不够的，我们还需要知道这个token的属性。
-例如我们需要知道INT_CONST具体的值是多少。
-如果你需要其它 token，需要先到 yacc.y 中定义 token，然后在这里实现。
-
-TODO(Lab1)：参考SysY2022的定义，实现更多的词法，如浮点数、十六进制/八进制数等
-*/
-%}
 
 \n              {
                     loc.lines(yyleng);
                     loc.step();
                 }
 
-[ \f\r\v]+    { /* empty */ }
-[\t]    {
-    loc.columns(handleTab());
-}
+[ \f\r\v]+      { }
+[\t]            { loc.columns(handleTab()); }
 
-"if"                { RETT(IF, loc) }
-"else"              { RETT(ELSE, loc) }
-"for"               { RETT(FOR, loc) }
-"while"             { RETT(WHILE, loc) }
-"continue"          { RETT(CONTINUE, loc) }
-"break"             { RETT(BREAK, loc) }
-"switch"            { RETT(SWITCH, loc) }
-"case"              { RETT(CASE, loc) }
-"goto"              { RETT(GOTO, loc) }
-"do"                { RETT(DO, loc) }
-"return"            { RETT(RETURN, loc) }
+"//".*          { }
 
-"const"             { RETT(CONST, loc) }
+"/*"            { BEGIN(COMMENT); }
+<COMMENT>"*/"   { BEGIN(INITIAL); }
+<COMMENT>\n     {
+                    loc.lines(yyleng);
+                    loc.step();
+                }
+<COMMENT>[\t]   { loc.columns(handleTab()); }
+<COMMENT>.      { }
+<COMMENT><<EOF>> {
+                    _parser.reportError(loc, "unterminated block comment");
+                    BEGIN(INITIAL);
+                    return YaccParser::make_ERR_TOKEN(std::string("/*"), loc);
+                }
 
-";"                 { RETT(SEMICOLON, loc) }
-","                 { RETT(COMMA, loc) }
+"if"            { RETT(IF, loc) }
+"else"          { RETT(ELSE, loc) }
+"for"           { RETT(FOR, loc) }
+"while"         { RETT(WHILE, loc) }
+"continue"      { RETT(CONTINUE, loc) }
+"break"         { RETT(BREAK, loc) }
+"switch"        { RETT(SWITCH, loc) }
+"case"          { RETT(CASE, loc) }
+"goto"          { RETT(GOTO, loc) }
+"do"            { RETT(DO, loc) }
+"return"        { RETT(RETURN, loc) }
+"const"         { RETT(CONST, loc) }
+"int"           { RETT(INT, loc) }
+"float"         { RETT(FLOAT, loc) }
+"void"          { RETT(VOID, loc) }
 
-"//".*              { 
+"=="            { RETT(EQ, loc) }
+"!="            { RETT(NE, loc) }
+"<="            { RETT(LE, loc) }
+">="            { RETT(GE, loc) }
+"&&"            { RETT(AND, loc) }
+"||"            { RETT(OR, loc) }
+"="             { RETT(ASSIGN, loc) }
+"!"             { RETT(NOT, loc) }
+"<"             { RETT(LT, loc) }
+">"             { RETT(GT, loc) }
+"+"             { RETT(PLUS, loc) }
+"-"             { RETT(MINUS, loc) }
+"*"             { RETT(STAR, loc) }
+"/"             { RETT(SLASH, loc) }
+"%"             { RETT(MOD, loc) }
+
+";"             { RETT(SEMICOLON, loc) }
+","             { RETT(COMMA, loc) }
+"("             { RETT(LPAREN, loc) }
+")"             { RETT(RPAREN, loc) }
+"["             { RETT(LBRACKET, loc) }
+"]"             { RETT(RBRACKET, loc) }
+"{"             { RETT(LBRACE, loc) }
+"}"             { RETT(RBRACE, loc) }
+
+{hex_float}     { return makeFloatHex(yytext, loc, _parser); }
+{dec_float}     { return makeFloatDec(yytext, loc, _parser); }
+{hex_int}       { return makeIntConst(yytext, loc, _parser); }
+{oct_int}       { return makeIntConst(yytext, loc, _parser); }
+{dec_int}       { return makeIntConst(yytext, loc, _parser); }
+
+{ident} {
     auto str = std::string(yytext);
-    // return YaccParser::make_SLASH_COMMENT(str, loc);  //思考为什么要把这一行注释掉
+    return YaccParser::make_IDENT(str, loc);
 }
 
-"/*""*/" {
-    //TODO(Lab1)：实现多行注释的处理，包括修改上方的匹配规则
-}
-
-[A-Za-z_]+[A-Za-z0-9_]* {
-    auto str = std::string(yytext);
-    return YaccParser::make_IDENT(str, loc); 
-}
-
-\"[^\"]*\"          { 
+\"[^\"]*\" {
     std::string str(yytext);
     if (!str.empty()) str = str.substr(1, str.size() - 2);
-    return YaccParser::make_STR_CONST(str, loc); 
+    return YaccParser::make_STR_CONST(str, loc);
 }
-
-[1-9][0-9]* {
-    try {
-        bool isLL = false;
-        long long result = convertToInt(yytext, '\0', isLL);
-        // if (isLL) return YaccParser::make_LL_CONST(result, loc);
-        return YaccParser::make_INT_CONST(static_cast<int>(result), loc);
-    } catch (const std::exception& e) {
-        _parser.reportError(loc, std::string("Error parsing hexadecimal int: ") + e.what());
-        auto str = std::string(yytext);
-        return YaccParser::make_ERR_TOKEN(str, loc);
-    }
-}
-
-"("                 { RETT(LPAREN, loc) }
-")"                 { RETT(RPAREN, loc) }
-"["                 { RETT(LBRACKET, loc) }
-"]"                 { RETT(RBRACKET, loc) }
-"{"                 { RETT(LBRACE, loc) }
-"}"                 { RETT(RBRACE, loc) }
 
 <<EOF>>         { RETT(END, loc); }
+
+. {
+    auto str = std::string(yytext);
+    _parser.reportError(loc, std::string("unexpected character: ") + str);
+    return YaccParser::make_ERR_TOKEN(str, loc);
+}
 
 %%
 
@@ -350,4 +379,46 @@ float convertToFloatHex(const char* str)
     }
 
     return static_cast<float>(value);
+}
+
+YaccParser::symbol_type makeIntConst(const char* text, const location& loc, Parser& parser)
+{
+    try
+    {
+        bool      isLL   = false;
+        long long result = convertToInt(text, '\0', isLL);
+        if (isLL) return YaccParser::make_LL_CONST(result, loc);
+        return YaccParser::make_INT_CONST(static_cast<int>(result), loc);
+    }
+    catch (const std::exception& e)
+    {
+        parser.reportError(loc, std::string("Error parsing integer: ") + e.what());
+        return YaccParser::make_ERR_TOKEN(std::string(text), loc);
+    }
+}
+
+YaccParser::symbol_type makeFloatDec(const char* text, const location& loc, Parser& parser)
+{
+    try
+    {
+        return YaccParser::make_FLOAT_CONST(convertToFloatDec(text), loc);
+    }
+    catch (const std::exception& e)
+    {
+        parser.reportError(loc, std::string("Error parsing decimal float: ") + e.what());
+        return YaccParser::make_ERR_TOKEN(std::string(text), loc);
+    }
+}
+
+YaccParser::symbol_type makeFloatHex(const char* text, const location& loc, Parser& parser)
+{
+    try
+    {
+        return YaccParser::make_FLOAT_CONST(convertToFloatHex(text), loc);
+    }
+    catch (const std::exception& e)
+    {
+        parser.reportError(loc, std::string("Error parsing hexadecimal float: ") + e.what());
+        return YaccParser::make_ERR_TOKEN(std::string(text), loc);
+    }
 }
