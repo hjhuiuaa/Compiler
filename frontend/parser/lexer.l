@@ -3,10 +3,12 @@
     #include <frontend/parser/scanner.h>
     #include <frontend/parser/location.hh>
     #include <frontend/parser/parser.h>
+    #include <cerrno>
+    #include <cstdlib>
+    #include <cmath>
     #include <stdexcept>
     #include <string>
-    #include <limits>      
-    #include <cmath>       
+    #include <limits>
 
     using namespace FE;
 
@@ -166,219 +168,40 @@ int handleTab()
 
 long long convertToInt(const char* str, const char end, bool& isLongLong)
 {
-    // 该函数用于将字符串转换为整数，能正确处理格式无误的十进制、十六进制和八进制整数
-    // 接受一个 isLongLong 引用参数，用于指示结果是否超出 int 范围
+    if (str == nullptr) throw std::invalid_argument("null integer literal");
 
-    int         base       = 10;
-    long long   result     = 0;
-    int         isNegative = 0;
-    const char* ptr        = str;
-    static int  zeroOffset = '0';
-    static int  aOffset    = 'a' - 10;
-    static int  AOffset    = 'A' - 10;
-    int*        offset     = NULL;
-    isLongLong             = false;
+    errno           = 0;
+    char*     tail  = nullptr;
+    long long value = std::strtoll(str, &tail, 0);
 
-    if (*ptr == '-')
-    {
-        isNegative = 1;
-        ++ptr;
-    }
-    else if (*ptr == '+') { ++ptr; }
+    if (tail == str || tail == nullptr || *tail != end)
+        throw std::invalid_argument(std::string(str) + " is not a complete integer literal");
+    if (errno == ERANGE) throw std::out_of_range(std::string(str) + " is outside the long long range");
 
-    if (ptr[0] == '0' && (ptr[1] == 'x' || ptr[1] == 'X'))
-    {
-        base = 16;
-        ptr += 2;
-    }
-    else if (ptr[0] == '0')
-    {
-        base = 8;
-        ptr += 1;
-    }
-
-    while (*ptr != end)
-    {
-        int value = 0;
-
-        if (base == 16)
-        {
-            if (*ptr >= '0' && *ptr <= '9')
-                offset = &zeroOffset;
-            else if (*ptr >= 'a' && *ptr <= 'f')
-                offset = &aOffset;
-            else if (*ptr >= 'A' && *ptr <= 'F')
-                offset = &AOffset;
-        }
-        else { offset = &zeroOffset; }
-
-        value  = *ptr - *offset;
-        result = result * base + value;
-        ++ptr;
-    }
-
-    if (isNegative) result = -result;
-
-    if (result > std::numeric_limits<int>::max() || result < std::numeric_limits<int>::min())
-    {
-        isLongLong = true;
-        if (result > std::numeric_limits<long long>::max() || result < std::numeric_limits<long long>::min())
-        {
-            throw std::out_of_range(str + std::string(" overflow or underflow for long long"));
-        }
-    }
-
-    return result;
+    isLongLong = value > std::numeric_limits<int>::max() || value < std::numeric_limits<int>::min();
+    return value;
 }
 
 float convertToFloatDec(const char* str)
 {
-    // 该函数用于将字符串转换为浮点数，能正确处理格式无误的十进制浮点数
+    if (str == nullptr) throw std::invalid_argument("null floating literal");
 
-    const char* head = str;
-    if (str == NULL) { return 0.0f; }
+    errno       = 0;
+    char* tail  = nullptr;
+    float value = std::strtof(str, &tail);
 
-    int sign = 1;
-    if (*str == '-')
-    {
-        sign = -1;
-        str++;
-    }
-    else if (*str == '+') { str++; }
+    if (tail == str || tail == nullptr || *tail != '\0')
+        throw std::invalid_argument(std::string(str) + " is not a complete floating literal");
+    if (!std::isfinite(value)) throw std::out_of_range(std::string(str) + " overflows float");
+    if (errno == ERANGE && value == 0.0f) throw std::out_of_range(std::string(str) + " underflows float");
 
-    double integerPart = 0.0;
-    while (isdigit(*str))
-    {
-        integerPart = integerPart * 10 + (*str - '0');
-        str++;
-    }
-
-    double fractionPart = 0.0;
-    if (*str == '.')
-    {
-        str++;
-        double divisor = 10.0;
-        while (isdigit(*str))
-        {
-            fractionPart += (*str - '0') / divisor;
-            divisor *= 10.0;
-            str++;
-        }
-    }
-
-    double value = integerPart + fractionPart;
-
-    if (*str == 'e' || *str == 'E')
-    {
-        str++;
-        int expSign = 1;
-        if (*str == '-')
-        {
-            expSign = -1;
-            str++;
-        }
-        else if (*str == '+') { str++; }
-
-        int exponent = 0;
-        while (isdigit(*str))
-        {
-            exponent = exponent * 10 + (*str - '0');
-            str++;
-        }
-
-        value *= pow(10, expSign * exponent);
-    }
-
-    value = sign * value;
-
-    if (value > std::numeric_limits<float>::max() || value < -std::numeric_limits<float>::max())
-    {
-        throw std::out_of_range(
-            head + ((value > std::numeric_limits<float>::max()) ? std::string(" overflow") : std::string(" underflow")));
-    }
-
-    return static_cast<float>(value);
+    return value;
 }
 
 float convertToFloatHex(const char* str)
 {
-    // 该函数用于将字符串转换为浮点数，能正确处理格式无误的十六进制浮点数
-
-    const char* head = str;
-    if (str == NULL) { return 0.0f; }
-
-    int sign = 1;
-    if (*str == '-')
-    {
-        sign = -1;
-        str++;
-    }
-    else if (*str == '+') { str++; }
-
-    if (*str == '0' && (*(str + 1) == 'x' || *(str + 1) == 'X')) { str += 2; }
-
-    unsigned long long integerPart = 0;
-    while (isxdigit(*str))
-    {
-        int digit = 0;
-        if (isdigit(*str)) { digit = (*str - '0'); }
-        else if (*str >= 'a' && *str <= 'f') { digit = (*str - 'a' + 10); }
-        else if (*str >= 'A' && *str <= 'F') { digit = (*str - 'A' + 10); }
-        integerPart = integerPart * 16 + digit;
-        str++;
-    }
-
-    double fractionPart = 0.0;
-    if (*str == '.')
-    {
-        str++;
-        unsigned long long numerator   = 0;
-        unsigned long long denominator = 1;
-        while (isxdigit(*str))
-        {
-            int digit = 0;
-            if (isdigit(*str)) { digit = (*str - '0'); }
-            else if (*str >= 'a' && *str <= 'f') { digit = (*str - 'a' + 10); }
-            else if (*str >= 'A' && *str <= 'F') { digit = (*str - 'A' + 10); }
-            numerator = numerator * 16 + digit;
-            denominator *= 16;
-            str++;
-        }
-        fractionPart = (double)numerator / (double)denominator;
-    }
-
-    double value = (double)integerPart + fractionPart;
-
-    if (*str == 'p' || *str == 'P')
-    {
-        str++;
-        int expSign = 1;
-        if (*str == '-')
-        {
-            expSign = -1;
-            str++;
-        }
-        else if (*str == '+') { str++; }
-
-        int exponent = 0;
-        while (isdigit(*str))
-        {
-            exponent = exponent * 10 + (*str - '0');
-            str++;
-        }
-
-        value *= pow(2, expSign * exponent);
-    }
-
-    value = sign * value;
-
-    if (value > std::numeric_limits<float>::max() || value < -std::numeric_limits<float>::max())
-    {
-        throw std::out_of_range(
-            head + ((value > std::numeric_limits<float>::max()) ? std::string(" overflow") : std::string(" underflow")));
-    }
-
-    return static_cast<float>(value);
+    // strtof 同时支持 C 标准的十进制和十六进制浮点格式。
+    return convertToFloatDec(str);
 }
 
 YaccParser::symbol_type makeIntConst(const char* text, const location& loc, Parser& parser)
