@@ -14,12 +14,6 @@
 
     static location loc;
 
-    // YY_USER_ACTION 宏会自动插入到每个规则的代码块开头
-    // 如下方的 "int"               { RETT(INT, loc) }
-    // 实际上会被转换为
-    // "int"               { loc.step(); loc.columns(yyleng); RETT(INT, loc) }
-    // 这样就能自动更新 loc 的位置
-    // yyleng 是当前匹配的字符串的长度
     #define YY_USER_ACTION      \
         loc.step();             \
         loc.columns(yyleng);
@@ -156,12 +150,6 @@ dec_int     {nonzero}{digit}*
 
 int handleTab()
 {
-    // 该函数用于处理制表符，根据当前位置计算制表符应占用的列数
-    // 如，在TAB_WIDTH为4的情况下：
-    // 对于" \t"，则会对 '\t' 返回 3
-    // 对于"   \t"，则会对 '\t' 返回 1
-    // 对于"    \t"，则会对 '\t' 返回 4
-
     int& c = loc.begin.column;
     return TAB_WIDTH - ((c - 1) % TAB_WIDTH) - 1;
 }
@@ -200,7 +188,6 @@ float convertToFloatDec(const char* str)
 
 float convertToFloatHex(const char* str)
 {
-    // strtof 同时支持 C 标准的十进制和十六进制浮点格式。
     return convertToFloatDec(str);
 }
 

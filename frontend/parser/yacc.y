@@ -58,9 +58,6 @@
 %define parse.error verbose
 %define api.token.prefix {TOKEN_}
 
-// 从这开始定义你需要用到的 token
-// 对于一些需要 "值" 的 token，可以在前面加上 <type> 来指定值的类型
-// 例如，%token <int> INT_CONST 定义了一个名为 INT_CONST
 %token <int> INT_CONST
 %token <long long> LL_CONST
 %token <float> FLOAT_CONST
